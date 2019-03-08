@@ -1,5 +1,4 @@
 #### MIPT, DIHT, Tkachenko Dmitry, 2019 graduate thesis
-![SpeakThru](/res/images/Logo.png)
 My thesis on "Application for automatic text detection and translation"
 
 **Application parts:**
