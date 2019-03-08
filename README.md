@@ -1,13 +1,9 @@
 ### MIPT, DIHT, Tkachenko Dmitry, 2019 graduate thesis
 My thesis on "Application for automatic text detection and translation"
 
-* [iOS part](https://github.com/klabertants/mipt_thesis/tree/master/iOS/)
-* [Design](https://www.figma.com/file/NYoOoNyu3uDlYJKps1YiwevW/SpeakThru?node-id=0%3A1)
-- [x] Create logo
-- [x] Create launch screen
-- [ ] Create main screen
-- [ ] ...to be continued
-* [ML part](https://github.com/klabertants/mipt_thesis/tree/master/ML/)
+* [iOS](https://github.com/klabertants/mipt_thesis/tree/master/iOS/)
+* [Resources](https://github.com/klabertants/mipt_thesis/tree/master/res/)
+* [ML](https://github.com/klabertants/mipt_thesis/tree/master/ML/)
 
 Tech links:
 * [Firebase](https://console.firebase.google.com/u/3/project/speakthru-d756b/overview)
