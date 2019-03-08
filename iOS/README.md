@@ -1,4 +1,4 @@
-<center> ### iOS </center>
+<center>  iOS </center>
 This directory includes iOS project files and all misc files connected with iOS part
 
 Goals:
