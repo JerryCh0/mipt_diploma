@@ -1,7 +1,7 @@
 #### iOS
 This directory includes iOS project files and all misc files connected with iOS part
 
-** Goals: **
+**Goals:** 
 - [x] Initial project setup
 - [x] Installing pods
 - [ ] Connect Firebase
