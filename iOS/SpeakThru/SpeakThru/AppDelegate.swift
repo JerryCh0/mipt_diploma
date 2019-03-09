@@ -13,12 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        self.window = UIWindow()
-        self.window?.rootViewController = MainViewController()
-        self.window?.makeKeyAndVisible()
-        // Override point for customization after application launch.
+        self.window = STApp.shared.window
         return true
     }
 

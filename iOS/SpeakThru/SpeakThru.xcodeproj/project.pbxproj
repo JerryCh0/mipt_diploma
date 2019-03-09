@@ -12,6 +12,15 @@
 		0A130948222A749E0098433D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A130946222A749E0098433D /* LaunchScreen.storyboard */; };
 		0A130953222A749E0098433D /* SpeakThruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A130952222A749E0098433D /* SpeakThruTests.swift */; };
 		0A280105223309F00087C228 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A280104223309F00087C228 /* MainViewController.swift */; };
+		0A83D3682233A8A40005AE1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A83D3672233A8A40005AE1F /* GoogleService-Info.plist */; };
+		0AD1E1F02233A96900FE7101 /* STFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1EF2233A96900FE7101 /* STFirebaseManager.swift */; };
+		0AD1E1F22233A9CA00FE7101 /* STAppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1F12233A9CA00FE7101 /* STAppContext.swift */; };
+		0AD1E1F42233AA9D00FE7101 /* STApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1F32233AA9D00FE7101 /* STApp.swift */; };
+		0AD1E1F72233AE1000FE7101 /* STRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1F62233AE1000FE7101 /* STRouter.swift */; };
+		0AD1E1FC2233B53C00FE7101 /* STButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1FB2233B53C00FE7101 /* STButton.swift */; };
+		0AD1E1FE2233B6C100FE7101 /* STRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1FD2233B6C100FE7101 /* STRouting.swift */; };
+		4A29AAAB7A8E5ECB405F1F34 /* Pods_SpeakThru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF1108AC15768D0CB235D76 /* Pods_SpeakThru.framework */; };
+		508290961A63AB414B6CA813 /* Pods_SpeakThruTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3361E05BF9FC5480081ECF /* Pods_SpeakThruTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,19 @@
 		0A130954222A749E0098433D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A2801032233079E0087C228 /* Rationale-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rationale-Regular.ttf"; sourceTree = "<group>"; };
 		0A280104223309F00087C228 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0A83D3672233A8A40005AE1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0AD1E1EF2233A96900FE7101 /* STFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STFirebaseManager.swift; sourceTree = "<group>"; };
+		0AD1E1F12233A9CA00FE7101 /* STAppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STAppContext.swift; sourceTree = "<group>"; };
+		0AD1E1F32233AA9D00FE7101 /* STApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STApp.swift; sourceTree = "<group>"; };
+		0AD1E1F62233AE1000FE7101 /* STRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STRouter.swift; sourceTree = "<group>"; };
+		0AD1E1FB2233B53C00FE7101 /* STButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STButton.swift; sourceTree = "<group>"; };
+		0AD1E1FD2233B6C100FE7101 /* STRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STRouting.swift; sourceTree = "<group>"; };
+		475F318D136623AD2DBAC4CC /* Pods-SpeakThru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakThru.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeakThru/Pods-SpeakThru.debug.xcconfig"; sourceTree = "<group>"; };
+		5F3361E05BF9FC5480081ECF /* Pods_SpeakThruTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeakThruTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		948F426638F81E8F47511E1C /* Pods-SpeakThru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakThru.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeakThru/Pods-SpeakThru.release.xcconfig"; sourceTree = "<group>"; };
+		DFA2F102ED919490BEE11BC7 /* Pods-SpeakThruTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakThruTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeakThruTests/Pods-SpeakThruTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3C936CB57BB27C8E68F2566 /* Pods-SpeakThruTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakThruTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeakThruTests/Pods-SpeakThruTests.release.xcconfig"; sourceTree = "<group>"; };
+		FCF1108AC15768D0CB235D76 /* Pods_SpeakThru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeakThru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A29AAAB7A8E5ECB405F1F34 /* Pods_SpeakThru.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508290961A63AB414B6CA813 /* Pods_SpeakThruTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +85,8 @@
 				0A13093C222A749C0098433D /* SpeakThru */,
 				0A130951222A749E0098433D /* SpeakThruTests */,
 				0A13093B222A749C0098433D /* Products */,
+				92A4BF70C2355AD957B395DB /* Pods */,
+				5788000CE78208F9C8E7E5DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +103,13 @@
 			isa = PBXGroup;
 			children = (
 				0A130949222A749E0098433D /* Info.plist */,
+				0A83D3672233A8A40005AE1F /* GoogleService-Info.plist */,
 				0A13093D222A749C0098433D /* AppDelegate.swift */,
+				0AD1E1F52233AD7400FE7101 /* STCore */,
+				0AD1E1EE2233A93D00FE7101 /* Network */,
 				0A13095E222A78130098433D /* ViewControllers */,
 				0A13095F222A782B0098433D /* Misc */,
+				0AD1E1FA2233B51A00FE7101 /* UI */,
 				0A13095D222A77FC0098433D /* Resources */,
 			);
 			path = SpeakThru;
@@ -135,6 +165,53 @@
 			path = Rationale;
 			sourceTree = "<group>";
 		};
+		0AD1E1EE2233A93D00FE7101 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0AD1E1EF2233A96900FE7101 /* STFirebaseManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0AD1E1F52233AD7400FE7101 /* STCore */ = {
+			isa = PBXGroup;
+			children = (
+				0AD1E1F32233AA9D00FE7101 /* STApp.swift */,
+				0AD1E1F12233A9CA00FE7101 /* STAppContext.swift */,
+				0AD1E1F62233AE1000FE7101 /* STRouter.swift */,
+				0AD1E1FD2233B6C100FE7101 /* STRouting.swift */,
+			);
+			path = STCore;
+			sourceTree = "<group>";
+		};
+		0AD1E1FA2233B51A00FE7101 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0AD1E1FB2233B53C00FE7101 /* STButton.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5788000CE78208F9C8E7E5DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCF1108AC15768D0CB235D76 /* Pods_SpeakThru.framework */,
+				5F3361E05BF9FC5480081ECF /* Pods_SpeakThruTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92A4BF70C2355AD957B395DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				475F318D136623AD2DBAC4CC /* Pods-SpeakThru.debug.xcconfig */,
+				948F426638F81E8F47511E1C /* Pods-SpeakThru.release.xcconfig */,
+				DFA2F102ED919490BEE11BC7 /* Pods-SpeakThruTests.debug.xcconfig */,
+				F3C936CB57BB27C8E68F2566 /* Pods-SpeakThruTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A130957222A749E0098433D /* Build configuration list for PBXNativeTarget "SpeakThru" */;
 			buildPhases = (
+				190263B774098C0AC9356356 /* [CP] Check Pods Manifest.lock */,
 				0A130936222A749C0098433D /* Sources */,
 				0A130937222A749C0098433D /* Frameworks */,
 				0A130938222A749C0098433D /* Resources */,
+				929635C9B3FE89E61C0F84C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +238,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A13095A222A749E0098433D /* Build configuration list for PBXNativeTarget "SpeakThruTests" */;
 			buildPhases = (
+				3673B8DD2A758A7350BAA612 /* [CP] Check Pods Manifest.lock */,
 				0A13094A222A749E0098433D /* Sources */,
 				0A13094B222A749E0098433D /* Frameworks */,
 				0A13094C222A749E0098433D /* Resources */,
@@ -179,6 +259,7 @@
 		0A130932222A749C0098433D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ST;
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = klabertants;
@@ -218,6 +299,7 @@
 			files = (
 				0A130948222A749E0098433D /* LaunchScreen.storyboard in Resources */,
 				0A130945222A749E0098433D /* Images.xcassets in Resources */,
+				0A83D3682233A8A40005AE1F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,13 +312,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		190263B774098C0AC9356356 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeakThru-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3673B8DD2A758A7350BAA612 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpeakThruTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		929635C9B3FE89E61C0F84C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpeakThru/Pods-SpeakThru-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeakThru/Pods-SpeakThru-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A130936222A749C0098433D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD1E1F02233A96900FE7101 /* STFirebaseManager.swift in Sources */,
+				0AD1E1FE2233B6C100FE7101 /* STRouting.swift in Sources */,
+				0AD1E1F42233AA9D00FE7101 /* STApp.swift in Sources */,
+				0AD1E1F22233A9CA00FE7101 /* STAppContext.swift in Sources */,
 				0A13093E222A749C0098433D /* AppDelegate.swift in Sources */,
+				0AD1E1FC2233B53C00FE7101 /* STButton.swift in Sources */,
 				0A280105223309F00087C228 /* MainViewController.swift in Sources */,
+				0AD1E1F72233AE1000FE7101 /* STRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +535,7 @@
 		};
 		0A130958222A749E0098433D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 475F318D136623AD2DBAC4CC /* Pods-SpeakThru.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -406,6 +554,7 @@
 		};
 		0A130959222A749E0098433D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 948F426638F81E8F47511E1C /* Pods-SpeakThru.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -424,6 +573,7 @@
 		};
 		0A13095B222A749E0098433D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFA2F102ED919490BEE11BC7 /* Pods-SpeakThruTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -445,6 +595,7 @@
 		};
 		0A13095C222A749E0098433D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C936CB57BB27C8E68F2566 /* Pods-SpeakThruTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
