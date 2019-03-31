@@ -23,9 +23,13 @@ final class STButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func set(callback: @escaping STButtonCallback) {
+        callback_ = callback
+    }
+    
     @objc private func callback() {
         callback_()
     }
     
-    private let callback_: STButtonCallback
+    private var callback_: STButtonCallback
 }

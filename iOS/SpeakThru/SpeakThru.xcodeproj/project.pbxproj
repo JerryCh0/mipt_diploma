@@ -11,7 +11,7 @@
 		0A130945222A749E0098433D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A130944222A749E0098433D /* Images.xcassets */; };
 		0A130948222A749E0098433D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A130946222A749E0098433D /* LaunchScreen.storyboard */; };
 		0A130953222A749E0098433D /* SpeakThruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A130952222A749E0098433D /* SpeakThruTests.swift */; };
-		0A280105223309F00087C228 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A280104223309F00087C228 /* MainViewController.swift */; };
+		0A280105223309F00087C228 /* STMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A280104223309F00087C228 /* STMainVC.swift */; };
 		0A83D3682233A8A40005AE1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A83D3672233A8A40005AE1F /* GoogleService-Info.plist */; };
 		0AD1E1F02233A96900FE7101 /* STFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1EF2233A96900FE7101 /* STFirebaseManager.swift */; };
 		0AD1E1F22233A9CA00FE7101 /* STAppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1F12233A9CA00FE7101 /* STAppContext.swift */; };
@@ -19,6 +19,8 @@
 		0AD1E1F72233AE1000FE7101 /* STRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1F62233AE1000FE7101 /* STRouter.swift */; };
 		0AD1E1FC2233B53C00FE7101 /* STButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1FB2233B53C00FE7101 /* STButton.swift */; };
 		0AD1E1FE2233B6C100FE7101 /* STRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1FD2233B6C100FE7101 /* STRouting.swift */; };
+		0AEDBBA122514B75000CE43F /* STStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDBBA022514B75000CE43F /* STStyleKit.swift */; };
+		0AEDBBA322514E45000CE43F /* STSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDBBA222514E45000CE43F /* STSettingsVC.swift */; };
 		4A29AAAB7A8E5ECB405F1F34 /* Pods_SpeakThru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF1108AC15768D0CB235D76 /* Pods_SpeakThru.framework */; };
 		508290961A63AB414B6CA813 /* Pods_SpeakThruTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3361E05BF9FC5480081ECF /* Pods_SpeakThruTests.framework */; };
 /* End PBXBuildFile section */
@@ -43,7 +45,7 @@
 		0A130952222A749E0098433D /* SpeakThruTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakThruTests.swift; sourceTree = "<group>"; };
 		0A130954222A749E0098433D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A2801032233079E0087C228 /* Rationale-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rationale-Regular.ttf"; sourceTree = "<group>"; };
-		0A280104223309F00087C228 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0A280104223309F00087C228 /* STMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STMainVC.swift; sourceTree = "<group>"; };
 		0A83D3672233A8A40005AE1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0AD1E1EF2233A96900FE7101 /* STFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STFirebaseManager.swift; sourceTree = "<group>"; };
 		0AD1E1F12233A9CA00FE7101 /* STAppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STAppContext.swift; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		0AD1E1F62233AE1000FE7101 /* STRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STRouter.swift; sourceTree = "<group>"; };
 		0AD1E1FB2233B53C00FE7101 /* STButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STButton.swift; sourceTree = "<group>"; };
 		0AD1E1FD2233B6C100FE7101 /* STRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STRouting.swift; sourceTree = "<group>"; };
+		0AEDBBA022514B75000CE43F /* STStyleKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STStyleKit.swift; sourceTree = "<group>"; };
+		0AEDBBA222514E45000CE43F /* STSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingsVC.swift; sourceTree = "<group>"; };
 		475F318D136623AD2DBAC4CC /* Pods-SpeakThru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakThru.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeakThru/Pods-SpeakThru.debug.xcconfig"; sourceTree = "<group>"; };
 		5F3361E05BF9FC5480081ECF /* Pods_SpeakThruTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeakThruTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		948F426638F81E8F47511E1C /* Pods-SpeakThru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakThru.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeakThru/Pods-SpeakThru.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,7 +140,8 @@
 		0A13095E222A78130098433D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0A280104223309F00087C228 /* MainViewController.swift */,
+				0A280104223309F00087C228 /* STMainVC.swift */,
+				0AEDBBA222514E45000CE43F /* STSettingsVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 				0AD1E1F12233A9CA00FE7101 /* STAppContext.swift */,
 				0AD1E1F62233AE1000FE7101 /* STRouter.swift */,
 				0AD1E1FD2233B6C100FE7101 /* STRouting.swift */,
+				0AEDBBA022514B75000CE43F /* STStyleKit.swift */,
 			);
 			path = STCore;
 			sourceTree = "<group>";
@@ -378,11 +384,13 @@
 			files = (
 				0AD1E1F02233A96900FE7101 /* STFirebaseManager.swift in Sources */,
 				0AD1E1FE2233B6C100FE7101 /* STRouting.swift in Sources */,
+				0AEDBBA322514E45000CE43F /* STSettingsVC.swift in Sources */,
 				0AD1E1F42233AA9D00FE7101 /* STApp.swift in Sources */,
 				0AD1E1F22233A9CA00FE7101 /* STAppContext.swift in Sources */,
+				0AEDBBA122514B75000CE43F /* STStyleKit.swift in Sources */,
 				0A13093E222A749C0098433D /* AppDelegate.swift in Sources */,
 				0AD1E1FC2233B53C00FE7101 /* STButton.swift in Sources */,
-				0A280105223309F00087C228 /* MainViewController.swift in Sources */,
+				0A280105223309F00087C228 /* STMainVC.swift in Sources */,
 				0AD1E1F72233AE1000FE7101 /* STRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ import UIKit
 final class STRouter: NSObject {
     
     init(window: UIWindow) {
-        window.rootViewController = MainViewController()
+        window.rootViewController = STMainVC()
         window.makeKeyAndVisible()
         self.window = window
         super.init()
@@ -26,7 +26,11 @@ extension STRouter: STRouting {
     func open(screen: STScreen) {
         switch screen {
         case .settings:
+            let settingsVC = STSettingsVC()
+            window.rootViewController?.present(settingsVC, animated: true, completion: nil)
             print("Settings opened")
+        case .bookmarks:
+            print("Bookmarks opened")
         default:
             assert(false, "Trying to make unimplemented routing")
         }
