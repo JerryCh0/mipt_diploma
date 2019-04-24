@@ -10,8 +10,7 @@ import UIKit
 
 final class STTranslationView: UIView {
     
-    init(with translation: STTranslation?) {
-        guard translation == nil else { fatalError() }
+    init() {
         super.init(frame: CGRect.zero)
         addSubviews()
         setupUI()
@@ -19,6 +18,14 @@ final class STTranslationView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func set(translation: STTranslation) {
+        photoImageView.image = translation.imageToTranslate
+        translationTextView.text = translation.translatedText
+        fromLanguageLabel.text = translation.fromLanguage
+        toLanguageLabel.text = translation.toLanguage
+        // TODO: isSaved
     }
     
     override func layoutSubviews() {
@@ -87,11 +94,13 @@ final class STTranslationView: UIView {
         translationTextView.layer.cornerRadius = STLayout.cornerRadius
         
         photoImageView.backgroundColor = .white
+        photoImageView.contentMode = .scaleToFill
         
         backgroundBubble.backgroundColor = STColor.greyBlue
         
         translationTextView.backgroundColor = .black
         translationTextView.textColor = STColor.neonBlue
+        translationTextView.textAlignment = .center
         translationTextView.isEditable = false
         translationTextView.isSelectable = false
         

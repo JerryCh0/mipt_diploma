@@ -21,6 +21,7 @@ final class STStyleKit {
     static let copyIcon = UIImage(named: "STButtonCopy")!
     static let saveIcon = UIImage(named: "STButtonSave")!
     static let savedIcon = UIImage(named: "STButtonSaved")!
+    static let rewindIcon = UIImage(named: "STButtonRewind")!
     
     static let shutterImage = UIImage(named: "STButtonShutter")!
     static let arrowImage = UIImage(named: "STArrow")!

@@ -26,13 +26,10 @@ final class STTranslation: NSObject {
     }
     
     
-    private let imageToTranslate: UIImage
-    
-    private let translatedText: String
-    
-    private let isSaved: Bool
-    
-    private let fromLanguage: String
-    private let toLanguage: String
+    let imageToTranslate: UIImage
+    let translatedText: String
+    let isSaved: Bool
+    let fromLanguage: String
+    let toLanguage: String
     
 }

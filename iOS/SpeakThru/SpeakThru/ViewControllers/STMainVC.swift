@@ -108,7 +108,7 @@ final class STMainVC: UIViewController {
         }
     )
     
-    private let translationView = STTranslationView(with: nil)
+    private let translationView = STTranslationView()
 }
 
 private struct STLayout {
