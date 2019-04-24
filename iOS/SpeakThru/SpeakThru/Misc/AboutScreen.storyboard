@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rationale-Regular.ttf">
+            <string>Rationale-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--AboutVC-->
+        <scene sceneID="ZJb-Ml-pDi">
+            <objects>
+                <viewController storyboardIdentifier="AboutVC" id="JL9-J8-7l7" customClass="STAboutVC" customModule="SpeakThru" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gLm-NW-h2n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bt5-un-EFh">
+                                <rect key="frame" x="16" y="36" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="LVH-HC-Aom"/>
+                                    <constraint firstAttribute="height" constant="24" id="q3Q-tk-bnv"/>
+                                </constraints>
+                                <state key="normal" image="STButtonBack"/>
+                                <connections>
+                                    <action selector="onBackButtonTap:" destination="JL9-J8-7l7" eventType="touchUpInside" id="hyA-Dc-Bfv"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Iyl-hS-7EU">
+                                <rect key="frame" x="137.5" y="148" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2Sj-pL-9S0"/>
+                                    <constraint firstAttribute="width" constant="100" id="h1K-Z2-WjP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SpeakThru" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qj-2Z-ZvA">
+                                <rect key="frame" x="16" y="280" width="343" height="42"/>
+                                <fontDescription key="fontDescription" name="Rationale-Regular" family="Rationale" pointSize="36"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.75686274509999996" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="©  2019, Ткаченко Дмитрий" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIN-P9-ofm">
+                                <rect key="frame" x="16" y="630" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="Rationale-Regular" family="Rationale" pointSize="14"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.75686274509999996" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Версия 1.0b" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh8-bt-QI0">
+                                <rect key="frame" x="16" y="354" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="Rationale-Regular" family="Rationale" pointSize="14"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.75686274509999996" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMn-pa-IsN">
+                                <rect key="frame" x="16" y="435" width="343" height="33"/>
+                                <fontDescription key="fontDescription" name="Rationale-Regular" family="Rationale" pointSize="18"/>
+                                <state key="normal" title="Написать разработчику">
+                                    <color key="titleColor" red="0.12941176469999999" green="0.75686274509999996" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onFeedbackTap:" destination="JL9-J8-7l7" eventType="touchUpInside" id="liR-6F-LR9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bt5-un-EFh" firstAttribute="leading" secondItem="8c8-1i-7yx" secondAttribute="leading" constant="16" id="A9B-pV-rcY"/>
+                            <constraint firstItem="hh8-bt-QI0" firstAttribute="leading" secondItem="8c8-1i-7yx" secondAttribute="leading" constant="16" id="BGj-iR-pCc"/>
+                            <constraint firstItem="8c8-1i-7yx" firstAttribute="trailing" secondItem="WIN-P9-ofm" secondAttribute="trailing" constant="16" id="CfA-h2-mfd"/>
+                            <constraint firstItem="Iyl-hS-7EU" firstAttribute="centerX" secondItem="gLm-NW-h2n" secondAttribute="centerX" id="DRX-33-Apm"/>
+                            <constraint firstItem="WIN-P9-ofm" firstAttribute="leading" secondItem="8c8-1i-7yx" secondAttribute="leading" constant="16" id="EEP-Fo-N7b"/>
+                            <constraint firstItem="Iyl-hS-7EU" firstAttribute="top" secondItem="8c8-1i-7yx" secondAttribute="top" constant="128" id="IAU-TX-mWE"/>
+                            <constraint firstItem="ZMn-pa-IsN" firstAttribute="leading" secondItem="8c8-1i-7yx" secondAttribute="leading" constant="16" id="MmR-nV-5q4"/>
+                            <constraint firstItem="1Qj-2Z-ZvA" firstAttribute="centerX" secondItem="gLm-NW-h2n" secondAttribute="centerX" id="PUX-M1-R6Y"/>
+                            <constraint firstItem="hh8-bt-QI0" firstAttribute="centerX" secondItem="gLm-NW-h2n" secondAttribute="centerX" id="Rjd-V5-YPj"/>
+                            <constraint firstItem="8c8-1i-7yx" firstAttribute="trailing" secondItem="1Qj-2Z-ZvA" secondAttribute="trailing" constant="16" id="S5i-VS-7gi"/>
+                            <constraint firstItem="hh8-bt-QI0" firstAttribute="top" secondItem="1Qj-2Z-ZvA" secondAttribute="bottom" constant="32" id="WjJ-55-jKa"/>
+                            <constraint firstItem="ZMn-pa-IsN" firstAttribute="top" secondItem="hh8-bt-QI0" secondAttribute="bottom" constant="64" id="ZNL-rh-2uc"/>
+                            <constraint firstItem="8c8-1i-7yx" firstAttribute="trailing" secondItem="ZMn-pa-IsN" secondAttribute="trailing" constant="16" id="cZ0-Nc-8Pf"/>
+                            <constraint firstItem="WIN-P9-ofm" firstAttribute="centerX" secondItem="gLm-NW-h2n" secondAttribute="centerX" id="dNr-7q-ZJw"/>
+                            <constraint firstItem="1Qj-2Z-ZvA" firstAttribute="top" secondItem="Iyl-hS-7EU" secondAttribute="bottom" constant="32" id="jsD-0I-eui"/>
+                            <constraint firstItem="1Qj-2Z-ZvA" firstAttribute="leading" secondItem="8c8-1i-7yx" secondAttribute="leading" constant="16" id="o9l-Ho-Xy6"/>
+                            <constraint firstItem="Bt5-un-EFh" firstAttribute="top" secondItem="8c8-1i-7yx" secondAttribute="top" constant="16" id="ome-3o-KDn"/>
+                            <constraint firstItem="8c8-1i-7yx" firstAttribute="bottom" secondItem="WIN-P9-ofm" secondAttribute="bottom" constant="20" id="rfV-hZ-hYb"/>
+                            <constraint firstItem="ZMn-pa-IsN" firstAttribute="centerX" secondItem="gLm-NW-h2n" secondAttribute="centerX" id="y4w-yr-0Uv"/>
+                            <constraint firstItem="8c8-1i-7yx" firstAttribute="trailing" secondItem="hh8-bt-QI0" secondAttribute="trailing" constant="16" id="zeo-MH-fcG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8c8-1i-7yx"/>
+                    </view>
+                    <connections>
+                        <outlet property="feedbackButton" destination="ZMn-pa-IsN" id="9b9-NY-4jL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RmC-DN-u6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="100" height="100"/>
+        <image name="STButtonBack" width="24" height="24"/>
+    </resources>
+</document>

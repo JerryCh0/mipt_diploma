@@ -40,14 +40,18 @@ PODS:
   - "GoogleUtilities/NSData+zlib (5.3.0)"
   - GoogleUtilities/Reachability (5.3.0):
     - GoogleUtilities/Logger
+  - Koloda (4.4):
+    - pop (~> 1.0)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - pop (1.0.10)
 
 DEPENDENCIES:
   - Firebase/Core
+  - Koloda
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -57,7 +61,9 @@ SPEC REPOS:
     - FirebaseInstanceID
     - GoogleAppMeasurement
     - GoogleUtilities
+    - Koloda
     - nanopb
+    - pop
 
 SPEC CHECKSUMS:
   Firebase: a870ed114d769b424021a0c8ddb0c86c3250a0c5
@@ -66,8 +72,10 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: ea5af6920d0a4a29b40459d055bebe4a6c1333c4
   GoogleAppMeasurement: 7d2552cea4e12d09ce737ef0441887a746585ff3
   GoogleUtilities: 760ccb53b7c7f40f9c02d8c241f76f841a7a6162
+  Koloda: 0f3c51580d9d547c66a5cd9e4771611afc3e259e
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
 
-PODFILE CHECKSUM: c2e2c0192e8abee1e66b97c92a6d72e9a0b546ef
+PODFILE CHECKSUM: 29e8d139ecd2a2f24c4ec0c050f60767ec5ed717
 
 COCOAPODS: 1.5.3

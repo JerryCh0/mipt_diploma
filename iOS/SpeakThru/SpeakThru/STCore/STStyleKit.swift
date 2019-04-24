@@ -10,6 +10,10 @@ import UIKit
 
 final class STStyleKit {
     
+    static func rationaleFont(of size: CGFloat) -> UIFont {
+        return UIFont(name: "Rationale-Regular", size: size)!
+    }
+    
     static let backIcon = UIImage(named: "STButtonBack")!
     static let closeIcon = UIImage(named: "STButtonClose")!
     static let settingsIcon = UIImage(named: "STButtonSettings")!

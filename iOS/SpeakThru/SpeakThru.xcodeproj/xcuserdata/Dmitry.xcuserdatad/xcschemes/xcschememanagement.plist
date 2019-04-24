@@ -7,7 +7,25 @@
 		<key>SpeakThru.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>7</integer>
+		</dict>
+		<key>SpeakThru.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0A130939222A749C0098433D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0A13094D222A749E0098433D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

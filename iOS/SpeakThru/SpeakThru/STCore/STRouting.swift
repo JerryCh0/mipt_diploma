@@ -12,7 +12,6 @@ enum STScreen {
     case main
     case settings
     case bookmarks
-    case translation
     case about
 }
 

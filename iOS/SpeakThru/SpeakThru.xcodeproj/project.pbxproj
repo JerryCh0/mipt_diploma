@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A05F72E2270457100F72B62 /* AboutScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A05F72D2270457100F72B62 /* AboutScreen.storyboard */; };
+		0A05F7302270476F00F72B62 /* STAboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05F72F2270476F00F72B62 /* STAboutVC.swift */; };
+		0A05F73422704D2E00F72B62 /* STBookmarksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05F73322704D2E00F72B62 /* STBookmarksVC.swift */; };
+		0A05F7362270685A00F72B62 /* STTranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05F7352270685A00F72B62 /* STTranslationView.swift */; };
+		0A05F739227068A800F72B62 /* STTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05F738227068A800F72B62 /* STTranslation.swift */; };
 		0A13093E222A749C0098433D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A13093D222A749C0098433D /* AppDelegate.swift */; };
 		0A130945222A749E0098433D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A130944222A749E0098433D /* Images.xcassets */; };
 		0A130948222A749E0098433D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A130946222A749E0098433D /* LaunchScreen.storyboard */; };
 		0A130953222A749E0098433D /* SpeakThruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A130952222A749E0098433D /* SpeakThruTests.swift */; };
 		0A280105223309F00087C228 /* STMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A280104223309F00087C228 /* STMainVC.swift */; };
+		0A759E0B226F36A300497CA6 /* Rationale-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2801032233079E0087C228 /* Rationale-Regular.ttf */; };
 		0A83D3682233A8A40005AE1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A83D3672233A8A40005AE1F /* GoogleService-Info.plist */; };
 		0AD1E1F02233A96900FE7101 /* STFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1EF2233A96900FE7101 /* STFirebaseManager.swift */; };
 		0AD1E1F22233A9CA00FE7101 /* STAppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1F12233A9CA00FE7101 /* STAppContext.swift */; };
@@ -36,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A05F72D2270457100F72B62 /* AboutScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutScreen.storyboard; sourceTree = "<group>"; };
+		0A05F72F2270476F00F72B62 /* STAboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STAboutVC.swift; sourceTree = "<group>"; };
+		0A05F73322704D2E00F72B62 /* STBookmarksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STBookmarksVC.swift; sourceTree = "<group>"; };
+		0A05F7352270685A00F72B62 /* STTranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTranslationView.swift; sourceTree = "<group>"; };
+		0A05F738227068A800F72B62 /* STTranslation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTranslation.swift; sourceTree = "<group>"; };
 		0A13093A222A749C0098433D /* SpeakThru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeakThru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A13093D222A749C0098433D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A130944222A749E0098433D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -83,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A05F7372270688200F72B62 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0A05F738227068A800F72B62 /* STTranslation.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		0A130931222A749C0098433D = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +128,7 @@
 				0A130949222A749E0098433D /* Info.plist */,
 				0A83D3672233A8A40005AE1F /* GoogleService-Info.plist */,
 				0A13093D222A749C0098433D /* AppDelegate.swift */,
+				0A05F7372270688200F72B62 /* Data */,
 				0AD1E1F52233AD7400FE7101 /* STCore */,
 				0AD1E1EE2233A93D00FE7101 /* Network */,
 				0A13095E222A78130098433D /* ViewControllers */,
@@ -142,6 +162,8 @@
 			children = (
 				0A280104223309F00087C228 /* STMainVC.swift */,
 				0AEDBBA222514E45000CE43F /* STSettingsVC.swift */,
+				0A05F72F2270476F00F72B62 /* STAboutVC.swift */,
+				0A05F73322704D2E00F72B62 /* STBookmarksVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -150,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				0A130946222A749E0098433D /* LaunchScreen.storyboard */,
+				0A05F72D2270457100F72B62 /* AboutScreen.storyboard */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -194,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				0AD1E1FB2233B53C00FE7101 /* STButton.swift */,
+				0A05F7352270685A00F72B62 /* STTranslationView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -306,6 +330,8 @@
 				0A130948222A749E0098433D /* LaunchScreen.storyboard in Resources */,
 				0A130945222A749E0098433D /* Images.xcassets in Resources */,
 				0A83D3682233A8A40005AE1F /* GoogleService-Info.plist in Resources */,
+				0A05F72E2270457100F72B62 /* AboutScreen.storyboard in Resources */,
+				0A759E0B226F36A300497CA6 /* Rationale-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,12 +389,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SpeakThru/Pods-SpeakThru-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -388,10 +418,14 @@
 				0AD1E1F42233AA9D00FE7101 /* STApp.swift in Sources */,
 				0AD1E1F22233A9CA00FE7101 /* STAppContext.swift in Sources */,
 				0AEDBBA122514B75000CE43F /* STStyleKit.swift in Sources */,
+				0A05F739227068A800F72B62 /* STTranslation.swift in Sources */,
 				0A13093E222A749C0098433D /* AppDelegate.swift in Sources */,
 				0AD1E1FC2233B53C00FE7101 /* STButton.swift in Sources */,
+				0A05F7362270685A00F72B62 /* STTranslationView.swift in Sources */,
 				0A280105223309F00087C228 /* STMainVC.swift in Sources */,
 				0AD1E1F72233AE1000FE7101 /* STRouter.swift in Sources */,
+				0A05F7302270476F00F72B62 /* STAboutVC.swift in Sources */,
+				0A05F73422704D2E00F72B62 /* STBookmarksVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +583,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7H58X7JTPY;
 				INFOPLIST_FILE = SpeakThru/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -568,6 +603,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7H58X7JTPY;
 				INFOPLIST_FILE = SpeakThru/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

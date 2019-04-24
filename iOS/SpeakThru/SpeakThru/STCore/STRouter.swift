@@ -7,17 +7,28 @@
 //
 
 import UIKit
+import FirebaseAnalytics
 
 final class STRouter: NSObject {
     
     init(window: UIWindow) {
-        window.rootViewController = STMainVC()
+        let mainVC = STMainVC()
+        let navigationVC = UINavigationController(rootViewController: mainVC)
+        window.rootViewController = navigationVC
         window.makeKeyAndVisible()
         self.window = window
         super.init()
     }
     
     private let window: UIWindow
+    
+    private let settingsVC = STSettingsVC()
+    private let bookmarksVC = STBookmarksVC()
+    
+    private lazy var aboutVC: UIViewController = {
+        let storyboard = UIStoryboard(name: "AboutScreen", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: "AboutVC")
+    }()
     
 }
 
@@ -26,11 +37,17 @@ extension STRouter: STRouting {
     func open(screen: STScreen) {
         switch screen {
         case .settings:
-            let settingsVC = STSettingsVC()
-            window.rootViewController?.present(settingsVC, animated: true, completion: nil)
-            print("Settings opened")
+            Analytics.logEvent("open_settings", parameters: nil)
+            guard let navigationVC = window.rootViewController as? UINavigationController else { return }
+            navigationVC.pushViewController(settingsVC, animated: true)
         case .bookmarks:
-            print("Bookmarks opened")
+            Analytics.logEvent("open_bookmarks", parameters: nil)
+            guard let navigationVC = window.rootViewController as? UINavigationController else { return }
+            navigationVC.pushViewController(bookmarksVC, animated: true)
+        case .about:
+            Analytics.logEvent("open_about", parameters: nil)
+            guard let navigationVC = window.rootViewController as? UINavigationController else { return }
+            navigationVC.pushViewController(aboutVC, animated: true)
         default:
             assert(false, "Trying to make unimplemented routing")
         }
