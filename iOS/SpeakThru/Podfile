@@ -8,6 +8,9 @@ target 'SpeakThru' do
   # Pods for SpeakThru
 	pod 'Firebase/Core'  
 	pod 'Koloda'
+	pod 'Toast-Swift'
+    	pod 'Firebase/MLVision'
+	pod 'Firebase/MLVisionTextModel'
 
     target 'SpeakThruTests' do
     inherit! :search_paths

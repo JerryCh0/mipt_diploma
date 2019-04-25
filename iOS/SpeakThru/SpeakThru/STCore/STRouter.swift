@@ -22,9 +22,6 @@ final class STRouter: NSObject {
     
     private let window: UIWindow
     
-    private let settingsVC = STSettingsVC()
-    private let bookmarksVC = STBookmarksVC()
-    
     private lazy var aboutVC: UIViewController = {
         let storyboard = UIStoryboard(name: "AboutScreen", bundle: nil)
         return storyboard.instantiateViewController(withIdentifier: "AboutVC")
@@ -39,10 +36,12 @@ extension STRouter: STRouting {
         case .settings:
             Analytics.logEvent("open_settings", parameters: nil)
             guard let navigationVC = window.rootViewController as? UINavigationController else { return }
+            let settingsVC = STSettingsVC()
             navigationVC.pushViewController(settingsVC, animated: true)
         case .bookmarks:
             Analytics.logEvent("open_bookmarks", parameters: nil)
             guard let navigationVC = window.rootViewController as? UINavigationController else { return }
+            let bookmarksVC = STBookmarksVC()
             navigationVC.pushViewController(bookmarksVC, animated: true)
         case .about:
             Analytics.logEvent("open_about", parameters: nil)

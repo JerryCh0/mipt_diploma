@@ -10,4 +10,5 @@ import Foundation
 
 final class STAppContext: NSObject {
     private let firebaseManager = STFirebaseManager()
+    let database = STDatabaseImpl()
 }

@@ -24,6 +24,11 @@ final class STBookmarksVC: UIViewController {
         self.rewindButton.set { [unowned self] in
             self.kolodaView.revertAction()
         }
+        STApp.shared.database.add(listener: self)
+    }
+    
+    deinit {
+        STApp.shared.database.remove(listener: self)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,7 +45,7 @@ final class STBookmarksVC: UIViewController {
         
         backButton.frame = CGRect(
             x: STLayout.boundOffset + view.safeAreaInsets.left,
-            y: STLayout.boundOffset + STLayout.closeButtonSize.height + view.safeAreaInsets.top,
+            y: STLayout.boundOffset + view.safeAreaInsets.top,
             width: STLayout.closeButtonSize.width,
             height: STLayout.closeButtonSize.height
         )
@@ -67,6 +72,13 @@ final class STBookmarksVC: UIViewController {
             width: view.frame.width - (STLayout.kolodaInsets.left + STLayout.kolodaInsets.right),
             height: view.frame.height - STLayout.kolodaInsets.bottom - kolodaTop
         )
+        
+        placeholderLabel.frame = CGRect(
+            x: view.frame.midX - STLayout.placeholderLabelSize.width / 2,
+            y: view.frame.midY - STLayout.placeholderLabelSize.height / 2,
+            width: STLayout.placeholderLabelSize.width,
+            height: STLayout.placeholderLabelSize.height
+        )
     }
     
     private func setupUI() {
@@ -76,6 +88,12 @@ final class STBookmarksVC: UIViewController {
         titleLabel.textColor = STColor.neonBlue
         titleLabel.textAlignment = .center
         
+        // Placeholder
+        placeholderLabel.font = STStyleKit.rationaleFont(of: 16)
+        updatePlaceholderText()
+        placeholderLabel.textColor = STColor.neonBlue
+        placeholderLabel.textAlignment = .center
+        
         kolodaView.delegate = self
         kolodaView.dataSource = self
         
@@ -83,8 +101,14 @@ final class STBookmarksVC: UIViewController {
     }
     
     private func addSubviews() {
-        let subviews = [backButton, titleLabel, kolodaView, rewindButton]
+        let subviews = [placeholderLabel, backButton, titleLabel, kolodaView, rewindButton]
         subviews.forEach(view.addSubview)
+    }
+    
+    private func updatePlaceholderText() {
+        placeholderLabel.text = self.kolodaNumberOfCards(kolodaView) > 0
+            ? "Нажмите ⟲, чтобы листать назад"
+            : "Пока здесь пусто"
     }
     
     private let backButton = STButton(
@@ -98,8 +122,10 @@ final class STBookmarksVC: UIViewController {
     )
     
     private let titleLabel = UILabel()
-    
+    private let placeholderLabel = UILabel()
     private let kolodaView = KolodaView()
+    
+    private let listenerId = UUID().uuidString
 }
 
 extension STBookmarksVC: KolodaViewDelegate {
@@ -115,7 +141,8 @@ extension STBookmarksVC: KolodaViewDelegate {
 extension STBookmarksVC: KolodaViewDataSource {
     
     func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
-        return 3
+        let translations = STApp.shared.database.getAllTranslations()
+        return translations.count
     }
     
     func kolodaSpeedThatCardShouldDrag(_ koloda: KolodaView) -> DragSpeed {
@@ -124,14 +151,8 @@ extension STBookmarksVC: KolodaViewDataSource {
     
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         let view = STTranslationView()
-        let translation = STTranslation(
-            imageToTranslate: UIImage(named: "SampleTranslation")!,
-            translatedText: "Путь к выходу",
-            isSaved: true,
-            fromLanguage: "EN",
-            toLanguage: "RU"
-        )
-        view.set(translation: translation)
+        let translations = Array(STApp.shared.database.getAllTranslations().values)
+        view.set(translation: translations[index])
         return view
     }
     
@@ -141,11 +162,23 @@ extension STBookmarksVC: KolodaViewDataSource {
     
 }
 
+extension STBookmarksVC: STDatabaseListener {
+    func onDataUpdated() {
+        updatePlaceholderText()
+        kolodaView.reloadData()
+    }
+    
+    func id() -> String {
+        return listenerId
+    }
+}
+
 private struct STLayout {
     static let boundOffset = CGFloat(16)
     static let closeButtonSize = CGSize(width: 24, height: 24)
     static let rewindButtonSize = CGSize(width: 24, height: 24)
     static let titleLabelSize = CGSize(width: 256, height: 24)
+    static let placeholderLabelSize = CGSize(width: 256, height: 24)
     
     static let kolodaInsets = UIEdgeInsets(top: 20, left: 20, bottom: 32, right: 20)
 }

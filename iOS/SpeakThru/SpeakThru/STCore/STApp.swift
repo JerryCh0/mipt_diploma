@@ -7,16 +7,22 @@
 //
 
 import UIKit
+import Toast_Swift
 
 final class STApp {
     
     private init() {
         self.window = UIWindow()
         self.router = STRouter(window: self.window)
+        ToastManager.shared.isTapToDismissEnabled = true
     }
     
     var routing: STRouting {
         return router
+    }
+    
+    var database: STDatabase {
+        return context.database
     }
     
     private let context = STAppContext()

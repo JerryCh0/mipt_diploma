@@ -35,7 +35,7 @@ final class STSettingsVC: UIViewController {
         
         backButton.frame = CGRect(
             x: STLayout.boundOffset + view.safeAreaInsets.left,
-            y: STLayout.boundOffset + STLayout.closeButtonSize.height + view.safeAreaInsets.top,
+            y: STLayout.boundOffset + view.safeAreaInsets.top,
             width: STLayout.closeButtonSize.width,
             height: STLayout.closeButtonSize.height
         )

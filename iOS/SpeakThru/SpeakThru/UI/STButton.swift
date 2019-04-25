@@ -31,5 +31,15 @@ final class STButton: UIButton {
         callback_()
     }
     
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        let offset = CGFloat(10)
+        let newArea = CGRect(
+            x: bounds.minX - offset,
+            y: bounds.minY - offset,
+            width: bounds.width + 2 * offset,
+            height: bounds.height + 2 * offset)
+        return newArea.contains(point)
+    }
+    
     private var callback_: STButtonCallback
 }

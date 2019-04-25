@@ -28,6 +28,9 @@
 		0AD1E1FE2233B6C100FE7101 /* STRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1FD2233B6C100FE7101 /* STRouting.swift */; };
 		0AEDBBA122514B75000CE43F /* STStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDBBA022514B75000CE43F /* STStyleKit.swift */; };
 		0AEDBBA322514E45000CE43F /* STSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDBBA222514E45000CE43F /* STSettingsVC.swift */; };
+		0AF0DC7222719E5B00158E8F /* STDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0DC7122719E5B00158E8F /* STDatabase.swift */; };
+		0AF0DC742271C53A00158E8F /* STCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0DC732271C53A00158E8F /* STCameraController.swift */; };
+		0AF0DC762271D11E00158E8F /* STFirebaseRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0DC752271D11E00158E8F /* STFirebaseRecognizer.swift */; };
 		4A29AAAB7A8E5ECB405F1F34 /* Pods_SpeakThru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF1108AC15768D0CB235D76 /* Pods_SpeakThru.framework */; };
 		508290961A63AB414B6CA813 /* Pods_SpeakThruTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3361E05BF9FC5480081ECF /* Pods_SpeakThruTests.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +71,9 @@
 		0AD1E1FD2233B6C100FE7101 /* STRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STRouting.swift; sourceTree = "<group>"; };
 		0AEDBBA022514B75000CE43F /* STStyleKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STStyleKit.swift; sourceTree = "<group>"; };
 		0AEDBBA222514E45000CE43F /* STSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingsVC.swift; sourceTree = "<group>"; };
+		0AF0DC7122719E5B00158E8F /* STDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STDatabase.swift; sourceTree = "<group>"; };
+		0AF0DC732271C53A00158E8F /* STCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCameraController.swift; sourceTree = "<group>"; };
+		0AF0DC752271D11E00158E8F /* STFirebaseRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STFirebaseRecognizer.swift; sourceTree = "<group>"; };
 		475F318D136623AD2DBAC4CC /* Pods-SpeakThru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakThru.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeakThru/Pods-SpeakThru.debug.xcconfig"; sourceTree = "<group>"; };
 		5F3361E05BF9FC5480081ECF /* Pods_SpeakThruTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeakThruTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		948F426638F81E8F47511E1C /* Pods-SpeakThru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakThru.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeakThru/Pods-SpeakThru.release.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +218,9 @@
 				0AD1E1F62233AE1000FE7101 /* STRouter.swift */,
 				0AD1E1FD2233B6C100FE7101 /* STRouting.swift */,
 				0AEDBBA022514B75000CE43F /* STStyleKit.swift */,
+				0AF0DC7122719E5B00158E8F /* STDatabase.swift */,
+				0AF0DC732271C53A00158E8F /* STCameraController.swift */,
+				0AF0DC752271D11E00158E8F /* STFirebaseRecognizer.swift */,
 			);
 			path = STCore;
 			sourceTree = "<group>";
@@ -257,6 +266,7 @@
 				0A130937222A749C0098433D /* Frameworks */,
 				0A130938222A749C0098433D /* Resources */,
 				929635C9B3FE89E61C0F84C9 /* [CP] Embed Pods Frameworks */,
+				EAEFD65DE601D67284CB7D33 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -391,21 +401,49 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SpeakThru/Pods-SpeakThru-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeakThru/Pods-SpeakThru-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAEFD65DE601D67284CB7D33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SpeakThru/Pods-SpeakThru-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMobileVision/GoogleMVTextDetectorResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpeakThru/Pods-SpeakThru-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -416,18 +454,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A9AAECA22708C3F009CF722 /* UITextView+CenterVertically.swift in Sources */,
+				0AF0DC742271C53A00158E8F /* STCameraController.swift in Sources */,
 				0AD1E1F02233A96900FE7101 /* STFirebaseManager.swift in Sources */,
 				0AD1E1FE2233B6C100FE7101 /* STRouting.swift in Sources */,
 				0AEDBBA322514E45000CE43F /* STSettingsVC.swift in Sources */,
 				0AD1E1F42233AA9D00FE7101 /* STApp.swift in Sources */,
 				0AD1E1F22233A9CA00FE7101 /* STAppContext.swift in Sources */,
 				0AEDBBA122514B75000CE43F /* STStyleKit.swift in Sources */,
+				0AF0DC7222719E5B00158E8F /* STDatabase.swift in Sources */,
 				0A05F739227068A800F72B62 /* STTranslation.swift in Sources */,
 				0A13093E222A749C0098433D /* AppDelegate.swift in Sources */,
 				0AD1E1FC2233B53C00FE7101 /* STButton.swift in Sources */,
 				0A05F7362270685A00F72B62 /* STTranslationView.swift in Sources */,
 				0A280105223309F00087C228 /* STMainVC.swift in Sources */,
 				0AD1E1F72233AE1000FE7101 /* STRouter.swift in Sources */,
+				0AF0DC762271D11E00158E8F /* STFirebaseRecognizer.swift in Sources */,
 				0A05F7302270476F00F72B62 /* STAboutVC.swift in Sources */,
 				0A05F73422704D2E00F72B62 /* STBookmarksVC.swift in Sources */,
 			);
@@ -588,10 +629,7 @@
 				DEVELOPMENT_TEAM = 7H58X7JTPY;
 				INFOPLIST_FILE = SpeakThru/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = klabertants.SpeakThru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -608,10 +646,7 @@
 				DEVELOPMENT_TEAM = 7H58X7JTPY;
 				INFOPLIST_FILE = SpeakThru/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = klabertants.SpeakThru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -628,11 +663,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7H58X7JTPY;
 				INFOPLIST_FILE = SpeakThruTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = klabertants.SpeakThruTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -650,11 +681,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7H58X7JTPY;
 				INFOPLIST_FILE = SpeakThruTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = klabertants.SpeakThruTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

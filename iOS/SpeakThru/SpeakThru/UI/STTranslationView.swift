@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Toast_Swift
+import FirebaseAnalytics
+import AVFoundation
 
 final class STTranslationView: UIView {
     
@@ -21,11 +24,35 @@ final class STTranslationView: UIView {
     }
     
     func set(translation: STTranslation) {
+        self.translation = translation
+        
         photoImageView.image = translation.imageToTranslate
         translationTextView.text = translation.translatedText
         fromLanguageLabel.text = translation.fromLanguage
         toLanguageLabel.text = translation.toLanguage
-        // TODO: isSaved
+        bookmarkButton.setImage(
+            translation.isSaved ? STStyleKit.savedIcon : STStyleKit.saveIcon,
+            for: .normal
+        )
+    }
+    
+    func set(previewLayer: AVCaptureVideoPreviewLayer) {
+        self.previewLayer = previewLayer
+        photoImageView.layer.addSublayer(previewLayer)
+    }
+    
+    func beginRecognition(with image: UIImage) {
+        subviewsToHide.forEach { $0.isHidden = true}
+        previewLayer?.isHidden = true
+        photoImageView.image = image
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+    }
+    
+    func stopRecognition() {
+        subviewsToHide.forEach { $0.isHidden = false }
+        activityIndicator.isHidden = true
+        activityIndicator.stopAnimating()
     }
     
     override func layoutSubviews() {
@@ -42,6 +69,7 @@ final class STTranslationView: UIView {
         let textViewHeight = STLayout.textViewHeightPercentage * bubbleHeight
         
         photoImageView.frame = CGRect(x: 0, y: 0, width: width, height: photoHeight)
+        previewLayer?.frame = photoImageView.frame
         backgroundBubble.frame = CGRect(x: 0, y: maxY - bubbleHeight, width: width, height: bubbleHeight)
         
         bookmarkButton.frame = CGRect(
@@ -85,6 +113,13 @@ final class STTranslationView: UIView {
             width: STLayout.langSize.width,
             height: STLayout.langSize.height
         )
+        
+        activityIndicator.frame = CGRect(
+            x: translationTextView.frame.midX - STLayout.activityIndicatorSize.width / 2,
+            y: translationTextView.frame.midY - STLayout.activityIndicatorSize.height / 2,
+            width: STLayout.activityIndicatorSize.width,
+            height: STLayout.activityIndicatorSize.height
+        )
     }
     
     private func setupUI() {
@@ -95,6 +130,7 @@ final class STTranslationView: UIView {
         
         photoImageView.backgroundColor = .white
         photoImageView.contentMode = .scaleToFill
+        photoImageView.layer.masksToBounds = true
         
         backgroundBubble.backgroundColor = STColor.greyBlue
         
@@ -107,6 +143,9 @@ final class STTranslationView: UIView {
         bookmarkButton.setImage(STStyleKit.saveIcon, for: .normal)
         copyButton.setImage(STStyleKit.copyIcon, for: .normal)
         
+        bookmarkButton.addTarget(self, action: #selector(onBookmarkTap), for: .touchUpInside)
+        copyButton.addTarget(self, action: #selector(copyToClipboard), for: .touchUpInside)
+        
         arrowImageView.image = STStyleKit.arrowImage
         
         fromLanguageLabel.textColor = STColor.neonBlue
@@ -114,6 +153,9 @@ final class STTranslationView: UIView {
         
         toLanguageLabel.textColor = STColor.neonBlue
         toLanguageLabel.font = STStyleKit.rationaleFont(of: 18)
+        
+        activityIndicator.color = STColor.neonBlue
+        activityIndicator.isHidden = true
     }
     
     private func addSubviews() {
@@ -126,10 +168,61 @@ final class STTranslationView: UIView {
             arrowImageView,
             toLanguageLabel,
             copyButton,
-            photoImageView
+            photoImageView,
+            activityIndicator
         ]
         
         subviews.forEach(addSubview)
+    }
+    
+    @objc private func copyToClipboard() {
+        Analytics.logEvent(
+            "copy_to_pasteboard",
+            parameters: ["translation_id" : translation?.id ?? "none"]
+        )
+        
+        guard let trans = translation else { return }
+        let pasteboard = UIPasteboard.general
+        pasteboard.string = trans.translatedText
+        
+        makeToast(
+            "Перевод скопирован",
+            duration: 2.0,
+            position: .center,
+            title: nil,
+            image: nil,
+            style: toastStyle,
+            completion: nil
+        )
+    }
+    
+    @objc private func onBookmarkTap() {
+        Analytics.logEvent(
+            (translation?.isSaved ?? false) ? "delete_translation" : "save_translation",
+            parameters: ["translation_id" : translation?.id ?? "none"]
+        )
+        guard let trans = translation else { return }
+        if trans.isSaved {
+            if STApp.shared.database.removeTranslation(with: trans.id) {
+                bookmarkButton.setImage(STStyleKit.saveIcon, for: .normal)
+            }
+        } else {
+            trans.isSaved = true
+            if STApp.shared.database.store(translation: trans) {
+                bookmarkButton.setImage(STStyleKit.savedIcon, for: .normal)
+                makeToast(
+                    "Перевод сохранён",
+                    duration: 2.0,
+                    position: .center,
+                    title: nil,
+                    image: nil,
+                    style: toastStyle,
+                    completion: nil
+                )
+            } else {
+                trans.isSaved = false
+            }
+        }
     }
     
     private let photoImageView = UIImageView()
@@ -140,7 +233,20 @@ final class STTranslationView: UIView {
     private let fromLanguageLabel = UILabel()
     private let arrowImageView = UIImageView()
     private let toLanguageLabel = UILabel()
+    private let activityIndicator = UIActivityIndicatorView()
     
+    private lazy var subviewsToHide =
+        [bookmarkButton, copyButton, fromLanguageLabel, toLanguageLabel, arrowImageView]
+    
+    private var translation: STTranslation?
+    private var previewLayer: CALayer?
+    
+    private lazy var toastStyle: ToastStyle = {
+        var style = ToastStyle()
+        style.backgroundColor = STColor.greyBlue
+        style.messageColor = STColor.neonBlue
+        return style
+    }()
 }
 
 private struct STLayout {
@@ -158,5 +264,7 @@ private struct STLayout {
     static let buttonSize = CGSize(width: 24, height: 24)
     static let langSize = CGSize(width: 18, height: 21)
     static let arrowSize = CGSize(width: 43, height: 5)
+    
+    static let activityIndicatorSize = CGSize(width: 20, height: 20)
     
 }
