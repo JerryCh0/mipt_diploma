@@ -17,8 +17,8 @@
 		0A130948222A749E0098433D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A130946222A749E0098433D /* LaunchScreen.storyboard */; };
 		0A130953222A749E0098433D /* SpeakThruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A130952222A749E0098433D /* SpeakThruTests.swift */; };
 		0A280105223309F00087C228 /* STMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A280104223309F00087C228 /* STMainVC.swift */; };
+		0A68FA79227AE85500E9414E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A68FA78227AE85500E9414E /* GoogleService-Info.plist */; };
 		0A759E0B226F36A300497CA6 /* Rationale-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2801032233079E0087C228 /* Rationale-Regular.ttf */; };
-		0A83D3682233A8A40005AE1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A83D3672233A8A40005AE1F /* GoogleService-Info.plist */; };
 		0A9AAECA22708C3F009CF722 /* UITextView+CenterVertically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */; };
 		0AD1E1F02233A96900FE7101 /* STFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1EF2233A96900FE7101 /* STFirebaseManager.swift */; };
 		0AD1E1F22233A9CA00FE7101 /* STAppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1F12233A9CA00FE7101 /* STAppContext.swift */; };
@@ -26,6 +26,8 @@
 		0AD1E1F72233AE1000FE7101 /* STRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1F62233AE1000FE7101 /* STRouter.swift */; };
 		0AD1E1FC2233B53C00FE7101 /* STButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1FB2233B53C00FE7101 /* STButton.swift */; };
 		0AD1E1FE2233B6C100FE7101 /* STRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1FD2233B6C100FE7101 /* STRouting.swift */; };
+		0ADDF696227AF9EB00F5B50A /* STGoogleTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDF695227AF9EB00F5B50A /* STGoogleTranslator.swift */; };
+		0ADDF698227B2FBB00F5B50A /* STSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDF697227B2FBB00F5B50A /* STSettingsViewModel.swift */; };
 		0AEDBBA122514B75000CE43F /* STStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDBBA022514B75000CE43F /* STStyleKit.swift */; };
 		0AEDBBA322514E45000CE43F /* STSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDBBA222514E45000CE43F /* STSettingsVC.swift */; };
 		0AF0DC7222719E5B00158E8F /* STDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0DC7122719E5B00158E8F /* STDatabase.swift */; };
@@ -61,7 +63,7 @@
 		0A130954222A749E0098433D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A2801032233079E0087C228 /* Rationale-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rationale-Regular.ttf"; sourceTree = "<group>"; };
 		0A280104223309F00087C228 /* STMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STMainVC.swift; sourceTree = "<group>"; };
-		0A83D3672233A8A40005AE1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A68FA78227AE85500E9414E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+CenterVertically.swift"; sourceTree = "<group>"; };
 		0AD1E1EF2233A96900FE7101 /* STFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STFirebaseManager.swift; sourceTree = "<group>"; };
 		0AD1E1F12233A9CA00FE7101 /* STAppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STAppContext.swift; sourceTree = "<group>"; };
@@ -69,6 +71,8 @@
 		0AD1E1F62233AE1000FE7101 /* STRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STRouter.swift; sourceTree = "<group>"; };
 		0AD1E1FB2233B53C00FE7101 /* STButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STButton.swift; sourceTree = "<group>"; };
 		0AD1E1FD2233B6C100FE7101 /* STRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STRouting.swift; sourceTree = "<group>"; };
+		0ADDF695227AF9EB00F5B50A /* STGoogleTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STGoogleTranslator.swift; sourceTree = "<group>"; };
+		0ADDF697227B2FBB00F5B50A /* STSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingsViewModel.swift; sourceTree = "<group>"; };
 		0AEDBBA022514B75000CE43F /* STStyleKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STStyleKit.swift; sourceTree = "<group>"; };
 		0AEDBBA222514E45000CE43F /* STSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingsVC.swift; sourceTree = "<group>"; };
 		0AF0DC7122719E5B00158E8F /* STDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STDatabase.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				0A05F738227068A800F72B62 /* STTranslation.swift */,
+				0ADDF697227B2FBB00F5B50A /* STSettingsViewModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -134,10 +139,11 @@
 			isa = PBXGroup;
 			children = (
 				0A130949222A749E0098433D /* Info.plist */,
-				0A83D3672233A8A40005AE1F /* GoogleService-Info.plist */,
+				0A68FA78227AE85500E9414E /* GoogleService-Info.plist */,
 				0A13093D222A749C0098433D /* AppDelegate.swift */,
 				0A05F7372270688200F72B62 /* Data */,
 				0AD1E1F52233AD7400FE7101 /* STCore */,
+				0ADDF699227B2FCC00F5B50A /* STAppDependentCore */,
 				0AD1E1EE2233A93D00FE7101 /* Network */,
 				0A13095E222A78130098433D /* ViewControllers */,
 				0A13095F222A782B0098433D /* Misc */,
@@ -217,10 +223,9 @@
 				0AD1E1F12233A9CA00FE7101 /* STAppContext.swift */,
 				0AD1E1F62233AE1000FE7101 /* STRouter.swift */,
 				0AD1E1FD2233B6C100FE7101 /* STRouting.swift */,
-				0AEDBBA022514B75000CE43F /* STStyleKit.swift */,
-				0AF0DC7122719E5B00158E8F /* STDatabase.swift */,
 				0AF0DC732271C53A00158E8F /* STCameraController.swift */,
 				0AF0DC752271D11E00158E8F /* STFirebaseRecognizer.swift */,
+				0ADDF695227AF9EB00F5B50A /* STGoogleTranslator.swift */,
 			);
 			path = STCore;
 			sourceTree = "<group>";
@@ -232,6 +237,15 @@
 				0A05F7352270685A00F72B62 /* STTranslationView.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		0ADDF699227B2FCC00F5B50A /* STAppDependentCore */ = {
+			isa = PBXGroup;
+			children = (
+				0AEDBBA022514B75000CE43F /* STStyleKit.swift */,
+				0AF0DC7122719E5B00158E8F /* STDatabase.swift */,
+			);
+			path = STAppDependentCore;
 			sourceTree = "<group>";
 		};
 		5788000CE78208F9C8E7E5DF /* Frameworks */ = {
@@ -342,7 +356,7 @@
 			files = (
 				0A130948222A749E0098433D /* LaunchScreen.storyboard in Resources */,
 				0A130945222A749E0098433D /* Images.xcassets in Resources */,
-				0A83D3682233A8A40005AE1F /* GoogleService-Info.plist in Resources */,
+				0A68FA79227AE85500E9414E /* GoogleService-Info.plist in Resources */,
 				0A05F72E2270457100F72B62 /* AboutScreen.storyboard in Resources */,
 				0A759E0B226F36A300497CA6 /* Rationale-Regular.ttf in Resources */,
 			);
@@ -460,6 +474,7 @@
 				0AEDBBA322514E45000CE43F /* STSettingsVC.swift in Sources */,
 				0AD1E1F42233AA9D00FE7101 /* STApp.swift in Sources */,
 				0AD1E1F22233A9CA00FE7101 /* STAppContext.swift in Sources */,
+				0ADDF696227AF9EB00F5B50A /* STGoogleTranslator.swift in Sources */,
 				0AEDBBA122514B75000CE43F /* STStyleKit.swift in Sources */,
 				0AF0DC7222719E5B00158E8F /* STDatabase.swift in Sources */,
 				0A05F739227068A800F72B62 /* STTranslation.swift in Sources */,
@@ -468,6 +483,7 @@
 				0A05F7362270685A00F72B62 /* STTranslationView.swift in Sources */,
 				0A280105223309F00087C228 /* STMainVC.swift in Sources */,
 				0AD1E1F72233AE1000FE7101 /* STRouter.swift in Sources */,
+				0ADDF698227B2FBB00F5B50A /* STSettingsViewModel.swift in Sources */,
 				0AF0DC762271D11E00158E8F /* STFirebaseRecognizer.swift in Sources */,
 				0A05F7302270476F00F72B62 /* STAboutVC.swift in Sources */,
 				0A05F73422704D2E00F72B62 /* STBookmarksVC.swift in Sources */,
@@ -629,7 +645,10 @@
 				DEVELOPMENT_TEAM = 7H58X7JTPY;
 				INFOPLIST_FILE = SpeakThru/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = klabertants.SpeakThru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -646,7 +665,10 @@
 				DEVELOPMENT_TEAM = 7H58X7JTPY;
 				INFOPLIST_FILE = SpeakThru/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = klabertants.SpeakThru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -663,7 +685,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7H58X7JTPY;
 				INFOPLIST_FILE = SpeakThruTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = klabertants.SpeakThruTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -681,7 +707,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7H58X7JTPY;
 				INFOPLIST_FILE = SpeakThruTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = klabertants.SpeakThruTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

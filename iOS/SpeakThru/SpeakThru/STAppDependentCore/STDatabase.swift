@@ -10,6 +10,8 @@ import Foundation
 
 protocol STDatabase {
     
+    func isApplicationRunsFirstTime() -> Bool
+    
     func forceDump()
     
     func add(listener: STDatabaseListener)
@@ -19,6 +21,9 @@ protocol STDatabase {
     func getTranslation(with id: String) -> STTranslation?
     func store(translation: STTranslation) -> Bool
     func removeTranslation(with id: String) -> Bool
+    
+    func set(targetLang: String) -> Bool
+    func getTargetLang() -> String
 }
 
 protocol STDatabaseListener {
@@ -78,6 +83,21 @@ final class STDatabaseImpl: STDatabase {
         return true
     }
     
+    func isApplicationRunsFirstTime() -> Bool {
+        let value = standardDefaults.value(forKey: firstLaunchKey) as? Bool
+        return value ?? true
+    }
+    
+    func set(targetLang: String) -> Bool {
+        targetLanguage = targetLang
+        notifyListeners()
+        return true
+    }
+    
+    func getTargetLang() -> String {
+        return targetLanguage
+    }
+    
     private func notifyListeners() {
         for listener in listeners {
             listener.onDataUpdated()
@@ -87,13 +107,20 @@ final class STDatabaseImpl: STDatabase {
     private func dump() {
         let encodedData: Data = NSKeyedArchiver.archivedData(withRootObject: translationsMap)
         standardDefaults.set(encodedData, forKey: dictKey)
+        standardDefaults.set(false, forKey: firstLaunchKey)
+        standardDefaults.set(targetLanguage, forKey: targetLangKey)
         standardDefaults.synchronize()
     }
     
     private var translationsMap: [String : STTranslation]
+    private lazy var targetLanguage: String = {
+        return standardDefaults.value(forKey: targetLangKey) as! String
+    }()
     private let standardDefaults = UserDefaults.standard
     
     private let dictKey = "translations_dictionary"
+    private let firstLaunchKey = "application_runs_first_time"
+    private let targetLangKey = "translation_target_language"
     
     private var listeners = [STDatabaseListener]()
     

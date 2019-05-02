@@ -24,10 +24,15 @@ final class STBookmarksVC: UIViewController {
         self.rewindButton.set { [unowned self] in
             self.kolodaView.revertAction()
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         STApp.shared.database.add(listener: self)
     }
     
-    deinit {
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         STApp.shared.database.remove(listener: self)
     }
     
@@ -165,6 +170,7 @@ extension STBookmarksVC: KolodaViewDataSource {
 extension STBookmarksVC: STDatabaseListener {
     func onDataUpdated() {
         updatePlaceholderText()
+        kolodaView.resetCurrentCardIndex()
         kolodaView.reloadData()
     }
     

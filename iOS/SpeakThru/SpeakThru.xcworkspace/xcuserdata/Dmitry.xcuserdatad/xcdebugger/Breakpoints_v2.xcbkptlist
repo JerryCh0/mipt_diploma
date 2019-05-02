@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeakThru/ViewControllers/STBookmarksVC.swift"
-            timestampString = "577884347.310818"
+            timestampString = "578498210.980667"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "onDataUpdated()"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeakThru/STCore/STDatabase.swift"
-            timestampString = "577884347.310894"
+            timestampString = "578498210.980752"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "deinit"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeakThru/STCore/STDatabase.swift"
-            timestampString = "577884347.310963"
+            timestampString = "578498210.980821"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "dump()"
             landmarkType = "7">
          </BreakpointContent>
@@ -70,27 +70,27 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeakThru/STCore/STDatabase.swift"
-            timestampString = "577884347.311028"
+            timestampString = "578498210.980884"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "remove(listener:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "SpeakThru.STDatabaseImpl.remove(listener: SpeakThru.STDatabaseListener) -&gt; ()"
                   moduleName = "SpeakThru"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dmitrijtkacenko/Desktop/mipt_thesis/iOS/SpeakThru/SpeakThru/STCore/STDatabase.swift"
-                  timestampString = "577886604.10885"
+                  timestampString = "578482221.1488349"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "55"
@@ -98,14 +98,14 @@
                   offsetFromSymbolStart = "44">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (SpeakThru.STDatabaseListener) -&gt; Swift.Bool in SpeakThru.STDatabaseImpl.remove(listener: SpeakThru.STDatabaseListener) -&gt; ()"
                   moduleName = "SpeakThru"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/dmitrijtkacenko/Desktop/mipt_thesis/iOS/SpeakThru/SpeakThru/STCore/STDatabase.swift"
-                  timestampString = "577886604.113219"
+                  timestampString = "578482221.151522"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "55"
@@ -121,28 +121,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SpeakThru/ViewControllers/STBookmarksVC.swift"
-            timestampString = "577884347.3110909"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "deinit"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "SpeakThru/UI/STTranslationView.swift"
-            timestampString = "577884347.311162"
+            timestampString = "578498210.980948"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "200"
-            endingLineNumber = "200"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "onBookmarkTap()"
             landmarkType = "7">
          </BreakpointContent>
@@ -154,11 +138,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeakThru/UI/STTranslationView.swift"
-            timestampString = "577884347.311648"
+            timestampString = "578498210.98101"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
             landmarkName = "onBookmarkTap()"
             landmarkType = "7">
          </BreakpointContent>
@@ -170,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeakThru/UI/STTranslationView.swift"
-            timestampString = "577884347.31199"
+            timestampString = "578498210.981068"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
             landmarkName = "onBookmarkTap()"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeakThru/ViewControllers/STMainVC.swift"
-            timestampString = "577886604.0079581"
+            timestampString = "578498210.9811291"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "onDataUpdated()"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeakThru/UI/STTranslationView.swift"
-            timestampString = "577884347.31239"
+            timestampString = "578498210.981194"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
@@ -218,11 +202,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeakThru/ViewControllers/STMainVC.swift"
-            timestampString = "577886604.00883"
+            timestampString = "578498210.981253"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "didCapture(photo:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpeakThru/STCore/STFirebaseRecognizer.swift"
+            timestampString = "578482220.963551"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "STFirebaseRecognizer"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpeakThru/ViewControllers/STMainVC.swift"
+            timestampString = "578498210.981344"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "didCapture(photo:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -234,12 +250,108 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpeakThru/ViewControllers/STMainVC.swift"
-            timestampString = "577886604.0099961"
+            timestampString = "578498210.981408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
-            landmarkName = "onRecognized(text:lang:)"
+            startingLineNumber = "191"
+            endingLineNumber = "191"
+            landmarkName = "onRecognized(from:text:lang:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpeakThru/ViewControllers/STMainVC.swift"
+            timestampString = "578498210.98147"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
+            landmarkName = "onRecognized(from:text:lang:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SpeakThru.STMainVC.onRecognized(from: __C.UIImage, text: Swift.String, lang: Swift.String) -&gt; ()"
+                  moduleName = "SpeakThru"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmitrijtkacenko/Desktop/mipt_thesis/iOS/SpeakThru/SpeakThru/ViewControllers/STMainVC.swift"
+                  timestampString = "578485666.5721461"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "159"
+                  endingLineNumber = "159"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SpeakThru.STMainVC.onRecognized(from: __C.UIImage, text: Swift.String, lang: Swift.String) -&gt; ()"
+                  moduleName = "SpeakThru"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmitrijtkacenko/Desktop/mipt_thesis/iOS/SpeakThru/SpeakThru/ViewControllers/STMainVC.swift"
+                  timestampString = "578485666.575031"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpeakThru/ViewControllers/STMainVC.swift"
+            timestampString = "578498210.981531"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "onRecognized(from:text:lang:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpeakThru/STCore/STGoogleTranslator.swift"
+            timestampString = "578498210.981593"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "translate(_:_:_:_:_:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpeakThru/STCore/STAppContext.swift"
+            timestampString = "578498210.981658"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

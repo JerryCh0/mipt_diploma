@@ -2,39 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
-	<string>ca-app-pub-3940256099942544/2934735716</string>
-	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
-	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>957269333853-omf9grpsrso0aoelb9agm2h4640qng56.apps.googleusercontent.com</string>
+	<string>451238788875-4f4fh1elujfamplv7mqpo090rs9h6rlc.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.957269333853-omf9grpsrso0aoelb9agm2h4640qng56</string>
+	<string>com.googleusercontent.apps.451238788875-4f4fh1elujfamplv7mqpo090rs9h6rlc</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAzoPsnhhY0NsurwbKgy1_FvqfCAtNdNrQ</string>
+	<string>AIzaSyBWC8yE_dwf-B6oXYj6Sr9j4mWwAti96pM</string>
 	<key>GCM_SENDER_ID</key>
-	<string>957269333853</string>
+	<string>451238788875</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>klabertants.SpeakThru</string>
 	<key>PROJECT_ID</key>
-	<string>speakthru-d756b</string>
+	<string>speakthru-a4866</string>
 	<key>STORAGE_BUCKET</key>
-	<string>speakthru-d756b.appspot.com</string>
+	<string>speakthru-a4866.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true></true>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
 	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<false></false>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
 	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:957269333853:ios:62b381f37098ecbe</string>
+	<string>1:451238788875:ios:62b381f37098ecbe</string>
 	<key>DATABASE_URL</key>
-	<string>https://speakthru-d756b.firebaseio.com</string>
+	<string>https://speakthru-a4866.firebaseio.com</string>
 </dict>
 </plist>

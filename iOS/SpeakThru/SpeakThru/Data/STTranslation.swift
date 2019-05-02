@@ -14,11 +14,11 @@ final class STTranslation: NSObject {
     static let nullId = "NULL"
     
     init(id: String = STTranslation.nullId,
-         imageToTranslate: UIImage,
-         translatedText: String,
-         isSaved: Bool,
-         fromLanguage: String,
-         toLanguage: String) {
+         imageToTranslate: UIImage = UIImage(),
+         translatedText: String = "",
+         isSaved: Bool = false,
+         fromLanguage: String = "",
+         toLanguage: String = "") {
         
         self.id = id == STTranslation.nullId ? UUID().uuidString : id
         self.imageToTranslate = imageToTranslate

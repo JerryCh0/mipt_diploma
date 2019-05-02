@@ -9,6 +9,12 @@
 import UIKit
 import FirebaseAnalytics
 
+private enum MainVCState {
+    case capturing
+    case recognizing
+    case captured
+}
+
 final class STMainVC: UIViewController {
     
     override var prefersStatusBarHidden: Bool {
@@ -35,7 +41,17 @@ final class STMainVC: UIViewController {
         
         self.shutterButton.set {
             Analytics.logEvent("shutter_button_tap", parameters: nil)
-            self.cameraController.capturePhoto()
+            switch self.state {
+            case .capturing:
+                self.cameraController.capturePhoto()
+                self.state = .recognizing
+            case .recognizing:
+                return
+            case .captured:
+                self.translationView.continueCapturing()
+                self.state = .capturing
+            }
+            
         }
     }
     
@@ -57,25 +73,23 @@ final class STMainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         STApp.shared.database.add(listener: self)
-        
-//        let translation = STTranslation(
-//            imageToTranslate: UIImage(named: "SampleTranslation")!,
-//            translatedText: "Путь к выходу",
-//            isSaved: false,
-//            fromLanguage: "EN",
-//            toLanguage: "RU"
-//        )
-//        self.translation = translation
-//        translationView.set(translation: translation)
         addSubviews()
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
+        shutterButton.frame = CGRect(
+            x: view.frame.midX - STLayout.shutterButtonSize.width / 2,
+            y: view.frame.height - STLayout.shutterButtonSize.height - STLayout.boundOffset - view.safeAreaInsets.bottom,
+            //y: settingsButton.frame.maxY - STLayout.shutterButtonSize.height,
+            width: STLayout.shutterButtonSize.width,
+            height: STLayout.shutterButtonSize.height
+        )
+        
         settingsButton.frame = CGRect(
             x: view.frame.width - STLayout.settingsButtonSize.width - STLayout.boundOffset,
-            y: view.frame.height - STLayout.settingsButtonSize.height - STLayout.boundOffset - view.safeAreaInsets.bottom,
+            y: shutterButton.frame.midY - STLayout.settingsButtonSize.height / 2,
             width: STLayout.settingsButtonSize.width,
             height: STLayout.settingsButtonSize.height
         )
@@ -85,13 +99,6 @@ final class STMainVC: UIViewController {
             y: settingsButton.frame.minY,
             width: STLayout.bookmarksButtonSize.width,
             height: STLayout.bookmarksButtonSize.height
-        )
-        
-        shutterButton.frame = CGRect(
-            x: view.frame.midX - STLayout.shutterButtonSize.width / 2,
-            y: settingsButton.frame.maxY - STLayout.shutterButtonSize.height,
-            width: STLayout.shutterButtonSize.width,
-            height: STLayout.shutterButtonSize.height
         )
         
         let translationViewTop = STLayout.translationViewInsets.top + view.safeAreaInsets.top
@@ -138,6 +145,19 @@ final class STMainVC: UIViewController {
     
     private let cameraController = STCameraController()
     private let firebaseRecognizer = STFirebaseRecognizer()
+    
+    private var state: MainVCState = .capturing {
+        willSet {
+            switch newValue {
+            case .capturing:
+                shutterButton.setImage(STStyleKit.shutterImage, for: .normal)
+            case .recognizing:
+                shutterButton.setImage(STStyleKit.shutterImage, for: .normal)
+            case .captured:
+                shutterButton.setImage(STStyleKit.crossImage, for: .normal)
+            }
+        }
+    }
 }
 
 extension STMainVC: STDatabaseListener {
@@ -164,8 +184,25 @@ extension STMainVC: STCameraControllerDelegate {
 }
 
 extension STMainVC: STFirebaseRecognizerDelegate {
-    func onRecognized(text: String, lang: String) {
-        return
+    
+    func onRecognized(from photo: UIImage, text: String, lang: String) {
+        STGoogleTranslator.shared.translate(text, "ru", lang) { (translatedText, error) in
+            guard error == nil, let trText = translatedText else { return }
+            let translation = STTranslation(
+                imageToTranslate: photo,
+                translatedText: trText,
+                isSaved: false,
+                fromLanguage: lang.uppercased(),
+                toLanguage: "RU"
+            )
+            
+            DispatchQueue.main.async {
+                self.translation = translation
+                self.translationView.set(translation: translation)
+                self.translationView.stopRecognition()
+                self.state = .captured
+            }
+        }
     }
 }
 

@@ -55,6 +55,13 @@ final class STTranslationView: UIView {
         activityIndicator.stopAnimating()
     }
     
+    func continueCapturing() {
+        stopRecognition()
+        set(translation: STTranslation())
+        self.translation = nil
+        previewLayer?.isHidden = false
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -129,7 +136,7 @@ final class STTranslationView: UIView {
         translationTextView.layer.cornerRadius = STLayout.cornerRadius
         
         photoImageView.backgroundColor = .white
-        photoImageView.contentMode = .scaleToFill
+        photoImageView.contentMode = .scaleAspectFill
         photoImageView.layer.masksToBounds = true
         
         backgroundBubble.backgroundColor = STColor.greyBlue

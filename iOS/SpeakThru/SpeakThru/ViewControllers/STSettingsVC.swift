@@ -53,6 +53,13 @@ final class STSettingsVC: UIViewController {
             width: STLayout.aboutButtonSize.width,
             height: STLayout.aboutButtonSize.height
         )
+        
+        tableView.frame = CGRect(
+            x: view.safeAreaInsets.left + STLayout.boundOffset,
+            y: backButton.frame.maxY + STLayout.boundOffset,
+            width: view.frame.width - (view.safeAreaInsets.left + view.safeAreaInsets.right + 2 * STLayout.boundOffset),
+            height: aboutButton.frame.minY - 2 * STLayout.boundOffset - backButton.frame.maxY
+        )
     }
     
     private func setupUI() {
@@ -84,11 +91,17 @@ final class STSettingsVC: UIViewController {
             for: .touchUpInside
         )
         
+        // Table view
+        tableView.backgroundColor = .black
+        tableView.showsVerticalScrollIndicator = false
+        tableView.showsHorizontalScrollIndicator = false
+        tableView.separatorStyle = .none
+        
         addSubviews()
     }
     
     private func addSubviews() {
-        let subviews = [backButton, titleLabel, aboutButton]
+        let subviews = [backButton, titleLabel, aboutButton, tableView]
         subviews.forEach(view.addSubview)
     }
     
@@ -103,7 +116,16 @@ final class STSettingsVC: UIViewController {
     
     private let titleLabel = UILabel()
     private let aboutButton = UIButton()
+    private let tableView = UITableView()
 
+}
+
+extension STSettingsVC: UITableViewDataSource {
+    
+}
+
+extension STSettingsVC: UITableViewDelegate {
+    
 }
 
 private struct STLayout {

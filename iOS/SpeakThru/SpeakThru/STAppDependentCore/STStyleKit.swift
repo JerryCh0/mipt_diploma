@@ -23,6 +23,7 @@ final class STStyleKit {
     static let savedIcon = UIImage(named: "STButtonSaved")!
     static let rewindIcon = UIImage(named: "STButtonRewind")!
     
+    static let crossImage = UIImage(named: "STButtonCross")!
     static let shutterImage = UIImage(named: "STButtonShutter")!
     static let arrowImage = UIImage(named: "STArrow")!
     
