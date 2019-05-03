@@ -18,6 +18,7 @@ protocol STDatabase {
     func remove(listener: STDatabaseListener)
     
     func getAllTranslations() -> [String : STTranslation]
+    func removeAllTranslations() -> Bool
     func getTranslation(with id: String) -> STTranslation?
     func store(translation: STTranslation) -> Bool
     func removeTranslation(with id: String) -> Bool
@@ -79,6 +80,12 @@ final class STDatabaseImpl: STDatabase {
     func removeTranslation(with id: String) -> Bool {
         guard id != STTranslation.nullId, translationsMap.keys.contains(id) else { return false }
         translationsMap.removeValue(forKey: id)
+        notifyListeners()
+        return true
+    }
+    
+    func removeAllTranslations() -> Bool {
+        translationsMap.removeAll()
         notifyListeners()
         return true
     }

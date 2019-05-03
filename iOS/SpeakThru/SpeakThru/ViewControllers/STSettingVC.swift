@@ -1,21 +1,23 @@
 //
-//  STSettingsVC.swift
+//  STSettingVC.swift
 //  SpeakThru
 //
-//  Created by Дмитрий Ткаченко on 31/03/2019.
+//  Created by Дмитрий Ткаченко on 03/05/2019.
 //  Copyright © 2019 klabertants. All rights reserved.
 //
 
 import UIKit
 
-final class STSettingsVC: UIViewController {
+final class STSettingVC: UIViewController {
     
     override var prefersStatusBarHidden: Bool {
         return true
     }
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    init(title: String, items: [STSettingsCellViewModel]) {
+        self.titleText = title
+        self.items = items
+        super.init(nibName: nil, bundle: nil)
         self.backButton.set { [unowned self] in
             self.navigationController?.popViewController(animated: true)
         }
@@ -30,19 +32,14 @@ final class STSettingsVC: UIViewController {
         setupUI()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.view.isHidden = false
-    }
-    
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
         backButton.frame = CGRect(
             x: STLayout.boundOffset + view.safeAreaInsets.left,
             y: STLayout.boundOffset + view.safeAreaInsets.top,
-            width: STLayout.closeButtonSize.width,
-            height: STLayout.closeButtonSize.height
+            width: STLayout.backButtonSize.width,
+            height: STLayout.backButtonSize.height
         )
         
         titleLabel.frame = CGRect(
@@ -52,18 +49,11 @@ final class STSettingsVC: UIViewController {
             height: STLayout.titleLabelSize.height
         )
         
-        aboutButton.frame = CGRect(
-            x: view.frame.midX - STLayout.aboutButtonSize.width / 2,
-            y: view.frame.maxY - view.safeAreaInsets.bottom - STLayout.boundOffset - STLayout.aboutButtonSize.height,
-            width: STLayout.aboutButtonSize.width,
-            height: STLayout.aboutButtonSize.height
-        )
-        
         tableView.frame = CGRect(
             x: view.safeAreaInsets.left + STLayout.boundOffset,
             y: backButton.frame.maxY + STLayout.boundOffset,
             width: view.frame.width - (view.safeAreaInsets.left + view.safeAreaInsets.right + 2 * STLayout.boundOffset),
-            height: aboutButton.frame.minY - 2 * STLayout.boundOffset - backButton.frame.maxY
+            height: 2 * STLayout.boundOffset - backButton.frame.maxY
         )
     }
     
@@ -71,30 +61,9 @@ final class STSettingsVC: UIViewController {
         
         // Title
         titleLabel.font = STStyleKit.rationaleFont(of: 18)
-        titleLabel.text = "Настройки"
+        titleLabel.text = titleText
         titleLabel.textColor = STColor.neonBlue
         titleLabel.textAlignment = .center
-        
-        // About button
-        let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.alignment = .center
-        
-        let attributes = [
-            NSAttributedString.Key.foregroundColor : STColor.neonBlue,
-            NSAttributedString.Key.paragraphStyle : paragraphStyle,
-            NSAttributedString.Key.font : STStyleKit.rationaleFont(of: 12)
-        ]
-        
-        aboutButton.setAttributedTitle(
-            NSMutableAttributedString(string: "О приложении", attributes: attributes),
-            for: .normal
-        )
-        
-        aboutButton.addTarget(
-            self,
-            action: #selector(aboutButtonHandler),
-            for: .touchUpInside
-        )
         
         // Table view
         tableView.backgroundColor = .black
@@ -109,27 +78,22 @@ final class STSettingsVC: UIViewController {
     }
     
     private func addSubviews() {
-        let subviews = [backButton, titleLabel, aboutButton, tableView]
+        let subviews = [backButton, titleLabel, tableView]
         subviews.forEach(view.addSubview)
-    }
-    
-    @objc private func aboutButtonHandler() {
-        STApp.shared.routing.open(screen: .about)
     }
     
     private let backButton = STButton(
         icon: STStyleKit.backIcon,
         callback: {}
     )
-    
     private let titleLabel = UILabel()
-    private let aboutButton = UIButton()
     private let tableView = UITableView()
-
-    private lazy var items = STSettingsViewModelFactory.buildMainSettings()
+    
+    private let titleText: String
+    private let items: [STSettingsCellViewModel]
 }
 
-extension STSettingsVC: UITableViewDataSource {
+extension STSettingVC: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return items.count
@@ -156,16 +120,17 @@ extension STSettingsVC: UITableViewDataSource {
         hView.backgroundColor = .black
         return hView
     }
+    
+    
 }
 
-extension STSettingsVC: UITableViewDelegate {
+extension STSettingVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         guard indexPath.section < items.count else { fatalError() }
         let item = items[indexPath.section]
         switch item {
         case let .detailedCell(_, _, action):
-            view.isHidden = true
             action()
         case let .textCell(_, action):
             action()
@@ -175,7 +140,6 @@ extension STSettingsVC: UITableViewDelegate {
 
 private struct STLayout {
     static let boundOffset = CGFloat(16)
-    static let closeButtonSize = CGSize(width: 24, height: 24)
-    static let aboutButtonSize = CGSize(width: 88, height: 14)
-    static let titleLabelSize = CGSize(width: 108, height: 24)
+    static let backButtonSize = CGSize(width: 24, height: 24)
+    static let titleLabelSize = CGSize(width: 256, height: 24)
 }

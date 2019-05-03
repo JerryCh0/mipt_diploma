@@ -13,6 +13,8 @@ enum STScreen {
     case settings
     case bookmarks
     case about
+    case recognitionModel
+    case targetLanguage
 }
 
 protocol STRouting {

@@ -20,6 +20,8 @@
 		0A68FA79227AE85500E9414E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A68FA78227AE85500E9414E /* GoogleService-Info.plist */; };
 		0A759E0B226F36A300497CA6 /* Rationale-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2801032233079E0087C228 /* Rationale-Regular.ttf */; };
 		0A9AAECA22708C3F009CF722 /* UITextView+CenterVertically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */; };
+		0AB1DE8F227C3D17007D166B /* STSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1DE8E227C3D17007D166B /* STSettingVC.swift */; };
+		0AB1DE91227C4142007D166B /* STSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1DE90227C4142007D166B /* STSettingCell.swift */; };
 		0AD1E1F02233A96900FE7101 /* STFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1EF2233A96900FE7101 /* STFirebaseManager.swift */; };
 		0AD1E1F22233A9CA00FE7101 /* STAppContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1F12233A9CA00FE7101 /* STAppContext.swift */; };
 		0AD1E1F42233AA9D00FE7101 /* STApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1F32233AA9D00FE7101 /* STApp.swift */; };
@@ -65,6 +67,8 @@
 		0A280104223309F00087C228 /* STMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STMainVC.swift; sourceTree = "<group>"; };
 		0A68FA78227AE85500E9414E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+CenterVertically.swift"; sourceTree = "<group>"; };
+		0AB1DE8E227C3D17007D166B /* STSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingVC.swift; sourceTree = "<group>"; };
+		0AB1DE90227C4142007D166B /* STSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingCell.swift; sourceTree = "<group>"; };
 		0AD1E1EF2233A96900FE7101 /* STFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STFirebaseManager.swift; sourceTree = "<group>"; };
 		0AD1E1F12233A9CA00FE7101 /* STAppContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STAppContext.swift; sourceTree = "<group>"; };
 		0AD1E1F32233AA9D00FE7101 /* STApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STApp.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				0A280104223309F00087C228 /* STMainVC.swift */,
+				0AB1DE8E227C3D17007D166B /* STSettingVC.swift */,
 				0AEDBBA222514E45000CE43F /* STSettingsVC.swift */,
 				0A05F72F2270476F00F72B62 /* STAboutVC.swift */,
 				0A05F73322704D2E00F72B62 /* STBookmarksVC.swift */,
@@ -235,6 +240,7 @@
 			children = (
 				0AD1E1FB2233B53C00FE7101 /* STButton.swift */,
 				0A05F7352270685A00F72B62 /* STTranslationView.swift */,
+				0AB1DE90227C4142007D166B /* STSettingCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -469,6 +475,7 @@
 			files = (
 				0A9AAECA22708C3F009CF722 /* UITextView+CenterVertically.swift in Sources */,
 				0AF0DC742271C53A00158E8F /* STCameraController.swift in Sources */,
+				0AB1DE8F227C3D17007D166B /* STSettingVC.swift in Sources */,
 				0AD1E1F02233A96900FE7101 /* STFirebaseManager.swift in Sources */,
 				0AD1E1FE2233B6C100FE7101 /* STRouting.swift in Sources */,
 				0AEDBBA322514E45000CE43F /* STSettingsVC.swift in Sources */,
@@ -487,6 +494,7 @@
 				0AF0DC762271D11E00158E8F /* STFirebaseRecognizer.swift in Sources */,
 				0A05F7302270476F00F72B62 /* STAboutVC.swift in Sources */,
 				0A05F73422704D2E00F72B62 /* STBookmarksVC.swift in Sources */,
+				0AB1DE91227C4142007D166B /* STSettingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

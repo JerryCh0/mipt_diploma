@@ -82,7 +82,6 @@ final class STMainVC: UIViewController {
         shutterButton.frame = CGRect(
             x: view.frame.midX - STLayout.shutterButtonSize.width / 2,
             y: view.frame.height - STLayout.shutterButtonSize.height - STLayout.boundOffset - view.safeAreaInsets.bottom,
-            //y: settingsButton.frame.maxY - STLayout.shutterButtonSize.height,
             width: STLayout.shutterButtonSize.width,
             height: STLayout.shutterButtonSize.height
         )
