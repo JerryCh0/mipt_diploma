@@ -8,5 +8,7 @@ This directory contains all resources used in application implementation like im
 - [x] Main screen
 - [x] Saved translations screen
 - [x] Translation screen
-- [ ] Settings screen
+- [x] Settings screen
+- [x] Language screen
+- [x] Recognition model selection screen
 - [x] About screen
