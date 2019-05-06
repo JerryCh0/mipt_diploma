@@ -9,8 +9,12 @@ This directory includes iOS project files and all misc files connected with iOS 
 - [x] Create app style-kit
 - [x] Move icons, images, colors to style-kit
 - [x] Implement Main View Controller
-- [ ] Implement Settings View Controller
+- [x] Implement Settings View Controller
+- [x] Implement Languages View Controller
+- [x] Implement Recognizer Type View Controller
 - [x] Implement About View Controller
-- [ ] Implement Translations View Controller
-- [ ] Choose and connect database
-- [ ] ... *to be continued*
+- [x] Implement Translations View Controller
+- [x] Choose and connect database
+- [x] Connect Google Translator API
+- [x] Connect Firebase Recognizer module
+- [ ] to be continued...
