@@ -30,6 +30,10 @@ final class STCameraController: NSObject {
             return
         }
         
+        if let photoOutputConnection = photoOutput.connection(with: .video) {
+            photoOutputConnection.videoOrientation = .portrait
+        }
+        
         if input != nil && session.canAddInput(input) && session.canAddOutput(photoOutput) {
             session.addInput(input)
             session.addOutput(photoOutput)
@@ -77,6 +81,14 @@ extension STCameraController: AVCapturePhotoCaptureDelegate {
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         guard let imageData = photo.fileDataRepresentation(),
             let image = UIImage(data: imageData) else { return }
+        if image.imageOrientation != UIImage.Orientation.up {
+            UIGraphicsBeginImageContext(image.size)
+            image.draw(in: CGRect(origin: CGPoint.zero, size: image.size))
+            let copy = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            delegate?.didCapture(photo: copy!)
+            return
+        }
         delegate?.didCapture(photo: image)
     }
     

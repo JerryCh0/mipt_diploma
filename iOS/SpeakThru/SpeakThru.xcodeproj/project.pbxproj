@@ -19,6 +19,8 @@
 		0A130953222A749E0098433D /* SpeakThruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A130952222A749E0098433D /* SpeakThruTests.swift */; };
 		0A280105223309F00087C228 /* STMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A280104223309F00087C228 /* STMainVC.swift */; };
 		0A3D00F22280426900E44063 /* STVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D00F12280426900E44063 /* STVision.swift */; };
+		0A3D00F422804B3400E44063 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D00F322804B3300E44063 /* tessdata */; };
+		0A3D00F622804B4F00E44063 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3D00F522804B4F00E44063 /* CoreImage.framework */; };
 		0A68FA79227AE85500E9414E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A68FA78227AE85500E9414E /* GoogleService-Info.plist */; };
 		0A759E0B226F36A300497CA6 /* Rationale-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2801032233079E0087C228 /* Rationale-Regular.ttf */; };
 		0A9AAECA22708C3F009CF722 /* UITextView+CenterVertically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */; };
@@ -69,6 +71,8 @@
 		0A2801032233079E0087C228 /* Rationale-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rationale-Regular.ttf"; sourceTree = "<group>"; };
 		0A280104223309F00087C228 /* STMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STMainVC.swift; sourceTree = "<group>"; };
 		0A3D00F12280426900E44063 /* STVision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STVision.swift; sourceTree = "<group>"; };
+		0A3D00F322804B3300E44063 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		0A3D00F522804B4F00E44063 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		0A68FA78227AE85500E9414E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+CenterVertically.swift"; sourceTree = "<group>"; };
 		0AB1DE8E227C3D17007D166B /* STSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingVC.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3D00F622804B4F00E44063 /* CoreImage.framework in Frameworks */,
 				4A29AAAB7A8E5ECB405F1F34 /* Pods_SpeakThru.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +131,7 @@
 		0A130931222A749C0098433D = {
 			isa = PBXGroup;
 			children = (
+				0A3D00F322804B3300E44063 /* tessdata */,
 				0A13093C222A749C0098433D /* SpeakThru */,
 				0A130951222A749E0098433D /* SpeakThruTests */,
 				0A13093B222A749C0098433D /* Products */,
@@ -233,9 +239,9 @@
 				0AD1E1F12233A9CA00FE7101 /* STAppContext.swift */,
 				0AD1E1F62233AE1000FE7101 /* STRouter.swift */,
 				0AD1E1FD2233B6C100FE7101 /* STRouting.swift */,
+				0ADDF695227AF9EB00F5B50A /* STGoogleTranslator.swift */,
 				0AF0DC732271C53A00158E8F /* STCameraController.swift */,
 				0AF0DC752271D11E00158E8F /* STRecognizer.swift */,
-				0ADDF695227AF9EB00F5B50A /* STGoogleTranslator.swift */,
 				0A3D00F12280426900E44063 /* STVision.swift */,
 			);
 			path = STCore;
@@ -263,6 +269,7 @@
 		5788000CE78208F9C8E7E5DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A3D00F522804B4F00E44063 /* CoreImage.framework */,
 				FCF1108AC15768D0CB235D76 /* Pods_SpeakThru.framework */,
 				5F3361E05BF9FC5480081ECF /* Pods_SpeakThruTests.framework */,
 			);
@@ -371,6 +378,7 @@
 				0A68FA79227AE85500E9414E /* GoogleService-Info.plist in Resources */,
 				0A05F72E2270457100F72B62 /* AboutScreen.storyboard in Resources */,
 				0A759E0B226F36A300497CA6 /* Rationale-Regular.ttf in Resources */,
+				0A3D00F422804B3400E44063 /* tessdata in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +581,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -634,6 +643,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;

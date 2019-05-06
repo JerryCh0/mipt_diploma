@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -405,7 +405,6 @@
 		9F809E275344AD0A0B376DE150FC4496 /* feature_chebyshev.h in Headers */ = {isa = PBXBuildFile; fileRef = 845C7507883B8D81F7681040775090D2 /* feature_chebyshev.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		9FB9F3D7EFDC87C8DBD40A6968BA010E /* GTLRRuntimeCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = E32012DCF3F490FAF0CD71B218CF07E0 /* GTLRRuntimeCommon.m */; };
 		9FF7EECC349F1F6BC3C9A199F9D93C6D /* opencl_device_selection.h in Headers */ = {isa = PBXBuildFile; fileRef = 406445A38C965DE0EB5C3FD30D4D96DE /* opencl_device_selection.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		A11A12EEB8E9AF69F4C1C0D1B6CC2739 /* config_auto.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FBCFC55110DDFAF15B1F9EE00E67492 /* config_auto.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A12400CAC37C391BB46CDFF80FAE8B9A /* POPAnimator.mm in Sources */ = {isa = PBXBuildFile; fileRef = DDAF138FB92866A0D35F8BF8EE9D6CBE /* POPAnimator.mm */; };
 		A136D01A3FD4DE50C32CA0F0295317F8 /* GTLRVisionQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D384EFD11B7588D8DA5AE6E013904 /* GTLRVisionQuery.m */; };
 		A1B47A3775757FB2DD639B641A294EA3 /* werd.h in Headers */ = {isa = PBXBuildFile; fileRef = 0462016D17752C6544850DC6FCD512A3 /* werd.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -785,7 +784,7 @@
 		04FA7C508F5E199C9AAF4C006755E547 /* FirebaseMLVision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMLVision.framework; path = Frameworks/FirebaseMLVision.framework; sourceTree = "<group>"; };
 		05ADFD3E959CE6A7F12BDE48750416CC /* GPBMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBMessage.m; path = objectivec/GPBMessage.m; sourceTree = "<group>"; };
 		05B93E7A405448A3CBE8E6A1B50A7A32 /* GULReachabilityChecker+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GULReachabilityChecker+Internal.h"; path = "GoogleUtilities/Reachability/GULReachabilityChecker+Internal.h"; sourceTree = "<group>"; };
-		05CF328E2AD57249AEB42F0F09E98969 /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
+		05CF328E2AD57249AEB42F0F09E98969 /* POPAnimationRuntime.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationRuntime.mm; path = pop/POPAnimationRuntime.mm; sourceTree = "<group>"; };
 		0615EB2B79C8E812BC07467EDF553A7C /* GTLRVisionService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRVisionService.m; path = Source/GeneratedServices/Vision/GTLRVisionService.m; sourceTree = "<group>"; };
 		077B2A99426D3BC392BF82E00E0BD578 /* GoogleAPIClientForREST.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GoogleAPIClientForREST.modulemap; sourceTree = "<group>"; };
 		07C4B0A5E978E814A7D11B7E4BD21FB5 /* textord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = textord.h; path = TesseractOCR/include/tesseract/textord.h; sourceTree = "<group>"; };
@@ -795,7 +794,7 @@
 		08794560DFF295DBAA03E44AED4956EB /* Pods-SpeakThru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpeakThru.release.xcconfig"; sourceTree = "<group>"; };
 		0899D3339E2FA806EF81DCF8FBEC4F1D /* GTLRQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRQuery.h; path = Source/Objects/GTLRQuery.h; sourceTree = "<group>"; };
 		08C329F438C6380566C0F1B1A99C200F /* GULReachabilityChecker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULReachabilityChecker.m; path = GoogleUtilities/Reachability/GULReachabilityChecker.m; sourceTree = "<group>"; };
-		09B4D330FA1CB29D6D236522B9E391EB /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
+		09B4D330FA1CB29D6D236522B9E391EB /* POPCGUtils.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCGUtils.mm; path = pop/POPCGUtils.mm; sourceTree = "<group>"; };
 		0A2B5A98F7CA3BC2C0E205CDF04DF306 /* indexmapbidi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = indexmapbidi.h; path = TesseractOCR/include/tesseract/indexmapbidi.h; sourceTree = "<group>"; };
 		0A681C4A5380748E4020BD8B6E2BB850 /* picofeat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = picofeat.h; path = TesseractOCR/include/tesseract/picofeat.h; sourceTree = "<group>"; };
 		0A7B7AA0DE59D37E2DBEF2F89E53BE11 /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
@@ -814,7 +813,7 @@
 		0ED7CB9BE735BD7EBBA0CDF1BB4F3DB7 /* Struct.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Struct.pbobjc.m; path = objectivec/google/protobuf/Struct.pbobjc.m; sourceTree = "<group>"; };
 		0FA92B03D066B05906538FCE9FE68214 /* intmatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = intmatcher.h; path = TesseractOCR/include/tesseract/intmatcher.h; sourceTree = "<group>"; };
 		1043991BDC0B3EAEABABFA478BFEF426 /* baseapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = baseapi.h; path = TesseractOCR/include/tesseract/baseapi.h; sourceTree = "<group>"; };
-		104ACB2562CDCFA91A97F902CDAEAE0F /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
+		104ACB2562CDCFA91A97F902CDAEAE0F /* POPPropertyAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPPropertyAnimation.mm; path = pop/POPPropertyAnimation.mm; sourceTree = "<group>"; };
 		1117A2E598101B89620950E6BA92F620 /* conv_net_classifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conv_net_classifier.h; path = TesseractOCR/include/tesseract/conv_net_classifier.h; sourceTree = "<group>"; };
 		11A33C4CED342F233CB48B4C103AE656 /* TesseractOCR.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TesseractOCR.h; path = TesseractOCR/TesseractOCR.h; sourceTree = "<group>"; };
 		11ED39CA0EA1857354AE05DE590588C7 /* Pods-SpeakThruTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpeakThruTests-frameworks.sh"; sourceTree = "<group>"; };
@@ -847,7 +846,7 @@
 		1A85C09C15EF3E42E57D73A4377DBBE8 /* globaloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = globaloc.h; path = TesseractOCR/include/tesseract/globaloc.h; sourceTree = "<group>"; };
 		1B11A4131AD8D96B62B7EB0F488AFB4C /* scanedg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = scanedg.h; path = TesseractOCR/include/tesseract/scanedg.h; sourceTree = "<group>"; };
 		1B244EAEBF2341904FA11E1D732E6C16 /* tuning_params.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tuning_params.h; path = TesseractOCR/include/tesseract/tuning_params.h; sourceTree = "<group>"; };
-		1CC20C69FCC65FA638E17A47D8D2B1CB /* POPDecayAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPDecayAnimation.mm; path = pop/POPDecayAnimation.mm; sourceTree = "<group>"; };
+		1CC20C69FCC65FA638E17A47D8D2B1CB /* POPDecayAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPDecayAnimation.mm; path = pop/POPDecayAnimation.mm; sourceTree = "<group>"; };
 		1D2B765B59B9A5A758F0EEEE99FC2A9D /* protos.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = protos.h; path = TesseractOCR/include/tesseract/protos.h; sourceTree = "<group>"; };
 		1D5EF19094817BB18E7CC694B745F436 /* mathfix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mathfix.h; path = TesseractOCR/include/tesseract/mathfix.h; sourceTree = "<group>"; };
 		1E93C0E1F28F74B49AE031C13C594233 /* GPBArray_PackagePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBArray_PackagePrivate.h; path = objectivec/GPBArray_PackagePrivate.h; sourceTree = "<group>"; };
@@ -859,15 +858,15 @@
 		2126173D573FAD6FECD4A1376288E746 /* object_cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = object_cache.h; path = TesseractOCR/include/tesseract/object_cache.h; sourceTree = "<group>"; };
 		212AB9D8874A264415027D07F5AE28F8 /* FIROptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIROptions.m; path = Firebase/Core/FIROptions.m; sourceTree = "<group>"; };
 		218EB241E400D18A40C03C0EBADF0053 /* genblob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = genblob.h; path = TesseractOCR/include/tesseract/genblob.h; sourceTree = "<group>"; };
-		21D9DA3F3529CDBCA11E48C1F09541C8 /* GoogleAPIClientForREST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleAPIClientForREST.framework; path = GoogleAPIClientForREST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21D9DA3F3529CDBCA11E48C1F09541C8 /* GoogleAPIClientForREST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleAPIClientForREST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		224E4185E4F9C86BC3FFB66B949C6F94 /* GTLRObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRObject.m; path = Source/Objects/GTLRObject.m; sourceTree = "<group>"; };
 		22E512EBC9DCA572AD2EC0A08E0F67DA /* KolodaViewAnimatior.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KolodaViewAnimatior.swift; path = Pod/Classes/KolodaView/KolodaViewAnimatior.swift; sourceTree = "<group>"; };
 		2315D099EFCDB2D3472EBF2B3D6FEF69 /* errorcounter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = errorcounter.h; path = TesseractOCR/include/tesseract/errorcounter.h; sourceTree = "<group>"; };
-		23465D1C22416C5A849B5D226F1A00E0 /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
+		23465D1C22416C5A849B5D226F1A00E0 /* POPAnimationEvent.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationEvent.mm; path = pop/POPAnimationEvent.mm; sourceTree = "<group>"; };
 		238AB3DA06F2A9BE1E8205C860790F40 /* strtok_r.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = strtok_r.h; path = TesseractOCR/include/tesseract/strtok_r.h; sourceTree = "<group>"; };
 		23EDF9BBFCD3E418F4000D2913C5B1A8 /* tessdatamanager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tessdatamanager.h; path = TesseractOCR/include/tesseract/tessdatamanager.h; sourceTree = "<group>"; };
 		243C40236AFD98BEC03EA8D087E9DF89 /* resultiterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = resultiterator.h; path = TesseractOCR/include/tesseract/resultiterator.h; sourceTree = "<group>"; };
-		24E1E8E86DAC6F05B0588F3FD7BA77B7 /* POPBasicAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPBasicAnimation.mm; path = pop/POPBasicAnimation.mm; sourceTree = "<group>"; };
+		24E1E8E86DAC6F05B0588F3FD7BA77B7 /* POPBasicAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPBasicAnimation.mm; path = pop/POPBasicAnimation.mm; sourceTree = "<group>"; };
 		2523C195BEF97FDA2EAFB18B7146536B /* TesseractOCRiOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TesseractOCRiOS.modulemap; sourceTree = "<group>"; };
 		25C32C7B70F8C66C610E2B3F1F441D72 /* Koloda-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Koloda-prefix.pch"; sourceTree = "<group>"; };
 		265A7B48BF8390143C41EDE001839DE3 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -879,11 +878,11 @@
 		27551398CE263F502B6CF6B16324FF87 /* plotedges.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = plotedges.h; path = TesseractOCR/include/tesseract/plotedges.h; sourceTree = "<group>"; };
 		279BD000E6CF270B0CCFBC791E8E752A /* chopper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chopper.h; path = TesseractOCR/include/tesseract/chopper.h; sourceTree = "<group>"; };
 		2801A07AD6B025B8A585CBDAF6387123 /* baselinedetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = baselinedetect.h; path = TesseractOCR/include/tesseract/baselinedetect.h; sourceTree = "<group>"; };
-		28BEC16EA9A050458CB5982E8F29CA12 /* TransformationMatrix.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = TransformationMatrix.cpp; path = pop/WebCore/TransformationMatrix.cpp; sourceTree = "<group>"; };
+		28BEC16EA9A050458CB5982E8F29CA12 /* TransformationMatrix.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = TransformationMatrix.cpp; path = pop/WebCore/TransformationMatrix.cpp; sourceTree = "<group>"; };
 		29C7E875D044678FFAEAE2049BB2CD90 /* GPBCodedOutputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBCodedOutputStream.h; path = objectivec/GPBCodedOutputStream.h; sourceTree = "<group>"; };
-		2A38F185A88F30508C6FF8CDF7055F06 /* POPAnimationExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationExtras.mm; path = pop/POPAnimationExtras.mm; sourceTree = "<group>"; };
+		2A38F185A88F30508C6FF8CDF7055F06 /* POPAnimationExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationExtras.mm; path = pop/POPAnimationExtras.mm; sourceTree = "<group>"; };
 		2A4A7FF84592CD677F2429AF1BF2A554 /* TesseractOCRiOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TesseractOCRiOS-umbrella.h"; sourceTree = "<group>"; };
-		2A719331701F606B05729B3BFB7B46CD /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimatableProperty.mm; path = pop/POPAnimatableProperty.mm; sourceTree = "<group>"; };
+		2A719331701F606B05729B3BFB7B46CD /* POPAnimatableProperty.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimatableProperty.mm; path = pop/POPAnimatableProperty.mm; sourceTree = "<group>"; };
 		2A7423BA993B21A49E6A2FC338C120AA /* Protobuf.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Protobuf.modulemap; sourceTree = "<group>"; };
 		2ADCEE0D12E7710EE9C79DE3CC551907 /* Pods-SpeakThru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpeakThru.debug.xcconfig"; sourceTree = "<group>"; };
 		2AEA79F7739463A362DF1287A5ABB519 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -911,7 +910,7 @@
 		34423FF9F30AA30FCCB1BCB31BFA5688 /* pageiterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pageiterator.h; path = TesseractOCR/include/tesseract/pageiterator.h; sourceTree = "<group>"; };
 		348F0459D6277CCB65E5F0E4AF3C78C9 /* werdit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = werdit.h; path = TesseractOCR/include/tesseract/werdit.h; sourceTree = "<group>"; };
 		3495C7C11F0EA168C979506B8F8B5C11 /* POPCustomAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCustomAnimation.h; path = pop/POPCustomAnimation.h; sourceTree = "<group>"; };
-		349E4A15A5ACB0FC789F598A6F38C45A /* Pods_SpeakThruTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpeakThruTests.framework; path = "Pods-SpeakThruTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		349E4A15A5ACB0FC789F598A6F38C45A /* Pods_SpeakThruTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeakThruTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B390A93BE35F264619D16C9074C310 /* clst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = clst.h; path = TesseractOCR/include/tesseract/clst.h; sourceTree = "<group>"; };
 		34D79705C73AEB8524403270D1D95B7F /* cube_reco_context.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cube_reco_context.h; path = TesseractOCR/include/tesseract/cube_reco_context.h; sourceTree = "<group>"; };
 		34E0AAE68D8B06570E33210BC0B559DC /* gradechop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gradechop.h; path = TesseractOCR/include/tesseract/gradechop.h; sourceTree = "<group>"; };
@@ -971,7 +970,7 @@
 		4C45BCD5763DEF00E305271D38266603 /* GTMMIMEDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMMIMEDocument.m; path = Source/GTMMIMEDocument.m; sourceTree = "<group>"; };
 		4C67DDAF4897A3E2E60665FB307317CB /* GTLRBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRBase64.h; path = Source/Utilities/GTLRBase64.h; sourceTree = "<group>"; };
 		4CD56B48B57A12B060571A36B17543A9 /* Protobuf-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Protobuf-prefix.pch"; sourceTree = "<group>"; };
-		4E19A38C27DA41F490E65816261B5203 /* tfmini_rpn_detector_space_to_depth_gray_quantized_model.data */ = {isa = PBXFileReference; includeInIndex = 1; name = tfmini_rpn_detector_space_to_depth_gray_quantized_model.data; path = TextDetector/Resources/GoogleMVTextDetectorResources/tfmini_rpn_detector_space_to_depth_gray_quantized_model.data; sourceTree = "<group>"; };
+		4E19A38C27DA41F490E65816261B5203 /* tfmini_rpn_detector_space_to_depth_gray_quantized_model.data */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = tfmini_rpn_detector_space_to_depth_gray_quantized_model.data; path = TextDetector/Resources/GoogleMVTextDetectorResources/tfmini_rpn_detector_space_to_depth_gray_quantized_model.data; sourceTree = "<group>"; };
 		4F3EF84E4D882B7105F6B91F37A4B3E3 /* unicharmap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unicharmap.h; path = TesseractOCR/include/tesseract/unicharmap.h; sourceTree = "<group>"; };
 		50E95F1E8CF18652DDAF6C980EBA4AD8 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
 		50F3728F874690FFEB0A6A43878EBA44 /* GTLRUploadParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRUploadParameters.h; path = Source/Objects/GTLRUploadParameters.h; sourceTree = "<group>"; };
@@ -995,7 +994,7 @@
 		545E0787EF3E76C64749998F7EB9723A /* environ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = environ.h; path = TesseractOCR/include/leptonica/environ.h; sourceTree = "<group>"; };
 		55E570807F5C825D4212838790B70E65 /* GPBUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBUtilities.m; path = objectivec/GPBUtilities.m; sourceTree = "<group>"; };
 		56125367E79354CF09D16133147B2F87 /* UnitBezier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UnitBezier.h; path = pop/WebCore/UnitBezier.h; sourceTree = "<group>"; };
-		56138C1BD26A3E758001C3DA339BF780 /* Protobuf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Protobuf.framework; path = Protobuf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56138C1BD26A3E758001C3DA339BF780 /* Protobuf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Protobuf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56662C81A0C1AFB59730120DF9C18874 /* fxdefs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fxdefs.h; path = TesseractOCR/include/tesseract/fxdefs.h; sourceTree = "<group>"; };
 		566C9156064B7C8D9FF77D630CADD5B7 /* classifier_base.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = classifier_base.h; path = TesseractOCR/include/tesseract/classifier_base.h; sourceTree = "<group>"; };
 		566FAF24B1FA118B39B60CDA728C7DF2 /* cached_file.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cached_file.h; path = TesseractOCR/include/tesseract/cached_file.h; sourceTree = "<group>"; };
@@ -1003,7 +1002,7 @@
 		56A389E517270C1E3D7D135248ED7894 /* chop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chop.h; path = TesseractOCR/include/tesseract/chop.h; sourceTree = "<group>"; };
 		56F4940EBAB2132D703C88271F3A982C /* shapetable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = shapetable.h; path = TesseractOCR/include/tesseract/shapetable.h; sourceTree = "<group>"; };
 		57A9350CC0BF93C5DC0D46E3E6CA3D2C /* ccnontextdetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ccnontextdetect.h; path = TesseractOCR/include/tesseract/ccnontextdetect.h; sourceTree = "<group>"; };
-		58221F2D1DADAD480D5C685427DB59C1 /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TesseractOCR.framework; path = TesseractOCRiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58221F2D1DADAD480D5C685427DB59C1 /* TesseractOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TesseractOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		584185A098BB512835350573A68785C8 /* pdblock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pdblock.h; path = TesseractOCR/include/tesseract/pdblock.h; sourceTree = "<group>"; };
 		58B52B9A0D2EC313727D6189202EE93D /* Koloda.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Koloda.modulemap; sourceTree = "<group>"; };
 		58BF23FD25C81F37B9C754BB3F8A8F24 /* FirebaseCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FirebaseCore.h; path = Firebase/Core/Public/FirebaseCore.h; sourceTree = "<group>"; };
@@ -1038,10 +1037,10 @@
 		630DC162F666C0453CF4CEEC6D539CA4 /* commandlineflags.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = commandlineflags.h; path = TesseractOCR/include/tesseract/commandlineflags.h; sourceTree = "<group>"; };
 		6391C9F2B167381713D5639B991CA448 /* word_altlist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = word_altlist.h; path = TesseractOCR/include/tesseract/word_altlist.h; sourceTree = "<group>"; };
 		645118077B7F7878C85372480A62F0F6 /* POPAnimationExtras.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationExtras.h; path = pop/POPAnimationExtras.h; sourceTree = "<group>"; };
-		64BAF127284C3E1693050F0F27B58725 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GTMSessionFetcher.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		64E733B5E5D8DA5DB752FE7A3D127CDD /* tfmini_lstm_recognizer_latin_0.2_batch24.bincfg */ = {isa = PBXFileReference; includeInIndex = 1; name = tfmini_lstm_recognizer_latin_0.2_batch24.bincfg; path = TextDetector/Resources/GoogleMVTextDetectorResources/tfmini_lstm_recognizer_latin_0.2_batch24.bincfg; sourceTree = "<group>"; };
+		64BAF127284C3E1693050F0F27B58725 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E733B5E5D8DA5DB752FE7A3D127CDD /* tfmini_lstm_recognizer_latin_0.2_batch24.bincfg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = tfmini_lstm_recognizer_latin_0.2_batch24.bincfg; path = TextDetector/Resources/GoogleMVTextDetectorResources/tfmini_lstm_recognizer_latin_0.2_batch24.bincfg; sourceTree = "<group>"; };
 		6504822CEF23EDDB0F6ED7D0E9BD55F0 /* FIRComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRComponent.m; path = Firebase/Core/FIRComponent.m; sourceTree = "<group>"; };
-		65569E0ACA39F4D2367346B365F1AD03 /* GoogleMVTextDetectorResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GoogleMVTextDetectorResources.bundle; path = "GoogleMobileVision-GoogleMVTextDetectorResources.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65569E0ACA39F4D2367346B365F1AD03 /* GoogleMVTextDetectorResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleMVTextDetectorResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D031E9C468B9950187D1B0A49D63CD /* tessedit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tessedit.h; path = TesseractOCR/include/tesseract/tessedit.h; sourceTree = "<group>"; };
 		665AB6D4DBA675818D0E245E9E7A0A87 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67482F5396BC793E98D46296C29D0DD1 /* GTLRUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRUtilities.h; path = Source/Utilities/GTLRUtilities.h; sourceTree = "<group>"; };
@@ -1128,7 +1127,7 @@
 		811B99A4669326283D9F9735196C0A42 /* GTLRURITemplate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRURITemplate.h; path = Source/Utilities/GTLRURITemplate.h; sourceTree = "<group>"; };
 		8248BA0FB33B76F407D40A1B52507EF2 /* UIImage+G8FixOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+G8FixOrientation.h"; path = "TesseractOCR/UIImage+G8FixOrientation.h"; sourceTree = "<group>"; };
 		832ECE83572C185FF06A8AA91A98FD9F /* Protobuf.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Protobuf.xcconfig; sourceTree = "<group>"; };
-		83CB883D1257D0B235E32D3643DB8C0D /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
+		83CB883D1257D0B235E32D3643DB8C0D /* POPSpringAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPSpringAnimation.mm; path = pop/POPSpringAnimation.mm; sourceTree = "<group>"; };
 		840D9865BC1461FB376C4C113D44DB30 /* memry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = memry.h; path = TesseractOCR/include/tesseract/memry.h; sourceTree = "<group>"; };
 		84246CC557AB58BCFA172731E5D7A8D6 /* ResourceBundle-GoogleMVTextDetectorResources-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GoogleMVTextDetectorResources-Info.plist"; sourceTree = "<group>"; };
 		845499F1A2DA577DCE867C34D19D467F /* G8TesseractParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = G8TesseractParameters.h; path = TesseractOCR/G8TesseractParameters.h; sourceTree = "<group>"; };
@@ -1187,7 +1186,7 @@
 		9351959443A5415B2298804F5EA2D153 /* Pods-SpeakThruTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpeakThruTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9353C1D89753DB328AB864D79047A5D3 /* kdpair.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kdpair.h; path = TesseractOCR/include/tesseract/kdpair.h; sourceTree = "<group>"; };
 		9364EA628FEA058C79B1A41D8B2879FD /* GTLRDateTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRDateTime.h; path = Source/Objects/GTLRDateTime.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94026C288FED6B661396FF556CDD028A /* Wrappers.pbobjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Wrappers.pbobjc.m; path = objectivec/google/protobuf/Wrappers.pbobjc.m; sourceTree = "<group>"; };
 		9403FE8986C5C42C7A49CBAF694EE3F9 /* POPSpringSolver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPSpringSolver.h; path = pop/POPSpringSolver.h; sourceTree = "<group>"; };
 		94160BB958059572E0D9328CD82206E8 /* ocrrow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocrrow.h; path = TesseractOCR/include/tesseract/ocrrow.h; sourceTree = "<group>"; };
@@ -1197,7 +1196,7 @@
 		95D70F6FE7C607D649EA1799FC9B8E8C /* secname.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = secname.h; path = TesseractOCR/include/tesseract/secname.h; sourceTree = "<group>"; };
 		96346DACD3B157F53C5ED1395C72FA5B /* POPAnimationEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationEvent.h; path = pop/POPAnimationEvent.h; sourceTree = "<group>"; };
 		96B1A386D3338BC19A8B367CD8035BF2 /* GTLRService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRService.m; path = Source/Objects/GTLRService.m; sourceTree = "<group>"; };
-		97406B56B54BA9A132EB15060582BA52 /* tfmini_latin_conv_model.data_fp16 */ = {isa = PBXFileReference; includeInIndex = 1; name = tfmini_latin_conv_model.data_fp16; path = TextDetector/Resources/GoogleMVTextDetectorResources/tfmini_latin_conv_model.data_fp16; sourceTree = "<group>"; };
+		97406B56B54BA9A132EB15060582BA52 /* tfmini_latin_conv_model.data_fp16 */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = tfmini_latin_conv_model.data_fp16; path = TextDetector/Resources/GoogleMVTextDetectorResources/tfmini_latin_conv_model.data_fp16; sourceTree = "<group>"; };
 		976AD2E004177E68F753B9FC83239599 /* regutils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = regutils.h; path = TesseractOCR/include/leptonica/regutils.h; sourceTree = "<group>"; };
 		98137C571FAD3FD82D3B19AFAADDC205 /* POPBasicAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPBasicAnimation.h; path = pop/POPBasicAnimation.h; sourceTree = "<group>"; };
 		986014DAE8A2D8A7B47C97041361FC61 /* GULSwizzler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULSwizzler.h; path = GoogleUtilities/MethodSwizzler/Private/GULSwizzler.h; sourceTree = "<group>"; };
@@ -1213,10 +1212,10 @@
 		9BB583B3E26C2CEF1E5BEF09256F0A5E /* GTMSessionFetcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-umbrella.h"; sourceTree = "<group>"; };
 		9C3C9DE369D0BFD6B90BB332B8CBE589 /* oldlist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = oldlist.h; path = TesseractOCR/include/tesseract/oldlist.h; sourceTree = "<group>"; };
 		9C61A560C458839876A9CF0978B0F3AC /* queue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = queue.h; path = TesseractOCR/include/leptonica/queue.h; sourceTree = "<group>"; };
-		9CC4D6E14FA514924EEDC7586F3BE965 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
+		9CC4D6E14FA514924EEDC7586F3BE965 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_decode.c; sourceTree = "<group>"; };
 		9CED7F6009F5275E998735C4704E7E17 /* leptwin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = leptwin.h; path = TesseractOCR/include/leptonica/leptwin.h; sourceTree = "<group>"; };
 		9CF677DAD3A884BA4BAF445CD063BF7A /* FIRVersion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRVersion.m; path = Firebase/Core/FIRVersion.m; sourceTree = "<group>"; };
-		9D1F27783291A11AF7BB6FB21B32A8F4 /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
+		9D1F27783291A11AF7BB6FB21B32A8F4 /* POPVector.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPVector.mm; path = pop/POPVector.mm; sourceTree = "<group>"; };
 		9DDFBB8E33754E68628074D075F78FA9 /* GPBMessage_PackagePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBMessage_PackagePrivate.h; path = objectivec/GPBMessage_PackagePrivate.h; sourceTree = "<group>"; };
 		9E630DBDBAEB3EB82A302CEB4B125823 /* POPAnimationPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationPrivate.h; path = pop/POPAnimationPrivate.h; sourceTree = "<group>"; };
 		9F67D5EAF4A68ECDE7677C2A2F985DE0 /* altlist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = altlist.h; path = TesseractOCR/include/tesseract/altlist.h; sourceTree = "<group>"; };
@@ -1227,7 +1226,7 @@
 		A09A7783FB165F17B169615AC21FD66F /* POPAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimator.h; path = pop/POPAnimator.h; sourceTree = "<group>"; };
 		A102C24BD8D7A6F4BF8507536ACEFED6 /* GTLRQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRQuery.m; path = Source/Objects/GTLRQuery.m; sourceTree = "<group>"; };
 		A12F2BE0ADF89490A9122797BB3E1367 /* Pods-SpeakThru-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpeakThru-acknowledgements.plist"; sourceTree = "<group>"; };
-		A130D8A854D87EFDADC9525B0E6598AD /* rpn_lstm_engine_tfmini.bincfg */ = {isa = PBXFileReference; includeInIndex = 1; name = rpn_lstm_engine_tfmini.bincfg; path = TextDetector/Resources/GoogleMVTextDetectorResources/rpn_lstm_engine_tfmini.bincfg; sourceTree = "<group>"; };
+		A130D8A854D87EFDADC9525B0E6598AD /* rpn_lstm_engine_tfmini.bincfg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = rpn_lstm_engine_tfmini.bincfg; path = TextDetector/Resources/GoogleMVTextDetectorResources/rpn_lstm_engine_tfmini.bincfg; sourceTree = "<group>"; };
 		A13BA09F12D258149FF192E6DFF90B42 /* fileerr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fileerr.h; path = TesseractOCR/include/tesseract/fileerr.h; sourceTree = "<group>"; };
 		A1DADA0E514B5AD7EBE5C02DD982491E /* POPPropertyAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPPropertyAnimation.h; path = pop/POPPropertyAnimation.h; sourceTree = "<group>"; };
 		A1F35F5402B372822523FA8360EF6052 /* paramsd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = paramsd.h; path = TesseractOCR/include/tesseract/paramsd.h; sourceTree = "<group>"; };
@@ -1239,12 +1238,12 @@
 		A4B12D57BE6B6D2D225AE10E2B0F6EF4 /* bilateral.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bilateral.h; path = TesseractOCR/include/leptonica/bilateral.h; sourceTree = "<group>"; };
 		A52A7C60954C9ED5D01B7958834B2259 /* sudoku.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sudoku.h; path = TesseractOCR/include/leptonica/sudoku.h; sourceTree = "<group>"; };
 		A60AE609836A655E484900D67602A849 /* morph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = morph.h; path = TesseractOCR/include/leptonica/morph.h; sourceTree = "<group>"; };
-		A65A511F0B63CE44DA77EC3DD210CDBC /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
+		A65A511F0B63CE44DA77EC3DD210CDBC /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_encode.c; sourceTree = "<group>"; };
 		A764BF187A2E9A852426EFF8023CDC75 /* dict.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dict.h; path = TesseractOCR/include/tesseract/dict.h; sourceTree = "<group>"; };
 		A790E81EBDDA3D0B4C0C51D001A978DC /* G8Constants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = G8Constants.h; path = TesseractOCR/G8Constants.h; sourceTree = "<group>"; };
-		A87DA902EF4A148E38BCB4F4752E7C23 /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
+		A87DA902EF4A148E38BCB4F4752E7C23 /* POPCustomAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPCustomAnimation.mm; path = pop/POPCustomAnimation.mm; sourceTree = "<group>"; };
 		A91EB4CA7C16794000B30D5A0931D4B7 /* boxread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = boxread.h; path = TesseractOCR/include/tesseract/boxread.h; sourceTree = "<group>"; };
-		A9F558ACDDD542A44DF10344342E1C6B /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast_Swift.framework; path = "Toast-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F558ACDDD542A44DF10344342E1C6B /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Toast_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AADD541FFA25EBFA34FC416DFDDBB022 /* extern.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = extern.h; path = TesseractOCR/include/tesseract/extern.h; sourceTree = "<group>"; };
 		AAF71CBDF986DCF754F830BF68510330 /* paragraphs_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = paragraphs_internal.h; path = TesseractOCR/include/tesseract/paragraphs_internal.h; sourceTree = "<group>"; };
 		AB12149318145B5D6C438D493E21A402 /* GTLRVisionService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRVisionService.h; path = Source/GeneratedServices/Vision/GTLRVisionService.h; sourceTree = "<group>"; };
@@ -1261,7 +1260,7 @@
 		B1C1C9F896094B7B215CF308B97FCA7C /* fixspace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fixspace.h; path = TesseractOCR/include/tesseract/fixspace.h; sourceTree = "<group>"; };
 		B2346CFA6EA40478E4A5C7BB76268654 /* GTLRService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRService.h; path = Source/Objects/GTLRService.h; sourceTree = "<group>"; };
 		B294D555E8B80B2A5DBF34F9E29F25C9 /* GPBDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBDictionary.m; path = objectivec/GPBDictionary.m; sourceTree = "<group>"; };
-		B2954324ED775DE12FD38CB0A97E15A6 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleUtilities.framework; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2954324ED775DE12FD38CB0A97E15A6 /* GoogleUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C3FEBA9DFCD15DEC169C8004D17724 /* textlineprojection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = textlineprojection.h; path = TesseractOCR/include/tesseract/textlineprojection.h; sourceTree = "<group>"; };
 		B3004800E57D9DB072A2D47684EE6DE2 /* edgblob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = edgblob.h; path = TesseractOCR/include/tesseract/edgblob.h; sourceTree = "<group>"; };
 		B332F18866FD120C17A51BFDA12161E9 /* tessvars.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tessvars.h; path = TesseractOCR/include/tesseract/tessvars.h; sourceTree = "<group>"; };
@@ -1271,7 +1270,7 @@
 		B565A2524F4CCD746EAEAAC6F92B8EE4 /* GULNetworkURLSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetworkURLSession.m; path = GoogleUtilities/Network/GULNetworkURLSession.m; sourceTree = "<group>"; };
 		B5772C6F9CA50EFAD6676AF6AD478E9B /* blobclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blobclass.h; path = TesseractOCR/include/tesseract/blobclass.h; sourceTree = "<group>"; };
 		B582ED3095BD090786F2B8A7E4D90841 /* Type.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Type.pbobjc.h; path = objectivec/google/protobuf/Type.pbobjc.h; sourceTree = "<group>"; };
-		B61B65C182997825F2409149FA6EC1CE /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
+		B61B65C182997825F2409149FA6EC1CE /* POPGeometry.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPGeometry.mm; path = pop/POPGeometry.mm; sourceTree = "<group>"; };
 		B63045A51A7C74AD07F88EE1138EAABB /* FirebaseCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseCore-umbrella.h"; sourceTree = "<group>"; };
 		B702B627E19CE74CF749AB4D943EB1F7 /* char_set.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = char_set.h; path = TesseractOCR/include/tesseract/char_set.h; sourceTree = "<group>"; };
 		B70A6063FC2A22FBF82874B2C52B9688 /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
@@ -1280,7 +1279,7 @@
 		B84DF13B898974D53E9FCC98B01057A9 /* sampleiterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sampleiterator.h; path = TesseractOCR/include/tesseract/sampleiterator.h; sourceTree = "<group>"; };
 		B93454A8B838ACE8F380B0991314879A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9443DAAE9D63277CAC696501CAAE2C8 /* G8Tesseract.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = G8Tesseract.h; path = TesseractOCR/G8Tesseract.h; sourceTree = "<group>"; };
-		B992F88650CF5B0C608A0CA7A9183D31 /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = pop.framework; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B992F88650CF5B0C608A0CA7A9183D31 /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D6854827A6994ADEB73FC66D38B28F /* Pods-SpeakThruTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpeakThruTests-resources.sh"; sourceTree = "<group>"; };
 		B9F9533A396E68816485865F2FBF5138 /* GTLRBatchQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRBatchQuery.m; path = Source/Objects/GTLRBatchQuery.m; sourceTree = "<group>"; };
 		BA080C31651122E63E0FA1E49F6E51BE /* GoogleUtilities-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleUtilities-dummy.m"; sourceTree = "<group>"; };
@@ -1298,9 +1297,9 @@
 		BCAD6FE2F180F6EFF143B96091EEDB5C /* params_model.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = params_model.h; path = TesseractOCR/include/tesseract/params_model.h; sourceTree = "<group>"; };
 		BD5718EB15D3A858332D438E50A1D17B /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = CoreOnly/Sources/Firebase.h; sourceTree = "<group>"; };
 		BD866D8748ACC0F0B07DE1A85AC48FF1 /* cjkpitch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cjkpitch.h; path = TesseractOCR/include/tesseract/cjkpitch.h; sourceTree = "<group>"; };
-		BE2F58D67CE75334C6537C07358B9141 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FirebaseCore.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE2F58D67CE75334C6537C07358B9141 /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5C2E27D98608375F85587EAC6406C7 /* GoogleAPIClientForREST-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleAPIClientForREST-umbrella.h"; sourceTree = "<group>"; };
-		BE5C8F364C01282B4869FD42AE9D4A8A /* POPAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimation.mm; path = pop/POPAnimation.mm; sourceTree = "<group>"; };
+		BE5C8F364C01282B4869FD42AE9D4A8A /* POPAnimation.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimation.mm; path = pop/POPAnimation.mm; sourceTree = "<group>"; };
 		BE77519A3932B92836D9C22D4C86431E /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
 		BED48038FA317E4536344A35996E7B12 /* GPBCodedOutputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBCodedOutputStream.m; path = objectivec/GPBCodedOutputStream.m; sourceTree = "<group>"; };
 		BEF3E7B2439A96987C7CC52213ACF316 /* UIImage+G8FixOrientation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+G8FixOrientation.m"; path = "TesseractOCR/UIImage+G8FixOrientation.m"; sourceTree = "<group>"; };
@@ -1313,7 +1312,7 @@
 		C0D660AEEEB62344AEF9B30DA46F6E3D /* GTLRDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTLRDefines.h; path = Source/GTLRDefines.h; sourceTree = "<group>"; };
 		C15008A2782A041EDE6EE91D7925ACDF /* ratngs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ratngs.h; path = TesseractOCR/include/tesseract/ratngs.h; sourceTree = "<group>"; };
 		C1F950217E4F1A42278078F14F211242 /* Pods-SpeakThruTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpeakThruTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C21DBCCE38FD3AB06F9EEE71999635AF /* G8Tesseract.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = G8Tesseract.mm; path = TesseractOCR/G8Tesseract.mm; sourceTree = "<group>"; };
+		C21DBCCE38FD3AB06F9EEE71999635AF /* G8Tesseract.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = G8Tesseract.mm; path = TesseractOCR/G8Tesseract.mm; sourceTree = "<group>"; };
 		C225187A7C67A2322A5E57340D65CC95 /* char_bigrams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = char_bigrams.h; path = TesseractOCR/include/tesseract/char_bigrams.h; sourceTree = "<group>"; };
 		C227E98CD11C0CAEFA39585626A08ACC /* char_samp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = char_samp.h; path = TesseractOCR/include/tesseract/char_samp.h; sourceTree = "<group>"; };
 		C231B8137C3D32F75D103AEF7AA7AB46 /* osdetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = osdetect.h; path = TesseractOCR/include/tesseract/osdetect.h; sourceTree = "<group>"; };
@@ -1336,7 +1335,7 @@
 		C9F9F3D63564958475B529DAE82932F3 /* GULLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GULLogger.h; path = GoogleUtilities/Logger/Private/GULLogger.h; sourceTree = "<group>"; };
 		CAA55E025C212E3BED12FC93E6EDED09 /* FIRConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRConfiguration.h; path = Firebase/Core/Public/FIRConfiguration.h; sourceTree = "<group>"; };
 		CAC9BDC363FB04333975EEF70F9CCE2E /* serialis.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = serialis.h; path = TesseractOCR/include/tesseract/serialis.h; sourceTree = "<group>"; };
-		CB2A8BFF75D1AAB2350BA7F88D100AA7 /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
+		CB2A8BFF75D1AAB2350BA7F88D100AA7 /* POPAnimationTracer.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimationTracer.mm; path = pop/POPAnimationTracer.mm; sourceTree = "<group>"; };
 		CBC588796912A0196B3797C2DD6AC48A /* ocrclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocrclass.h; path = TesseractOCR/include/tesseract/ocrclass.h; sourceTree = "<group>"; };
 		CCDD546E610B5EED72B631FE8D1E18C8 /* list.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = list.h; path = TesseractOCR/include/leptonica/list.h; sourceTree = "<group>"; };
 		CD80748A4D2F6EF41D04BF198C032FA2 /* control.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = control.h; path = TesseractOCR/include/tesseract/control.h; sourceTree = "<group>"; };
@@ -1383,7 +1382,7 @@
 		D9CF28E9028DD7611DC430EAE781FEF8 /* blckerr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blckerr.h; path = TesseractOCR/include/tesseract/blckerr.h; sourceTree = "<group>"; };
 		D9CFAE6B03D77A4763DD87352154CB18 /* GPBRootObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBRootObject.m; path = objectivec/GPBRootObject.m; sourceTree = "<group>"; };
 		DA18BD5BDE8FEA1486F3784B55C3C1D8 /* arrayaccess.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = arrayaccess.h; path = TesseractOCR/include/leptonica/arrayaccess.h; sourceTree = "<group>"; };
-		DAA085A20471B17FCDE941F6F8EC5E6D /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA085A20471B17FCDE941F6F8EC5E6D /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF001ED2FC526F48F3B322867784411 /* FIRComponentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRComponentType.m; path = Firebase/Core/FIRComponentType.m; sourceTree = "<group>"; };
 		DAFD051575D28A5911AEEAF942B2FA05 /* input_file_buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = input_file_buffer.h; path = TesseractOCR/include/tesseract/input_file_buffer.h; sourceTree = "<group>"; };
 		DC04907E87C90EE6B16F38466C13E901 /* renderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = renderer.h; path = TesseractOCR/include/tesseract/renderer.h; sourceTree = "<group>"; };
@@ -1392,7 +1391,7 @@
 		DCD55970D8C7F79093E2D07ECB657443 /* language_model.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = language_model.h; path = TesseractOCR/include/tesseract/language_model.h; sourceTree = "<group>"; };
 		DD067CCDCD8E38550DD7E7A099623287 /* linefind.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = linefind.h; path = TesseractOCR/include/tesseract/linefind.h; sourceTree = "<group>"; };
 		DD94B9F292707A6AD4937C41A26F7365 /* tess_lang_mod_edge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tess_lang_mod_edge.h; path = TesseractOCR/include/tesseract/tess_lang_mod_edge.h; sourceTree = "<group>"; };
-		DDAF138FB92866A0D35F8BF8EE9D6CBE /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
+		DDAF138FB92866A0D35F8BF8EE9D6CBE /* POPAnimator.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPAnimator.mm; path = pop/POPAnimator.mm; sourceTree = "<group>"; };
 		DE0F2FDF65F7C926AEA2EE01C29B3503 /* POPCGUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPCGUtils.h; path = pop/POPCGUtils.h; sourceTree = "<group>"; };
 		DE266EB4C0E469E61C3413983203745F /* equationdetect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = equationdetect.h; path = TesseractOCR/include/tesseract/equationdetect.h; sourceTree = "<group>"; };
 		DE64E249BAB29960870428615608623A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
@@ -1401,7 +1400,7 @@
 		DFA5F66609C085E9829DA463A7E23D6D /* cube_search_object.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cube_search_object.h; path = TesseractOCR/include/tesseract/cube_search_object.h; sourceTree = "<group>"; };
 		DFD0E49F578B87DC7F4D5A4C2D3ECA15 /* G8RecognizedBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = G8RecognizedBlock.h; path = TesseractOCR/G8RecognizedBlock.h; sourceTree = "<group>"; };
 		E050436A9D694E02007E5A8A732C5142 /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
-		E084961E3CB7EC63317094294B75B85A /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
+		E084961E3CB7EC63317094294B75B85A /* POPLayerExtras.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPLayerExtras.mm; path = pop/POPLayerExtras.mm; sourceTree = "<group>"; };
 		E091ED1956DAED857AD73B0A874F7F43 /* normstrngs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = normstrngs.h; path = TesseractOCR/include/tesseract/normstrngs.h; sourceTree = "<group>"; };
 		E0AA15512BCA5C12D4706A86F5B647EA /* mod128.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mod128.h; path = TesseractOCR/include/tesseract/mod128.h; sourceTree = "<group>"; };
 		E15A7C09037938AC657E55D08256C01F /* lang_model.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lang_model.h; path = TesseractOCR/include/tesseract/lang_model.h; sourceTree = "<group>"; };
@@ -1410,7 +1409,7 @@
 		E2AFD78BB2DA8206B023D682938ECABD /* FIRAnalyticsConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRAnalyticsConfiguration.h; path = Firebase/Core/Public/FIRAnalyticsConfiguration.h; sourceTree = "<group>"; };
 		E32012DCF3F490FAF0CD71B218CF07E0 /* GTLRRuntimeCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRRuntimeCommon.m; path = Source/Objects/GTLRRuntimeCommon.m; sourceTree = "<group>"; };
 		E40B99C0DCD88F64A9DFAD9E8158A305 /* Api.pbobjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Api.pbobjc.h; path = objectivec/google/protobuf/Api.pbobjc.h; sourceTree = "<group>"; };
-		E41A4BFC50FA2EF77AC563BE0E80AB92 /* seastar_lstm_recognizer_latin_0.2.class_lst */ = {isa = PBXFileReference; includeInIndex = 1; name = seastar_lstm_recognizer_latin_0.2.class_lst; path = TextDetector/Resources/GoogleMVTextDetectorResources/seastar_lstm_recognizer_latin_0.2.class_lst; sourceTree = "<group>"; };
+		E41A4BFC50FA2EF77AC563BE0E80AB92 /* seastar_lstm_recognizer_latin_0.2.class_lst */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = seastar_lstm_recognizer_latin_0.2.class_lst; path = TextDetector/Resources/GoogleMVTextDetectorResources/seastar_lstm_recognizer_latin_0.2.class_lst; sourceTree = "<group>"; };
 		E493A0AF20F09705597E9927420FD90D /* Pods-SpeakThruTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpeakThruTests-umbrella.h"; sourceTree = "<group>"; };
 		E4E8D1CA404E8C82C02248223FD65BEA /* GPBExtensionInternals.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBExtensionInternals.m; path = objectivec/GPBExtensionInternals.m; sourceTree = "<group>"; };
 		E54ADA96E4B1EA34F62D2C28EDEA6C6E /* FIRCoreConfigurable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRCoreConfigurable.h; path = Firebase/Core/Private/FIRCoreConfigurable.h; sourceTree = "<group>"; };
@@ -1418,14 +1417,14 @@
 		E60DE91CDBDCF23F5175C41B06487B85 /* neural_net.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = neural_net.h; path = TesseractOCR/include/tesseract/neural_net.h; sourceTree = "<group>"; };
 		E66E0F9F522AFD9731878E55AB7C7465 /* bitvec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bitvec.h; path = TesseractOCR/include/tesseract/bitvec.h; sourceTree = "<group>"; };
 		E68DEE0B3F4B8B8BBAE106B4A72FCA2A /* FIRDependency.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRDependency.h; path = Firebase/Core/Private/FIRDependency.h; sourceTree = "<group>"; };
-		E6C3903112F3EBBE729F93CF13436F28 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C3903112F3EBBE729F93CF13436F28 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6DB0B053B41A3589CA539ADEE499F23 /* GoogleUtilities-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleUtilities-umbrella.h"; sourceTree = "<group>"; };
 		E737A9F5721BB24801B76E0186FDA120 /* blobgrid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blobgrid.h; path = TesseractOCR/include/tesseract/blobgrid.h; sourceTree = "<group>"; };
 		E74719403602D931AF7989BE460B1694 /* bmp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bmp.h; path = TesseractOCR/include/leptonica/bmp.h; sourceTree = "<group>"; };
 		E7BD8236CA1F57EAF5C0A3B425FD53A5 /* GPBUnknownFieldSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBUnknownFieldSet.h; path = objectivec/GPBUnknownFieldSet.h; sourceTree = "<group>"; };
 		E82043B58029F4CEFEA1C5267D511866 /* tesseract_cube_combiner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tesseract_cube_combiner.h; path = TesseractOCR/include/tesseract/tesseract_cube_combiner.h; sourceTree = "<group>"; };
 		E8ED68A8D8101867FBAFE98DEC095BB5 /* Toast-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.xcconfig"; sourceTree = "<group>"; };
-		E98EAB22354CCB07F14C12AC29D0326D /* region_proposal_text_detector_tfmini_gray_quantized.bincfg */ = {isa = PBXFileReference; includeInIndex = 1; name = region_proposal_text_detector_tfmini_gray_quantized.bincfg; path = TextDetector/Resources/GoogleMVTextDetectorResources/region_proposal_text_detector_tfmini_gray_quantized.bincfg; sourceTree = "<group>"; };
+		E98EAB22354CCB07F14C12AC29D0326D /* region_proposal_text_detector_tfmini_gray_quantized.bincfg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = region_proposal_text_detector_tfmini_gray_quantized.bincfg; path = TextDetector/Resources/GoogleMVTextDetectorResources/region_proposal_text_detector_tfmini_gray_quantized.bincfg; sourceTree = "<group>"; };
 		E9FC91936F6C4CDD7E65D4A4E6D43B20 /* FIRLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRLogger.h; path = Firebase/Core/Private/FIRLogger.h; sourceTree = "<group>"; };
 		EA15855A7D26A1EA7A61B49212C95D94 /* bbuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bbuffer.h; path = TesseractOCR/include/leptonica/bbuffer.h; sourceTree = "<group>"; };
 		EA64224899C37C62175D58C1F9EABC4E /* jbclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = jbclass.h; path = TesseractOCR/include/leptonica/jbclass.h; sourceTree = "<group>"; };
@@ -1442,7 +1441,7 @@
 		EDB216CC2FDD10443EC6BF6776E5EC54 /* genericvector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = genericvector.h; path = TesseractOCR/include/tesseract/genericvector.h; sourceTree = "<group>"; };
 		EDD2A118BC54C5CF120F63CF449CD02B /* con_comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = con_comp.h; path = TesseractOCR/include/tesseract/con_comp.h; sourceTree = "<group>"; };
 		EE1052D700CC75F3A1D750996011376F /* FIRErrors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRErrors.m; path = Firebase/Core/FIRErrors.m; sourceTree = "<group>"; };
-		EE41D6BF304F1114D24A5374754976C3 /* Pods_SpeakThru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpeakThru.framework; path = "Pods-SpeakThru.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE41D6BF304F1114D24A5374754976C3 /* Pods_SpeakThru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeakThru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE6650450173E9CD325898A1C6886AD5 /* ltrresultiterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ltrresultiterator.h; path = TesseractOCR/include/tesseract/ltrresultiterator.h; sourceTree = "<group>"; };
 		EF2214218192CA3DC3BE32C691C02261 /* GTLRErrorObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTLRErrorObject.m; path = Source/Objects/GTLRErrorObject.m; sourceTree = "<group>"; };
 		EFE6A75E356A306CA1E3C9988659B5AD /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
@@ -1450,18 +1449,18 @@
 		F0128F01D28BF6B06200FCAD77F279D5 /* xform2d.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xform2d.h; path = TesseractOCR/include/tesseract/xform2d.h; sourceTree = "<group>"; };
 		F01E33DC5B61AC5A501EF4FB05344C2D /* pop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = pop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1678FBE8CE205EC7620936637C7169B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1A9564EAD4CAD87E917CBA826EC5837 /* Koloda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Koloda.framework; path = Koloda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A9564EAD4CAD87E917CBA826EC5837 /* Koloda.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Koloda.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B0A9EFAA598FAA109845D232EC4C8E /* devanagari_processing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = devanagari_processing.h; path = TesseractOCR/include/tesseract/devanagari_processing.h; sourceTree = "<group>"; };
 		F26907CEB7E24BDA4A8C36F0ABB38458 /* vecfuncs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vecfuncs.h; path = TesseractOCR/include/tesseract/vecfuncs.h; sourceTree = "<group>"; };
 		F2C3C4C47876BDEBADA25744A144E3DE /* GPBCodedInputStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBCodedInputStream.h; path = objectivec/GPBCodedInputStream.h; sourceTree = "<group>"; };
 		F2DDF01689A8B6CBBBDA7089462396B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F2DE6B5613650F179ADA0E32E1075900 /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
-		F3F7549000F152E9C66C23A69884A668 /* POPMath.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = POPMath.mm; path = pop/POPMath.mm; sourceTree = "<group>"; };
+		F3F7549000F152E9C66C23A69884A668 /* POPMath.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = POPMath.mm; path = pop/POPMath.mm; sourceTree = "<group>"; };
 		F410EEC751509D05AEF4EAA2D5E3D256 /* trie.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = trie.h; path = TesseractOCR/include/tesseract/trie.h; sourceTree = "<group>"; };
 		F4A6D5A4354E6F0FCEE333A484A46230 /* GPBCodedOutputStream_PackagePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GPBCodedOutputStream_PackagePrivate.h; path = objectivec/GPBCodedOutputStream_PackagePrivate.h; sourceTree = "<group>"; };
 		F5557B825EE30CA8A90501512F058365 /* POPAnimationTracerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPAnimationTracerInternal.h; path = pop/POPAnimationTracerInternal.h; sourceTree = "<group>"; };
 		F593D6251DAC3F8902740164C9F174EF /* FIRVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRVersion.h; path = Firebase/Core/Private/FIRVersion.h; sourceTree = "<group>"; };
-		F5BECF16DEFF8A30A2EFC29BFB4FE77D /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
+		F5BECF16DEFF8A30A2EFC29BFB4FE77D /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; path = pb_common.c; sourceTree = "<group>"; };
 		F69258146AA1BD92148217480CC17C3C /* search_object.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = search_object.h; path = TesseractOCR/include/tesseract/search_object.h; sourceTree = "<group>"; };
 		F73172EBA102DA82E0813B1309803C83 /* blamer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blamer.h; path = TesseractOCR/include/tesseract/blamer.h; sourceTree = "<group>"; };
 		F7375D8592A2D7F14D1CB4DD4740FBD5 /* POPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = POPDefines.h; path = pop/POPDefines.h; sourceTree = "<group>"; };
@@ -1471,7 +1470,7 @@
 		F8AB4344BAA9A8AA936A98567322BE0A /* Pods-SpeakThruTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SpeakThruTests.modulemap"; sourceTree = "<group>"; };
 		F916AF0A5ED5363DE6276E05E4CF8FDD /* pop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "pop-prefix.pch"; sourceTree = "<group>"; };
 		F91C2E315FAED49B5BA95DBD572185F0 /* svmnode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = svmnode.h; path = TesseractOCR/include/tesseract/svmnode.h; sourceTree = "<group>"; };
-		F94B244ED31C249BB832B7A24C173B3B /* tfmini_latin_lstm_model.data_fp16 */ = {isa = PBXFileReference; includeInIndex = 1; name = tfmini_latin_lstm_model.data_fp16; path = TextDetector/Resources/GoogleMVTextDetectorResources/tfmini_latin_lstm_model.data_fp16; sourceTree = "<group>"; };
+		F94B244ED31C249BB832B7A24C173B3B /* tfmini_latin_lstm_model.data_fp16 */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = tfmini_latin_lstm_model.data_fp16; path = TextDetector/Resources/GoogleMVTextDetectorResources/tfmini_latin_lstm_model.data_fp16; sourceTree = "<group>"; };
 		FA323406470D214017B5A6E37DDC94E6 /* FIRAppAssociationRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRAppAssociationRegistration.m; path = Firebase/Core/FIRAppAssociationRegistration.m; sourceTree = "<group>"; };
 		FB4608FDEB090A7BA35B94F4935B307A /* Pods-SpeakThru-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpeakThru-resources.sh"; sourceTree = "<group>"; };
 		FB9A8F6CD5449ED9A4D58D449010A86D /* GPBCodedInputStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GPBCodedInputStream.m; path = objectivec/GPBCodedInputStream.m; sourceTree = "<group>"; };
@@ -1619,7 +1618,6 @@
 				AE33D82C0674F33DCFFB321A93EAEBBE /* Support Files */,
 				646562F9F5C8A56A2642741F372831C1 /* TextDetector */,
 			);
-			name = GoogleMobileVision;
 			path = GoogleMobileVision;
 			sourceTree = "<group>";
 		};
@@ -1690,7 +1688,6 @@
 				94026C288FED6B661396FF556CDD028A /* Wrappers.pbobjc.m */,
 				CAD7B0438D66C145660DA92142CC6D6B /* Support Files */,
 			);
-			name = Protobuf;
 			path = Protobuf;
 			sourceTree = "<group>";
 		};
@@ -1835,7 +1832,6 @@
 				56125367E79354CF09D16133147B2F87 /* UnitBezier.h */,
 				C90F170C60E38ED28A4E37B622BA9C6F /* Support Files */,
 			);
-			name = pop;
 			path = pop;
 			sourceTree = "<group>";
 		};
@@ -1844,7 +1840,6 @@
 			children = (
 				0FD7B4F19B6FC861635B54616BFA0D40 /* CoreOnly */,
 			);
-			name = Firebase;
 			path = Firebase;
 			sourceTree = "<group>";
 		};
@@ -1876,7 +1871,6 @@
 			children = (
 				2EB33E8782671F3E37118708F5CBBE1B /* Frameworks */,
 			);
-			name = FirebaseInstanceID;
 			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
@@ -1912,7 +1906,6 @@
 				19D09E27D2D8215A0127D228ED591183 /* Toast.swift */,
 				4885A6736DC2C87FF287DDCF2960CF33 /* Support Files */,
 			);
-			name = "Toast-Swift";
 			path = "Toast-Swift";
 			sourceTree = "<group>";
 		};
@@ -1982,7 +1975,6 @@
 			children = (
 				B10D8C148DC13CDD43F1684CE878DF22 /* Frameworks */,
 			);
-			name = FirebaseMLVision;
 			path = FirebaseMLVision;
 			sourceTree = "<group>";
 		};
@@ -1993,7 +1985,6 @@
 				9E5C130B1633412FBF944310DCC45239 /* Support Files */,
 				BD26F76087949518A0B571065C4E7510 /* Vision */,
 			);
-			name = GoogleAPIClientForREST;
 			path = GoogleAPIClientForREST;
 			sourceTree = "<group>";
 		};
@@ -2024,7 +2015,6 @@
 				6C3872B9C4C2D3495118387AF4569D15 /* SwipeResultDirection.swift */,
 				7EBA67B0473A388A1F8719D97D87A3F2 /* Support Files */,
 			);
-			name = Koloda;
 			path = Koloda;
 			sourceTree = "<group>";
 		};
@@ -2156,7 +2146,6 @@
 				FD1295C1B6AA7901DBE274E700B1C7F1 /* Reachability */,
 				73BCC85FAD15E14B879A4A1E0340CDF9 /* Support Files */,
 			);
-			name = GoogleUtilities;
 			path = GoogleUtilities;
 			sourceTree = "<group>";
 		};
@@ -2179,7 +2168,6 @@
 			children = (
 				746D15BC829C92C7D3B038AE9ADD1F78 /* Frameworks */,
 			);
-			name = FirebaseAnalytics;
 			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
@@ -2190,7 +2178,6 @@
 				614129166D251332B3DAE0B61F5BB6D1 /* Full */,
 				5C2F40E98D1D61B8F627C9FD123E665F /* Support Files */,
 			);
-			name = GTMSessionFetcher;
 			path = GTMSessionFetcher;
 			sourceTree = "<group>";
 		};
@@ -2642,7 +2629,6 @@
 				D4C6551480E4247CD11566F741451A8B /* Frameworks */,
 				3742870884DDC3C5BF77694D8E0FC1D3 /* Support Files */,
 			);
-			name = TesseractOCRiOS;
 			path = TesseractOCRiOS;
 			sourceTree = "<group>";
 		};
@@ -2651,7 +2637,6 @@
 			children = (
 				0D828858B8727BB9E150134E7A5121AB /* Frameworks */,
 			);
-			name = FirebaseMLVisionTextModel;
 			path = FirebaseMLVisionTextModel;
 			sourceTree = "<group>";
 		};
@@ -2683,7 +2668,6 @@
 				3040B43015E8A661AABFF9C77A8251ED /* encode */,
 				A4982BB0DD4E41395BA0AEB6493009F7 /* Support Files */,
 			);
-			name = nanopb;
 			path = nanopb;
 			sourceTree = "<group>";
 		};
@@ -2706,7 +2690,6 @@
 			children = (
 				7D97392778D82B3AE7968E5A56DBFD1D /* Frameworks */,
 			);
-			name = GoogleAppMeasurement;
 			path = GoogleAppMeasurement;
 			sourceTree = "<group>";
 		};
@@ -2816,7 +2799,6 @@
 				9CF677DAD3A884BA4BAF445CD063BF7A /* FIRVersion.m */,
 				4FEB3A7A9A89B86ED40EE513D2D118C1 /* Support Files */,
 			);
-			name = FirebaseCore;
 			path = FirebaseCore;
 			sourceTree = "<group>";
 		};
@@ -2825,7 +2807,6 @@
 			children = (
 				3EEEEDC0F335B93370188F61B64CC0E0 /* Frameworks */,
 			);
-			name = FirebaseMLCommon;
 			path = FirebaseMLCommon;
 			sourceTree = "<group>";
 		};
@@ -2837,7 +2818,6 @@
 				6B9328E952ADC413DDC6886A46ECDFA0 /* NSData+zlib */,
 				25690750792946191958E9043E0EBA15 /* Support Files */,
 			);
-			name = GoogleToolboxForMac;
 			path = GoogleToolboxForMac;
 			sourceTree = "<group>";
 		};
@@ -3189,7 +3169,6 @@
 				26428E42F95B11D658BBDFA60E2536ED /* commandlineflags.h in Headers */,
 				E4CE568F4E83F9789B91BAA31A18EA8D /* commontraining.h in Headers */,
 				723ACF98ECC643C3E26BA4D45DA1D48E /* con_comp.h in Headers */,
-				A11A12EEB8E9AF69F4C1C0D1B6CC2739 /* config_auto.h in Headers */,
 				190222F106E883817B1D55A0213747A6 /* config_auto.h in Headers */,
 				6591C5BF93B317CF4EB69FAB9F140E3B /* const.h in Headers */,
 				8319C781887F8EFB8CB4AF2EDD696078 /* control.h in Headers */,
@@ -4200,6 +4179,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GTMSessionFetcher/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4231,6 +4211,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/Koloda/Koloda-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Koloda/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4264,6 +4245,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/TesseractOCRiOS/TesseractOCRiOS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TesseractOCRiOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4295,6 +4277,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -4326,6 +4309,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4349,6 +4333,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GoogleMobileVision";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Target Support Files/GoogleMobileVision/ResourceBundle-GoogleMVTextDetectorResources-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = GoogleMVTextDetectorResources;
@@ -4374,6 +4359,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-SpeakThruTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -4409,6 +4395,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-SpeakThruTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -4443,6 +4430,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-SpeakThru/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -4477,6 +4465,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4512,6 +4501,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-SpeakThru/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -4546,6 +4536,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4578,6 +4569,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/Protobuf/Protobuf-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Protobuf/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4610,6 +4602,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/pop/pop-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/pop/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4704,6 +4697,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GTMSessionFetcher/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4736,6 +4730,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/GoogleUtilities/GoogleUtilities-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GoogleUtilities/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4768,6 +4763,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/GoogleAPIClientForREST/GoogleAPIClientForREST-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GoogleAPIClientForREST/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4799,6 +4795,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4831,6 +4828,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/nanopb/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4863,6 +4861,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/pop/pop-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/pop/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4895,6 +4894,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/Koloda/Koloda-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Koloda/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4927,6 +4927,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/Protobuf/Protobuf-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Protobuf/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4958,6 +4959,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/GoogleUtilities/GoogleUtilities-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GoogleUtilities/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -4989,6 +4991,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/TesseractOCRiOS/TesseractOCRiOS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TesseractOCRiOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -5021,6 +5024,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/nanopb/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -5052,6 +5056,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Target Support Files/GoogleAPIClientForREST/GoogleAPIClientForREST-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GoogleAPIClientForREST/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -5084,6 +5089,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -5106,6 +5112,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/GoogleMobileVision";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "Target Support Files/GoogleMobileVision/ResourceBundle-GoogleMVTextDetectorResources-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = GoogleMVTextDetectorResources;

@@ -129,7 +129,7 @@ final class STDatabaseImpl: STDatabase {
         standardDefaults.set(encodedData, forKey: dictKey)
         standardDefaults.set(false, forKey: firstLaunchKey)
         standardDefaults.set(targetLanguage, forKey: targetLangKey)
-        standardDefaults.set(recognizerType, forKey: recognizerTypeKey)
+        standardDefaults.set(string(from: recognizerType), forKey: recognizerTypeKey)
         standardDefaults.synchronize()
     }
     
@@ -148,6 +148,6 @@ final class STDatabaseImpl: STDatabase {
         return standardDefaults.value(forKey: targetLangKey) as! String
     }()
     private lazy var recognizerType: RecognizerType = {
-        return standardDefaults.value(forKey: recognizerTypeKey) as? RecognizerType ?? .firebase
+        return type(from: standardDefaults.value(forKey: recognizerTypeKey) as! String)
     }()
 }

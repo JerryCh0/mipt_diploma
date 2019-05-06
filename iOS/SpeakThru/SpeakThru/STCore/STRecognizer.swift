@@ -8,27 +8,11 @@
 
 import Foundation
 import Firebase
-
-private let TypeToString = [
-    RecognizerType.firebase : "Firebase",
-    RecognizerType.myOwn : "Собственный"
-]
-
-func allRecognizers() -> [RecognizerType] {
-    return Array(TypeToString.keys)
-}
-
-func string(from type: RecognizerType) -> String {
-    return TypeToString[type] ?? ""
-}
+import Vision
+import TesseractOCR
 
 protocol STRecognizerDelegate: class {
     func onRecognized(from photo: UIImage, text: String, lang: String)
-}
-
-enum RecognizerType {
-    case firebase
-    case myOwn
 }
 
 private protocol Recognizer: class {
@@ -38,11 +22,14 @@ private protocol Recognizer: class {
 final class STRecognizer: Recognizer, STRecognizerDelegate {
     
     func recognize(from image: UIImage) {
+        vision.delegate = self
+        box.delegate = self
         switch type {
         case .firebase:
             firebaseRecognizer.recognize(from: image)
-        case .myOwn:
-            myOwnRecognizer.recognize(from: image)
+        case .vision:
+            vision.makeRequest(image: image)
+            //visionRecognizer.recognize(from: image)
         }
     }
     
@@ -63,12 +50,47 @@ final class STRecognizer: Recognizer, STRecognizerDelegate {
         rec.coreRecognizer = self
         return rec
     }()
-    private lazy var myOwnRecognizer: STFirebaseRecognizer = {
+    private lazy var visionRecognizer: STFirebaseRecognizer = {
         let rec = STFirebaseRecognizer()
         rec.coreRecognizer = self
         return rec
     }()
+    private lazy var vision = STVision()
+    private lazy var box = BoxService()
+    private lazy var tesseract = G8Tesseract(language: "eng")!
 }
+
+extension STRecognizer: STVisionDelegate {
+    func service(_ version: STVision, didDetect image: UIImage, results: [VNTextObservation]) {
+        box.handle(image: image, results: results)
+    }
+}
+
+extension STRecognizer: BoxServiceDelegate {
+    
+    func boxService(_ service: BoxService, didDetect images: [UIImage], on image: UIImage) {
+        parse(photo: image, images: images)
+    }
+    
+    private func parse(photo: UIImage, images: [UIImage]) {
+        let tesseract = G8Tesseract(language: "eng")!
+        tesseract.engineMode = .tesseractCubeCombined
+        tesseract.pageSegmentationMode = .singleLine
+        
+        var result = ""
+        
+        for image in images {
+            tesseract.image = image.g8_blackAndWhite()
+            if tesseract.recognize() {
+                result += " " + tesseract.recognizedText
+            }
+        }
+        
+        delegate?.onRecognized(from: photo, text: result, lang: "en")
+    }
+}
+
+// MARK: -FirebaseRecognizer
 
 private final class STFirebaseRecognizer {
     
@@ -90,4 +112,33 @@ private final class STFirebaseRecognizer {
     private lazy var cloudTextRecognizer = vision.cloudTextRecognizer()
     
     weak var coreRecognizer: STRecognizer?
+}
+
+// MARK: -RecognizerType
+
+enum RecognizerType {
+    case firebase
+    case vision
+}
+
+private let TypeToString = [
+    RecognizerType.firebase : "Firebase",
+    RecognizerType.vision : "Vision+Tesseract"
+]
+
+func allRecognizers() -> [RecognizerType] {
+    return Array(TypeToString.keys)
+}
+
+func string(from type: RecognizerType) -> String {
+    return TypeToString[type] ?? ""
+}
+
+func type(from string: String) -> RecognizerType {
+    for (key, value) in TypeToString {
+        if value == string {
+            return key
+        }
+    }
+    return .firebase
 }
