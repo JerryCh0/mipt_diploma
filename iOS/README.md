@@ -17,4 +17,5 @@ This directory includes iOS project files and all misc files connected with iOS 
 - [x] Choose and connect database
 - [x] Connect Google Translator API
 - [x] Connect Firebase Recognizer module
-- [ ] to be continued...
+- [ ] Implement own recognition and connect
+- [ ] Testing
