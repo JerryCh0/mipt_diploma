@@ -11,7 +11,7 @@ target 'SpeakThru' do
 	pod 'Toast-Swift'
     	pod 'Firebase/MLVision'
 	pod 'Firebase/MLVisionTextModel'
-
+	pod 'TesseractOCRiOS'
     target 'SpeakThruTests' do
     inherit! :search_paths
     # Pods for testing

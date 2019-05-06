@@ -18,6 +18,7 @@
 		0A130948222A749E0098433D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A130946222A749E0098433D /* LaunchScreen.storyboard */; };
 		0A130953222A749E0098433D /* SpeakThruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A130952222A749E0098433D /* SpeakThruTests.swift */; };
 		0A280105223309F00087C228 /* STMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A280104223309F00087C228 /* STMainVC.swift */; };
+		0A3D00F22280426900E44063 /* STVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D00F12280426900E44063 /* STVision.swift */; };
 		0A68FA79227AE85500E9414E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A68FA78227AE85500E9414E /* GoogleService-Info.plist */; };
 		0A759E0B226F36A300497CA6 /* Rationale-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2801032233079E0087C228 /* Rationale-Regular.ttf */; };
 		0A9AAECA22708C3F009CF722 /* UITextView+CenterVertically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */; };
@@ -67,6 +68,7 @@
 		0A130954222A749E0098433D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A2801032233079E0087C228 /* Rationale-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rationale-Regular.ttf"; sourceTree = "<group>"; };
 		0A280104223309F00087C228 /* STMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STMainVC.swift; sourceTree = "<group>"; };
+		0A3D00F12280426900E44063 /* STVision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STVision.swift; sourceTree = "<group>"; };
 		0A68FA78227AE85500E9414E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+CenterVertically.swift"; sourceTree = "<group>"; };
 		0AB1DE8E227C3D17007D166B /* STSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingVC.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				0AF0DC732271C53A00158E8F /* STCameraController.swift */,
 				0AF0DC752271D11E00158E8F /* STRecognizer.swift */,
 				0ADDF695227AF9EB00F5B50A /* STGoogleTranslator.swift */,
+				0A3D00F12280426900E44063 /* STVision.swift */,
 			);
 			path = STCore;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
 				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
@@ -442,6 +446,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
@@ -492,6 +497,7 @@
 				0A13093E222A749C0098433D /* AppDelegate.swift in Sources */,
 				0AD1E1FC2233B53C00FE7101 /* STButton.swift in Sources */,
 				0A05F7362270685A00F72B62 /* STTranslationView.swift in Sources */,
+				0A3D00F22280426900E44063 /* STVision.swift in Sources */,
 				0A280105223309F00087C228 /* STMainVC.swift in Sources */,
 				0AD1E1F72233AE1000FE7101 /* STRouter.swift in Sources */,
 				0ADDF698227B2FBB00F5B50A /* STSettingsViewModel.swift in Sources */,

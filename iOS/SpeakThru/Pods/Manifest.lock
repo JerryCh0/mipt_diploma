@@ -87,6 +87,7 @@ PODS:
   - nanopb/encode (0.3.8)
   - pop (1.0.10)
   - Protobuf (3.6.1)
+  - TesseractOCRiOS (4.0.0)
   - Toast-Swift (4.0.0)
 
 DEPENDENCIES:
@@ -94,6 +95,7 @@ DEPENDENCIES:
   - Firebase/MLVision
   - Firebase/MLVisionTextModel
   - Koloda
+  - TesseractOCRiOS
   - Toast-Swift
 
 SPEC REPOS:
@@ -115,6 +117,7 @@ SPEC REPOS:
     - nanopb
     - pop
     - Protobuf
+    - TesseractOCRiOS
     - Toast-Swift
 
 SPEC CHECKSUMS:
@@ -135,8 +138,9 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
+  TesseractOCRiOS: 90638afbe43d082433f2e76b384c7901d23956df
   Toast-Swift: 594b5c5e5129f15438e410207e43287f027b3c00
 
-PODFILE CHECKSUM: c0dc5ad49a43377806442c81e1c87293d4ff9873
+PODFILE CHECKSUM: a5db0cdeb8497a4733f937cf7cbfa36bb27c9cac
 
 COCOAPODS: 1.5.3
