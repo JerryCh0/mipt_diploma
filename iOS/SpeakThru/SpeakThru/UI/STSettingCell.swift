@@ -112,9 +112,9 @@ private struct STLayout {
                 height: labelHeight
             )
             let detailedTextFrame = CGRect(
-                x: frame.maxX - 12 - 64,
+                x: frame.maxX - 12 - 128,
                 y: frame.midY - labelHeight / 2,
-                width: 64,
+                width: 128,
                 height: labelHeight
             )
             return STLayout(mainTextFrame: mainTextFrame, detailedTextFrame: detailedTextFrame)

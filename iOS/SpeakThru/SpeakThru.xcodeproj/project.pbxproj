@@ -12,6 +12,7 @@
 		0A05F73422704D2E00F72B62 /* STBookmarksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05F73322704D2E00F72B62 /* STBookmarksVC.swift */; };
 		0A05F7362270685A00F72B62 /* STTranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05F7352270685A00F72B62 /* STTranslationView.swift */; };
 		0A05F739227068A800F72B62 /* STTranslation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A05F738227068A800F72B62 /* STTranslation.swift */; };
+		0A0D7E3C22801C070005CFCF /* Lang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0D7E3B22801C070005CFCF /* Lang.swift */; };
 		0A13093E222A749C0098433D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A13093D222A749C0098433D /* AppDelegate.swift */; };
 		0A130945222A749E0098433D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A130944222A749E0098433D /* Images.xcassets */; };
 		0A130948222A749E0098433D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A130946222A749E0098433D /* LaunchScreen.storyboard */; };
@@ -34,7 +35,7 @@
 		0AEDBBA322514E45000CE43F /* STSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEDBBA222514E45000CE43F /* STSettingsVC.swift */; };
 		0AF0DC7222719E5B00158E8F /* STDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0DC7122719E5B00158E8F /* STDatabase.swift */; };
 		0AF0DC742271C53A00158E8F /* STCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0DC732271C53A00158E8F /* STCameraController.swift */; };
-		0AF0DC762271D11E00158E8F /* STFirebaseRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0DC752271D11E00158E8F /* STFirebaseRecognizer.swift */; };
+		0AF0DC762271D11E00158E8F /* STRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF0DC752271D11E00158E8F /* STRecognizer.swift */; };
 		4A29AAAB7A8E5ECB405F1F34 /* Pods_SpeakThru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF1108AC15768D0CB235D76 /* Pods_SpeakThru.framework */; };
 		508290961A63AB414B6CA813 /* Pods_SpeakThruTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3361E05BF9FC5480081ECF /* Pods_SpeakThruTests.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		0A05F73322704D2E00F72B62 /* STBookmarksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STBookmarksVC.swift; sourceTree = "<group>"; };
 		0A05F7352270685A00F72B62 /* STTranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTranslationView.swift; sourceTree = "<group>"; };
 		0A05F738227068A800F72B62 /* STTranslation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTranslation.swift; sourceTree = "<group>"; };
+		0A0D7E3B22801C070005CFCF /* Lang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lang.swift; sourceTree = "<group>"; };
 		0A13093A222A749C0098433D /* SpeakThru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeakThru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A13093D222A749C0098433D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A130944222A749E0098433D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -81,7 +83,7 @@
 		0AEDBBA222514E45000CE43F /* STSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingsVC.swift; sourceTree = "<group>"; };
 		0AF0DC7122719E5B00158E8F /* STDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STDatabase.swift; sourceTree = "<group>"; };
 		0AF0DC732271C53A00158E8F /* STCameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCameraController.swift; sourceTree = "<group>"; };
-		0AF0DC752271D11E00158E8F /* STFirebaseRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STFirebaseRecognizer.swift; sourceTree = "<group>"; };
+		0AF0DC752271D11E00158E8F /* STRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STRecognizer.swift; sourceTree = "<group>"; };
 		475F318D136623AD2DBAC4CC /* Pods-SpeakThru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakThru.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeakThru/Pods-SpeakThru.debug.xcconfig"; sourceTree = "<group>"; };
 		5F3361E05BF9FC5480081ECF /* Pods_SpeakThruTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeakThruTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		948F426638F81E8F47511E1C /* Pods-SpeakThru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeakThru.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeakThru/Pods-SpeakThru.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				0A130946222A749E0098433D /* LaunchScreen.storyboard */,
 				0A05F72D2270457100F72B62 /* AboutScreen.storyboard */,
 				0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */,
+				0A0D7E3B22801C070005CFCF /* Lang.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -229,7 +232,7 @@
 				0AD1E1F62233AE1000FE7101 /* STRouter.swift */,
 				0AD1E1FD2233B6C100FE7101 /* STRouting.swift */,
 				0AF0DC732271C53A00158E8F /* STCameraController.swift */,
-				0AF0DC752271D11E00158E8F /* STFirebaseRecognizer.swift */,
+				0AF0DC752271D11E00158E8F /* STRecognizer.swift */,
 				0ADDF695227AF9EB00F5B50A /* STGoogleTranslator.swift */,
 			);
 			path = STCore;
@@ -481,6 +484,7 @@
 				0AEDBBA322514E45000CE43F /* STSettingsVC.swift in Sources */,
 				0AD1E1F42233AA9D00FE7101 /* STApp.swift in Sources */,
 				0AD1E1F22233A9CA00FE7101 /* STAppContext.swift in Sources */,
+				0A0D7E3C22801C070005CFCF /* Lang.swift in Sources */,
 				0ADDF696227AF9EB00F5B50A /* STGoogleTranslator.swift in Sources */,
 				0AEDBBA122514B75000CE43F /* STStyleKit.swift in Sources */,
 				0AF0DC7222719E5B00158E8F /* STDatabase.swift in Sources */,
@@ -491,7 +495,7 @@
 				0A280105223309F00087C228 /* STMainVC.swift in Sources */,
 				0AD1E1F72233AE1000FE7101 /* STRouter.swift in Sources */,
 				0ADDF698227B2FBB00F5B50A /* STSettingsViewModel.swift in Sources */,
-				0AF0DC762271D11E00158E8F /* STFirebaseRecognizer.swift in Sources */,
+				0AF0DC762271D11E00158E8F /* STRecognizer.swift in Sources */,
 				0A05F7302270476F00F72B62 /* STAboutVC.swift in Sources */,
 				0A05F73422704D2E00F72B62 /* STBookmarksVC.swift in Sources */,
 				0AB1DE91227C4142007D166B /* STSettingCell.swift in Sources */,

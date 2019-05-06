@@ -15,6 +15,7 @@ final class STAppContext: NSObject {
         if database.isApplicationRunsFirstTime() {
             guard let code = Locale.current.languageCode else { return }
             database.set(targetLang: code)
+            database.set(recognizerType: .firebase)
         }
     }
     

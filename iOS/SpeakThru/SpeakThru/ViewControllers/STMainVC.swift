@@ -25,7 +25,7 @@ final class STMainVC: UIViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
         self.cameraController.delegate = self
-        self.firebaseRecognizer.delegate = self
+        self.recognizer.delegate = self
         
         self.settingsButton.set {
             Analytics.logEvent("settings_button_tap", parameters: nil)
@@ -73,6 +73,7 @@ final class STMainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         STApp.shared.database.add(listener: self)
+        recognizer.type = STApp.shared.database.getRecognizerType()
         addSubviews()
     }
     
@@ -143,7 +144,7 @@ final class STMainVC: UIViewController {
     private let listenerId = UUID().uuidString
     
     private let cameraController = STCameraController()
-    private let firebaseRecognizer = STFirebaseRecognizer()
+    private let recognizer = STRecognizer()
     
     private var state: MainVCState = .capturing {
         willSet {
@@ -172,27 +173,29 @@ extension STMainVC: STDatabaseListener {
             trans.isSaved = false
             translationView.set(translation: trans)
         }
+        recognizer.type = STApp.shared.database.getRecognizerType()
     }
 }
 
 extension STMainVC: STCameraControllerDelegate {
     func didCapture(photo: UIImage) {
         translationView.beginRecognition(with: photo)
-        firebaseRecognizer.recognize(from: photo)
+        recognizer.recognize(from: photo)
     }
 }
 
-extension STMainVC: STFirebaseRecognizerDelegate {
+extension STMainVC: STRecognizerDelegate {
     
     func onRecognized(from photo: UIImage, text: String, lang: String) {
-        STGoogleTranslator.shared.translate(text, "ru", lang) { (translatedText, error) in
+        let targetLang = STApp.shared.database.getTargetLang()
+        STGoogleTranslator.shared.translate(text, targetLang, lang) { (translatedText, error) in
             guard error == nil, let trText = translatedText else { return }
             let translation = STTranslation(
                 imageToTranslate: photo,
                 translatedText: trText,
                 isSaved: false,
-                fromLanguage: lang.uppercased(),
-                toLanguage: "RU"
+                fromLanguage: lang.prefix(2).uppercased(),
+                toLanguage: targetLang.uppercased()
             )
             
             DispatchQueue.main.async {

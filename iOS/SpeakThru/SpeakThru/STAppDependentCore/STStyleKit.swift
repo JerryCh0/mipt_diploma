@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 final class STStyleKit {
     
@@ -27,6 +28,12 @@ final class STStyleKit {
     static let shutterImage = UIImage(named: "STButtonShutter")!
     static let arrowImage = UIImage(named: "STArrow")!
     
+    static let toastStyle: ToastStyle = {
+        var style = ToastStyle()
+        style.backgroundColor = STColor.greyBlue
+        style.messageColor = STColor.neonBlue
+        return style
+    }()
 }
 
 final class STColor : UIColor {

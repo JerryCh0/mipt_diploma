@@ -27,7 +27,12 @@ final class STSettingsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        STApp.shared.database.add(listener: self)
         setupUI()
+    }
+    
+    deinit {
+        STApp.shared.database.remove(listener: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -125,6 +130,8 @@ final class STSettingsVC: UIViewController {
     private let titleLabel = UILabel()
     private let aboutButton = UIButton()
     private let tableView = UITableView()
+    
+    private let listenerId = UUID().uuidString
 
     private lazy var items = STSettingsViewModelFactory.buildMainSettings()
 }
@@ -170,6 +177,17 @@ extension STSettingsVC: UITableViewDelegate {
         case let .textCell(_, action):
             action()
         }
+    }
+}
+
+extension STSettingsVC: STDatabaseListener {
+    func onDataUpdated() {
+        items = STSettingsViewModelFactory.buildMainSettings()
+        tableView.reloadData()
+    }
+    
+    func id() -> String {
+        return listenerId
     }
 }
 

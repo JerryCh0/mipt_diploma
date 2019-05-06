@@ -156,9 +156,11 @@ final class STTranslationView: UIView {
         arrowImageView.image = STStyleKit.arrowImage
         
         fromLanguageLabel.textColor = STColor.neonBlue
+        fromLanguageLabel.textAlignment = .center
         fromLanguageLabel.font = STStyleKit.rationaleFont(of: 18)
         
         toLanguageLabel.textColor = STColor.neonBlue
+        toLanguageLabel.textAlignment = .center
         toLanguageLabel.font = STStyleKit.rationaleFont(of: 18)
         
         activityIndicator.color = STColor.neonBlue
@@ -198,7 +200,7 @@ final class STTranslationView: UIView {
             position: .center,
             title: nil,
             image: nil,
-            style: toastStyle,
+            style: STStyleKit.toastStyle,
             completion: nil
         )
     }
@@ -223,7 +225,7 @@ final class STTranslationView: UIView {
                     position: .center,
                     title: nil,
                     image: nil,
-                    style: toastStyle,
+                    style: STStyleKit.toastStyle,
                     completion: nil
                 )
             } else {
@@ -247,13 +249,6 @@ final class STTranslationView: UIView {
     
     private var translation: STTranslation?
     private var previewLayer: CALayer?
-    
-    private lazy var toastStyle: ToastStyle = {
-        var style = ToastStyle()
-        style.backgroundColor = STColor.greyBlue
-        style.messageColor = STColor.neonBlue
-        return style
-    }()
 }
 
 private struct STLayout {
@@ -269,7 +264,7 @@ private struct STLayout {
     static let buttonsOffset: CGFloat = 10
     
     static let buttonSize = CGSize(width: 24, height: 24)
-    static let langSize = CGSize(width: 18, height: 21)
+    static let langSize = CGSize(width: 20, height: 21)
     static let arrowSize = CGSize(width: 43, height: 5)
     
     static let activityIndicatorSize = CGSize(width: 20, height: 20)

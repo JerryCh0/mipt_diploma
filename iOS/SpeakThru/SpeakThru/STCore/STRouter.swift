@@ -50,12 +50,18 @@ extension STRouter: STRouting {
         case .recognitionModel:
             Analytics.logEvent("open_recognition_model", parameters: nil)
             guard let navigationVC = window.rootViewController as? UINavigationController else { return }
-            let recognitionVC = STSettingVC(title: "Модель распознавания", items: [])
+            let recognitionVC = STSettingVC(
+                title: "Модель распознавания",
+                items: STSettingsViewModelFactory.buildRecognizerSettings()
+            )
             navigationVC.pushViewController(recognitionVC, animated: true)
         case .targetLanguage:
             Analytics.logEvent("open_target_language", parameters: nil)
             guard let navigationVC = window.rootViewController as? UINavigationController else { return }
-            let languageVC = STSettingVC(title: "Целевой язык", items: [])
+            let languageVC = STSettingVC(
+                title: "Целевой язык",
+                items: STSettingsViewModelFactory.buildLanguageSettings()
+            )
             navigationVC.pushViewController(languageVC, animated: true)
         default:
             assert(false, "Trying to make unimplemented routing")

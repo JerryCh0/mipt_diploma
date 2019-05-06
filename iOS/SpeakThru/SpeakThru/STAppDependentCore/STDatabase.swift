@@ -25,6 +25,9 @@ protocol STDatabase {
     
     func set(targetLang: String) -> Bool
     func getTargetLang() -> String
+    
+    func set(recognizerType: RecognizerType) -> Bool
+    func getRecognizerType() -> RecognizerType
 }
 
 protocol STDatabaseListener {
@@ -105,6 +108,16 @@ final class STDatabaseImpl: STDatabase {
         return targetLanguage
     }
     
+    func set(recognizerType: RecognizerType) -> Bool {
+        self.recognizerType = recognizerType
+        notifyListeners()
+        return true
+    }
+    
+    func getRecognizerType() -> RecognizerType {
+        return recognizerType
+    }
+    
     private func notifyListeners() {
         for listener in listeners {
             listener.onDataUpdated()
@@ -116,19 +129,25 @@ final class STDatabaseImpl: STDatabase {
         standardDefaults.set(encodedData, forKey: dictKey)
         standardDefaults.set(false, forKey: firstLaunchKey)
         standardDefaults.set(targetLanguage, forKey: targetLangKey)
+        standardDefaults.set(recognizerType, forKey: recognizerTypeKey)
         standardDefaults.synchronize()
     }
     
     private var translationsMap: [String : STTranslation]
-    private lazy var targetLanguage: String = {
-        return standardDefaults.value(forKey: targetLangKey) as! String
-    }()
+    
     private let standardDefaults = UserDefaults.standard
     
     private let dictKey = "translations_dictionary"
     private let firstLaunchKey = "application_runs_first_time"
     private let targetLangKey = "translation_target_language"
+    private let recognizerTypeKey = "recognizer_type"
     
     private var listeners = [STDatabaseListener]()
     
+    private lazy var targetLanguage: String = {
+        return standardDefaults.value(forKey: targetLangKey) as! String
+    }()
+    private lazy var recognizerType: RecognizerType = {
+        return standardDefaults.value(forKey: recognizerTypeKey) as? RecognizerType ?? .firebase
+    }()
 }

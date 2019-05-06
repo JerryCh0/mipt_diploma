@@ -53,7 +53,7 @@ final class STSettingVC: UIViewController {
             x: view.safeAreaInsets.left + STLayout.boundOffset,
             y: backButton.frame.maxY + STLayout.boundOffset,
             width: view.frame.width - (view.safeAreaInsets.left + view.safeAreaInsets.right + 2 * STLayout.boundOffset),
-            height: 2 * STLayout.boundOffset - backButton.frame.maxY
+            height: view.frame.height - (2 * STLayout.boundOffset + backButton.frame.maxY)
         )
     }
     
