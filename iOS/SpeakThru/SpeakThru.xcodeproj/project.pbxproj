@@ -18,7 +18,7 @@
 		0A130948222A749E0098433D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A130946222A749E0098433D /* LaunchScreen.storyboard */; };
 		0A130953222A749E0098433D /* SpeakThruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A130952222A749E0098433D /* SpeakThruTests.swift */; };
 		0A280105223309F00087C228 /* STMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A280104223309F00087C228 /* STMainVC.swift */; };
-		0A3D00F22280426900E44063 /* STVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D00F12280426900E44063 /* STVision.swift */; };
+		0A3D00F22280426900E44063 /* STTesseractRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D00F12280426900E44063 /* STTesseractRecognizer.swift */; };
 		0A3D00F422804B3400E44063 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D00F322804B3300E44063 /* tessdata */; };
 		0A3D00F622804B4F00E44063 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3D00F522804B4F00E44063 /* CoreImage.framework */; };
 		0A68FA79227AE85500E9414E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A68FA78227AE85500E9414E /* GoogleService-Info.plist */; };
@@ -70,7 +70,7 @@
 		0A130954222A749E0098433D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A2801032233079E0087C228 /* Rationale-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rationale-Regular.ttf"; sourceTree = "<group>"; };
 		0A280104223309F00087C228 /* STMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STMainVC.swift; sourceTree = "<group>"; };
-		0A3D00F12280426900E44063 /* STVision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STVision.swift; sourceTree = "<group>"; };
+		0A3D00F12280426900E44063 /* STTesseractRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTesseractRecognizer.swift; sourceTree = "<group>"; };
 		0A3D00F322804B3300E44063 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		0A3D00F522804B4F00E44063 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		0A68FA78227AE85500E9414E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -242,7 +242,7 @@
 				0ADDF695227AF9EB00F5B50A /* STGoogleTranslator.swift */,
 				0AF0DC732271C53A00158E8F /* STCameraController.swift */,
 				0AF0DC752271D11E00158E8F /* STRecognizer.swift */,
-				0A3D00F12280426900E44063 /* STVision.swift */,
+				0A3D00F12280426900E44063 /* STTesseractRecognizer.swift */,
 			);
 			path = STCore;
 			sourceTree = "<group>";
@@ -505,7 +505,7 @@
 				0A13093E222A749C0098433D /* AppDelegate.swift in Sources */,
 				0AD1E1FC2233B53C00FE7101 /* STButton.swift in Sources */,
 				0A05F7362270685A00F72B62 /* STTranslationView.swift in Sources */,
-				0A3D00F22280426900E44063 /* STVision.swift in Sources */,
+				0A3D00F22280426900E44063 /* STTesseractRecognizer.swift in Sources */,
 				0A280105223309F00087C228 /* STMainVC.swift in Sources */,
 				0AD1E1F72233AE1000FE7101 /* STRouter.swift in Sources */,
 				0ADDF698227B2FBB00F5B50A /* STSettingsViewModel.swift in Sources */,

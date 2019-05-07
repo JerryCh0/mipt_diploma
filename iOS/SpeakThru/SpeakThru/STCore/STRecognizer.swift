@@ -8,28 +8,23 @@
 
 import Foundation
 import Firebase
-import Vision
-import TesseractOCR
 
 protocol STRecognizerDelegate: class {
     func onRecognized(from photo: UIImage, text: String, lang: String)
 }
 
-private protocol Recognizer: class {
+protocol Recognizer: class {
     func recognize(from image: UIImage)
 }
 
 final class STRecognizer: Recognizer, STRecognizerDelegate {
     
     func recognize(from image: UIImage) {
-        vision.delegate = self
-        box.delegate = self
         switch type {
         case .firebase:
             firebaseRecognizer.recognize(from: image)
         case .vision:
-            vision.makeRequest(image: image)
-            //visionRecognizer.recognize(from: image)
+            tesseractRecognizer.recognize(from: image)
         }
     }
     
@@ -50,49 +45,18 @@ final class STRecognizer: Recognizer, STRecognizerDelegate {
         rec.coreRecognizer = self
         return rec
     }()
-    private lazy var visionRecognizer: STFirebaseRecognizer = {
-        let rec = STFirebaseRecognizer()
+    private lazy var tesseractRecognizer: STTesseractRecognizer = {
+        let rec = STTesseractRecognizer()
         rec.coreRecognizer = self
         return rec
     }()
-    private lazy var vision = STVision()
-    private lazy var box = BoxService()
-    private lazy var tesseract = G8Tesseract(language: "eng")!
-}
-
-extension STRecognizer: STVisionDelegate {
-    func service(_ version: STVision, didDetect image: UIImage, results: [VNTextObservation]) {
-        box.handle(image: image, results: results)
-    }
-}
-
-extension STRecognizer: BoxServiceDelegate {
     
-    func boxService(_ service: BoxService, didDetect images: [UIImage], on image: UIImage) {
-        parse(photo: image, images: images)
-    }
     
-    private func parse(photo: UIImage, images: [UIImage]) {
-        let tesseract = G8Tesseract(language: "eng")!
-        tesseract.engineMode = .tesseractCubeCombined
-        tesseract.pageSegmentationMode = .singleLine
-        
-        var result = ""
-        
-        for image in images {
-            tesseract.image = image.g8_blackAndWhite()
-            if tesseract.recognize() {
-                result += " " + tesseract.recognizedText
-            }
-        }
-        
-        delegate?.onRecognized(from: photo, text: result, lang: "en")
-    }
 }
 
 // MARK: -FirebaseRecognizer
 
-private final class STFirebaseRecognizer {
+private final class STFirebaseRecognizer: Recognizer {
     
     func recognize(from image: UIImage) {
         let vImage = VisionImage(image: image)
