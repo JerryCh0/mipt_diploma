@@ -25,6 +25,11 @@ final class STRecognizer: Recognizer, STRecognizerDelegate {
             firebaseRecognizer.recognize(from: image)
         case .vision:
             tesseractRecognizer.recognize(from: image)
+        case .own:
+            print("hehe")
+            // TODO: implement own
+        default:
+            firebaseRecognizer.recognize(from: image)
         }
     }
     
@@ -83,11 +88,13 @@ private final class STFirebaseRecognizer: Recognizer {
 enum RecognizerType {
     case firebase
     case vision
+    case own
 }
 
 private let TypeToString = [
     RecognizerType.firebase : "Firebase",
-    RecognizerType.vision : "Vision+Tesseract"
+    RecognizerType.vision : "Vision+Tesseract",
+    RecognizerType.own : "Own"
 ]
 
 func allRecognizers() -> [RecognizerType] {
