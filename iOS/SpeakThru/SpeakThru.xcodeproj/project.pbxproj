@@ -24,6 +24,8 @@
 		0A68FA79227AE85500E9414E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A68FA78227AE85500E9414E /* GoogleService-Info.plist */; };
 		0A759E0B226F36A300497CA6 /* Rationale-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2801032233079E0087C228 /* Rationale-Regular.ttf */; };
 		0A9AAECA22708C3F009CF722 /* UITextView+CenterVertically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */; };
+		0AB025DF2282B24F00FC165A /* apnr_ocr.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0AB025DE2282B24E00FC165A /* apnr_ocr.mlmodel */; };
+		0AB025E12282B2D600FC165A /* STOwnRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB025E02282B2D600FC165A /* STOwnRecognizer.swift */; };
 		0AB1DE8F227C3D17007D166B /* STSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1DE8E227C3D17007D166B /* STSettingVC.swift */; };
 		0AB1DE91227C4142007D166B /* STSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1DE90227C4142007D166B /* STSettingCell.swift */; };
 		0AD1E1F02233A96900FE7101 /* STFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD1E1EF2233A96900FE7101 /* STFirebaseManager.swift */; };
@@ -75,6 +77,8 @@
 		0A3D00F522804B4F00E44063 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		0A68FA78227AE85500E9414E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+CenterVertically.swift"; sourceTree = "<group>"; };
+		0AB025DE2282B24E00FC165A /* apnr_ocr.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = apnr_ocr.mlmodel; path = ../../../../Downloads/apnr_ocr.mlmodel; sourceTree = "<group>"; };
+		0AB025E02282B2D600FC165A /* STOwnRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STOwnRecognizer.swift; sourceTree = "<group>"; };
 		0AB1DE8E227C3D17007D166B /* STSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingVC.swift; sourceTree = "<group>"; };
 		0AB1DE90227C4142007D166B /* STSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingCell.swift; sourceTree = "<group>"; };
 		0AD1E1EF2233A96900FE7101 /* STFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STFirebaseManager.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 		0A130931222A749C0098433D = {
 			isa = PBXGroup;
 			children = (
+				0AB025DE2282B24E00FC165A /* apnr_ocr.mlmodel */,
 				0A3D00F322804B3300E44063 /* tessdata */,
 				0A13093C222A749C0098433D /* SpeakThru */,
 				0A130951222A749E0098433D /* SpeakThruTests */,
@@ -243,6 +248,7 @@
 				0AF0DC732271C53A00158E8F /* STCameraController.swift */,
 				0AF0DC752271D11E00158E8F /* STRecognizer.swift */,
 				0A3D00F12280426900E44063 /* STTesseractRecognizer.swift */,
+				0AB025E02282B2D600FC165A /* STOwnRecognizer.swift */,
 			);
 			path = STCore;
 			sourceTree = "<group>";
@@ -500,6 +506,7 @@
 				0A0D7E3C22801C070005CFCF /* Lang.swift in Sources */,
 				0ADDF696227AF9EB00F5B50A /* STGoogleTranslator.swift in Sources */,
 				0AEDBBA122514B75000CE43F /* STStyleKit.swift in Sources */,
+				0AB025E12282B2D600FC165A /* STOwnRecognizer.swift in Sources */,
 				0AF0DC7222719E5B00158E8F /* STDatabase.swift in Sources */,
 				0A05F739227068A800F72B62 /* STTranslation.swift in Sources */,
 				0A13093E222A749C0098433D /* AppDelegate.swift in Sources */,
@@ -512,6 +519,7 @@
 				0AF0DC762271D11E00158E8F /* STRecognizer.swift in Sources */,
 				0A05F7302270476F00F72B62 /* STAboutVC.swift in Sources */,
 				0A05F73422704D2E00F72B62 /* STBookmarksVC.swift in Sources */,
+				0AB025DF2282B24F00FC165A /* apnr_ocr.mlmodel in Sources */,
 				0AB1DE91227C4142007D166B /* STSettingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
