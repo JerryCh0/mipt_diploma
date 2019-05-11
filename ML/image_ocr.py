@@ -298,7 +298,7 @@ class TextImageGenerator(keras.callbacks.Callback):
                 input_length[i] = self.img_w // self.downsample_factor - 2
                 label_length[i] = self.Y_len[index + i]
                 source_str.append(self.X_text[index + i])
-        inputs = {'the_input': X_data,
+        inputs = {'the_input': X_data.reshape((size, int(np.prod(X_data.shape) / size))),
                   'the_labels': labels,
                   'input_length': input_length,
                   'label_length': label_length,
@@ -375,7 +375,6 @@ def decode_batch(test_func, word_batch):
         ret.append(outstr)
     return ret
 
-
 class VizCallback(keras.callbacks.Callback):
 
     def __init__(self, run_name, test_func, text_img_gen, num_display_words=6):
@@ -416,6 +415,13 @@ class VizCallback(keras.callbacks.Callback):
         word_batch = next(self.text_img_gen)[0]
         res = decode_batch(self.test_func,
                            word_batch['the_input'][0:self.num_display_words])
+        img_w = 128
+        if epoch > 19:
+            img_w = 512
+        word_batch['the_input'] = word_batch['the_input'].reshape(
+            (word_batch['the_input'].shape[0], img_w, 64, 1)
+        )
+        print(word_batch['the_input'].shape)
         if word_batch['the_input'][0].shape[0] < 256:
             cols = 2
         else:
@@ -470,10 +476,11 @@ def train(run_name, start_epoch, stop_epoch, img_w):
         downsample_factor=(pool_size ** 2),
         val_split=words_per_epoch - val_words)
     act = 'relu'
-    input_data = Input(name='the_input', shape=input_shape, dtype='float32')
+    input_data = Input(name='the_input', shape=(np.prod(input_shape),), dtype='float32')
+    reshape = Reshape(input_shape, input_shape=(np.prod(input_shape),))(input_data)
     inner = Conv2D(conv_filters, kernel_size, padding='same',
                    activation=act, kernel_initializer='he_normal',
-                   name='conv1')(input_data)
+                   name='conv1')(reshape)
     inner = MaxPooling2D(pool_size=(pool_size, pool_size), name='max1')(inner)
     inner = Conv2D(conv_filters, kernel_size, padding='same',
                    activation=act, kernel_initializer='he_normal',

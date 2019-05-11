@@ -14,6 +14,10 @@ import Vision
 
 private let GOOGLE_API_KEY = "AIzaSyCC0Euft9AJ1NDdIct62HMd-sX4vk1qMI0"
 
+private func mlToMatrix(_ arr: MLMultiArray) -> [[Double]] {
+    return []
+}
+
 final class STApp {
     
     private init() {
@@ -23,40 +27,38 @@ final class STApp {
         STGoogleTranslator.shared.start(with: GOOGLE_API_KEY)
         
         do {
-            let model = apnr_ocr()
+            let model = keras_ocr()
             
+            let input = keras_ocrInput(input1: (UIImage(named: "ML_TEST")?.preparedInput()!)!)
+            let options = MLPredictionOptions()
+            options.usesCPUOnly = true
+            let prediction = try model.prediction(input: input, options: options)
             
-            let image = resizeImage(
-                image: UIImage(named: "ML_TEST")!,
-                targetSize: CGSize(width: 128, height: 64)
-            )
-            
-            let input = apnr_ocrInput(input1: preprocess(image: image)!)
-            let prediction = try model.prediction(input: input)
-            
-            func predToString(arr: MLMultiArray) -> String {
-                let LETTERS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "E", "H", "K", "M", "O", "P", "T", "X", "Y", ""]
+            func predToString(_ arr: MLMultiArray) -> String {
+                let LETTERS = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", " ", ""]
                 var result = ""
-                for k in 0..<32 {
+                let stripe = 128
+                for k in 2..<stripe {
                     var currentMax = Double(0)
                     var index = 0
-                    for i in (k * 32)..<(k*32 + 23) {
+                    for i in (k * LETTERS.count)..<(k*LETTERS.count + LETTERS.count) {
                         if arr[i].doubleValue > currentMax {
                             index = i
                             currentMax = arr[i].doubleValue
                         }
                     }
                     if currentMax > 0.1 {
-                        result += LETTERS[index % 32]
-                        print(LETTERS[index % 32], "probabilty: \(currentMax)")
+                        result += LETTERS[index % LETTERS.count]
+                        //print(LETTERS[index % LETTERS.count], "probabilty: \(currentMax)")
                     }
                 }
                 return result
             }
             
-            print(predToString(arr: prediction.output1))
+            print(predToString(prediction.output1))
             
         } catch {
+            print("ERROR BLIN")
             return
         }
     }

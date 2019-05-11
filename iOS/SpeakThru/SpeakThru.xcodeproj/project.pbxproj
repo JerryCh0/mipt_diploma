@@ -17,14 +17,23 @@
 		0A130945222A749E0098433D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A130944222A749E0098433D /* Images.xcassets */; };
 		0A130948222A749E0098433D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A130946222A749E0098433D /* LaunchScreen.storyboard */; };
 		0A130953222A749E0098433D /* SpeakThruTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A130952222A749E0098433D /* SpeakThruTests.swift */; };
+		0A25C8882285768F00A2216A /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25C8872285768F00A2216A /* opencv2.framework */; };
+		0A25C88A228576A100A2216A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25C889228576A100A2216A /* AssetsLibrary.framework */; };
+		0A25C88C228576AA00A2216A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25C88B228576AA00A2216A /* CoreGraphics.framework */; };
+		0A25C88E228576B100A2216A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25C88D228576B100A2216A /* CoreMedia.framework */; };
+		0A25C890228576B700A2216A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25C88F228576B700A2216A /* CoreFoundation.framework */; };
+		0A25C892228576BD00A2216A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25C891228576BD00A2216A /* Accelerate.framework */; };
+		0A25C896228577DB00A2216A /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A25C895228577DB00A2216A /* OpenCVWrapper.mm */; };
+		0A25C89922857A1700A2216A /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A25C89822857A1600A2216A /* opencv2.framework */; };
+		0A25C89B228584BD00A2216A /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A25C89A228584BD00A2216A /* UIImage+Utils.swift */; };
 		0A280105223309F00087C228 /* STMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A280104223309F00087C228 /* STMainVC.swift */; };
 		0A3D00F22280426900E44063 /* STTesseractRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D00F12280426900E44063 /* STTesseractRecognizer.swift */; };
 		0A3D00F422804B3400E44063 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D00F322804B3300E44063 /* tessdata */; };
 		0A3D00F622804B4F00E44063 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3D00F522804B4F00E44063 /* CoreImage.framework */; };
+		0A6272C02287565E00405BF1 /* keras_ocr.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0A6272BF2287565E00405BF1 /* keras_ocr.mlmodel */; };
 		0A68FA79227AE85500E9414E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A68FA78227AE85500E9414E /* GoogleService-Info.plist */; };
 		0A759E0B226F36A300497CA6 /* Rationale-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2801032233079E0087C228 /* Rationale-Regular.ttf */; };
 		0A9AAECA22708C3F009CF722 /* UITextView+CenterVertically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */; };
-		0AB025DF2282B24F00FC165A /* apnr_ocr.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0AB025DE2282B24E00FC165A /* apnr_ocr.mlmodel */; };
 		0AB025E12282B2D600FC165A /* STOwnRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB025E02282B2D600FC165A /* STOwnRecognizer.swift */; };
 		0AB1DE8F227C3D17007D166B /* STSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1DE8E227C3D17007D166B /* STSettingVC.swift */; };
 		0AB1DE91227C4142007D166B /* STSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1DE90227C4142007D166B /* STSettingCell.swift */; };
@@ -70,14 +79,26 @@
 		0A13094E222A749E0098433D /* SpeakThruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeakThruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A130952222A749E0098433D /* SpeakThruTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakThruTests.swift; sourceTree = "<group>"; };
 		0A130954222A749E0098433D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A25C8872285768F00A2216A /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../../Downloads/opencv2.framework; sourceTree = "<group>"; };
+		0A25C889228576A100A2216A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		0A25C88B228576AA00A2216A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0A25C88D228576B100A2216A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0A25C88F228576B700A2216A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		0A25C891228576BD00A2216A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		0A25C893228577DA00A2216A /* SpeakThru-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpeakThru-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A25C894228577DB00A2216A /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		0A25C895228577DB00A2216A /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		0A25C8972285783B00A2216A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0A25C89822857A1600A2216A /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		0A25C89A228584BD00A2216A /* UIImage+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
 		0A2801032233079E0087C228 /* Rationale-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rationale-Regular.ttf"; sourceTree = "<group>"; };
 		0A280104223309F00087C228 /* STMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STMainVC.swift; sourceTree = "<group>"; };
 		0A3D00F12280426900E44063 /* STTesseractRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTesseractRecognizer.swift; sourceTree = "<group>"; };
 		0A3D00F322804B3300E44063 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		0A3D00F522804B4F00E44063 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		0A6272BF2287565E00405BF1 /* keras_ocr.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = keras_ocr.mlmodel; sourceTree = SOURCE_ROOT; };
 		0A68FA78227AE85500E9414E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+CenterVertically.swift"; sourceTree = "<group>"; };
-		0AB025DE2282B24E00FC165A /* apnr_ocr.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = apnr_ocr.mlmodel; path = ../../../../Downloads/apnr_ocr.mlmodel; sourceTree = "<group>"; };
 		0AB025E02282B2D600FC165A /* STOwnRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STOwnRecognizer.swift; sourceTree = "<group>"; };
 		0AB1DE8E227C3D17007D166B /* STSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingVC.swift; sourceTree = "<group>"; };
 		0AB1DE90227C4142007D166B /* STSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingCell.swift; sourceTree = "<group>"; };
@@ -107,6 +128,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A25C892228576BD00A2216A /* Accelerate.framework in Frameworks */,
+				0A25C890228576B700A2216A /* CoreFoundation.framework in Frameworks */,
+				0A25C88E228576B100A2216A /* CoreMedia.framework in Frameworks */,
+				0A25C89922857A1700A2216A /* opencv2.framework in Frameworks */,
+				0A25C88C228576AA00A2216A /* CoreGraphics.framework in Frameworks */,
+				0A25C88A228576A100A2216A /* AssetsLibrary.framework in Frameworks */,
+				0A25C8882285768F00A2216A /* opencv2.framework in Frameworks */,
 				0A3D00F622804B4F00E44063 /* CoreImage.framework in Frameworks */,
 				4A29AAAB7A8E5ECB405F1F34 /* Pods_SpeakThru.framework in Frameworks */,
 			);
@@ -135,7 +163,7 @@
 		0A130931222A749C0098433D = {
 			isa = PBXGroup;
 			children = (
-				0AB025DE2282B24E00FC165A /* apnr_ocr.mlmodel */,
+				0A25C89822857A1600A2216A /* opencv2.framework */,
 				0A3D00F322804B3300E44063 /* tessdata */,
 				0A13093C222A749C0098433D /* SpeakThru */,
 				0A130951222A749E0098433D /* SpeakThruTests */,
@@ -157,6 +185,7 @@
 		0A13093C222A749C0098433D /* SpeakThru */ = {
 			isa = PBXGroup;
 			children = (
+				0A6272BF2287565E00405BF1 /* keras_ocr.mlmodel */,
 				0A130949222A749E0098433D /* Info.plist */,
 				0A68FA78227AE85500E9414E /* GoogleService-Info.plist */,
 				0A13093D222A749C0098433D /* AppDelegate.swift */,
@@ -168,6 +197,10 @@
 				0A13095F222A782B0098433D /* Misc */,
 				0AD1E1FA2233B51A00FE7101 /* UI */,
 				0A13095D222A77FC0098433D /* Resources */,
+				0A25C894228577DB00A2216A /* OpenCVWrapper.h */,
+				0A25C895228577DB00A2216A /* OpenCVWrapper.mm */,
+				0A25C8972285783B00A2216A /* PrefixHeader.pch */,
+				0A25C893228577DA00A2216A /* SpeakThru-Bridging-Header.h */,
 			);
 			path = SpeakThru;
 			sourceTree = "<group>";
@@ -209,6 +242,7 @@
 				0A05F72D2270457100F72B62 /* AboutScreen.storyboard */,
 				0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */,
 				0A0D7E3B22801C070005CFCF /* Lang.swift */,
+				0A25C89A228584BD00A2216A /* UIImage+Utils.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -275,6 +309,12 @@
 		5788000CE78208F9C8E7E5DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A25C891228576BD00A2216A /* Accelerate.framework */,
+				0A25C88F228576B700A2216A /* CoreFoundation.framework */,
+				0A25C88D228576B100A2216A /* CoreMedia.framework */,
+				0A25C88B228576AA00A2216A /* CoreGraphics.framework */,
+				0A25C889228576A100A2216A /* AssetsLibrary.framework */,
+				0A25C8872285768F00A2216A /* opencv2.framework */,
 				0A3D00F522804B4F00E44063 /* CoreImage.framework */,
 				FCF1108AC15768D0CB235D76 /* Pods_SpeakThru.framework */,
 				5F3361E05BF9FC5480081ECF /* Pods_SpeakThruTests.framework */,
@@ -348,6 +388,7 @@
 				TargetAttributes = {
 					0A130939222A749C0098433D = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
 					};
 					0A13094D222A749E0098433D = {
 						CreatedOnToolsVersion = 10.0;
@@ -499,11 +540,13 @@
 				0AF0DC742271C53A00158E8F /* STCameraController.swift in Sources */,
 				0AB1DE8F227C3D17007D166B /* STSettingVC.swift in Sources */,
 				0AD1E1F02233A96900FE7101 /* STFirebaseManager.swift in Sources */,
+				0A25C896228577DB00A2216A /* OpenCVWrapper.mm in Sources */,
 				0AD1E1FE2233B6C100FE7101 /* STRouting.swift in Sources */,
 				0AEDBBA322514E45000CE43F /* STSettingsVC.swift in Sources */,
 				0AD1E1F42233AA9D00FE7101 /* STApp.swift in Sources */,
 				0AD1E1F22233A9CA00FE7101 /* STAppContext.swift in Sources */,
 				0A0D7E3C22801C070005CFCF /* Lang.swift in Sources */,
+				0A25C89B228584BD00A2216A /* UIImage+Utils.swift in Sources */,
 				0ADDF696227AF9EB00F5B50A /* STGoogleTranslator.swift in Sources */,
 				0AEDBBA122514B75000CE43F /* STStyleKit.swift in Sources */,
 				0AB025E12282B2D600FC165A /* STOwnRecognizer.swift in Sources */,
@@ -519,7 +562,7 @@
 				0AF0DC762271D11E00158E8F /* STRecognizer.swift in Sources */,
 				0A05F7302270476F00F72B62 /* STAboutVC.swift in Sources */,
 				0A05F73422704D2E00F72B62 /* STBookmarksVC.swift in Sources */,
-				0AB025DF2282B24F00FC165A /* apnr_ocr.mlmodel in Sources */,
+				0A6272C02287565E00405BF1 /* keras_ocr.mlmodel in Sources */,
 				0AB1DE91227C4142007D166B /* STSettingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -677,8 +720,34 @@
 			baseConfigurationReference = 475F318D136623AD2DBAC4CC /* Pods-SpeakThru.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7H58X7JTPY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleAPIClientForREST\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Koloda\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/TesseractOCRiOS\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast-Swift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/pop\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseMLCommon/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseMLVision/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseMLVisionTextModel/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleMobileVision/Detector/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleMobileVision/TextDetector/Frameworks\"",
+					"$(PROJECT_DIR)/",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SpeakThru/PrefixHeader.pch";
 				INFOPLIST_FILE = SpeakThru/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -687,6 +756,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = klabertants.SpeakThru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeakThru/SpeakThru-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -697,8 +768,34 @@
 			baseConfigurationReference = 948F426638F81E8F47511E1C /* Pods-SpeakThru.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7H58X7JTPY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleAPIClientForREST\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Koloda\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/TesseractOCRiOS\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Toast-Swift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/pop\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseMLCommon/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseMLVision/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseMLVisionTextModel/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleMobileVision/Detector/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleMobileVision/TextDetector/Frameworks\"",
+					"\"$(PROJECT_DIR)/opencv2.framework\"",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SpeakThru/PrefixHeader.pch";
 				INFOPLIST_FILE = SpeakThru/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -707,6 +804,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = klabertants.SpeakThru;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpeakThru/SpeakThru-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
