@@ -30,10 +30,10 @@ final class BoxService {
                 transform = transform.translatedBy(x: 0, y: -1)
                 let rect = result.boundingBox.applying(transform)
                 
-                let scaleUp: CGFloat = 0.2
+                let scaleUp: CGFloat = 1
                 let biggerRect = rect.insetBy(
                     dx: -rect.size.width * scaleUp,
-                    dy: -rect.size.height * scaleUp
+                    dy: -0.5 * (rect.size.width * (1 + 2 * scaleUp) / 8.0 - rect.size.height)
                 )
                 
                 if let croppedImage = crop(image: image, rect: biggerRect) {

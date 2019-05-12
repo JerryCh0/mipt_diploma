@@ -18,22 +18,6 @@ the word list to include two words separated by a space.
 
 The table below shows normalized edit distance values. Theano uses
 a slightly different CTC implementation, hence the different results.
-
-Epoch |   TF   |   TH
------:|-------:|-------:
-    10|  0.027 | 0.064
-    15|  0.038 | 0.035
-    20|  0.043 | 0.045
-    25|  0.014 | 0.019
-
-This requires ```cairo``` and ```editdistance``` packages:
-```python
-pip install cairocffi
-pip install editdistance
-```
-
-Created by Mike Henry
-https://github.com/mbhenry/
 '''
 import os
 import itertools
@@ -102,12 +86,16 @@ def paint_text(text, w, h, rotate=False, ud=False, multi_fonts=False):
             context.select_font_face('Courier',
                                      cairo.FONT_SLANT_NORMAL,
                                      cairo.FONT_WEIGHT_BOLD)
-        context.set_font_size(25)
+        font_size = 40
+        context.set_font_size(font_size)
         box = context.text_extents(text)
         border_w_h = (4, 4)
-        if box[2] > (w - 2 * border_w_h[1]) or box[3] > (h - 2 * border_w_h[0]):
-            raise IOError(('Could not fit string into image.'
-                           'Max char count is too large for given image width.'))
+        while box[2] > (w - 2 * border_w_h[1]) or box[3] > (h - 2 * border_w_h[0]):
+            #raise IOError(('Could not fit string into image.'
+            #               'Max char count is too large for given image width.'))
+            font_size -= 2
+            context.set_font_size(font_size)
+            box = context.text_extents(text)
 
         # teach the RNN translational invariance by
         # fitting text box randomly on canvas, with some room to rotate
