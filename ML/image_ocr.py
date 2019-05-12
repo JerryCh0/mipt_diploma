@@ -15,9 +15,6 @@ which is both a generator class for test/train data and a Keras
 callback class. After 20 epochs, longer sequences are thrown at it
 by recompiling the model to handle a wider image and rebuilding
 the word list to include two words separated by a space.
-
-The table below shows normalized edit distance values. Theano uses
-a slightly different CTC implementation, hence the different results.
 '''
 import os
 import itertools
