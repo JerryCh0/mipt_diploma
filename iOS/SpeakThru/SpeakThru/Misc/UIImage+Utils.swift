@@ -9,7 +9,7 @@
 import Foundation
 import CoreML
 
-func transpose(_ matrix: [[NSNumber]]) -> [[NSNumber]] {
+private func transpose(_ matrix: [[NSNumber]]) -> [[NSNumber]] {
     let rowCount = matrix.count
     let colCount = matrix[0].count
     var transposed : [[NSNumber]] = Array(repeating: Array(repeating: 0.0, count: rowCount), count: colCount)
@@ -68,39 +68,11 @@ extension UIImage {
             return nil
         }
     }
-    
-//    func getPixelChannel(x: Int, y: Int) -> NSNumber {
-//
-//        let pixelData = self.cgImage?.dataProvider?.data!
-//        let data: UnsafePointer<UInt8> = CFDataGetBytePtr(pixelData)
-//
-//        let pixelInfo: Int = ((Int(self.size.width) * y + x)) * 4
-//
-//        let r = CGFloat(data[pixelInfo]) / CGFloat(255.0)
-//        let g = CGFloat(data[pixelInfo+1]) / CGFloat(255.0)
-//        let b = CGFloat(data[pixelInfo+2]) / CGFloat(255.0)
-//
-//        return NSNumber(value: Double(0.299 * r + 0.587 * g + 0.114 * b))
-//    }
 
     func resize(targetSize: CGSize) -> UIImage {
+        let rect = CGRect(x: 0, y: 0, width: targetSize.width, height: targetSize.height)
         
-        let widthRatio  = targetSize.width  / size.width
-        let heightRatio = targetSize.height / size.height
-        
-        // Figure out what our orientation is, and use that to form the rectangle
-        var newSize: CGSize = targetSize
-        //    if(widthRatio > heightRatio) {
-        //        newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
-        //    } else {
-        //        newSize = CGSize(width: size.width * widthRatio,  height: size.height * widthRatio)
-        //    }
-        
-        // This is the rect that we've calculated out and this is what is actually used below
-        let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
-        
-        // Actually do the resizing to the rect using the ImageContext stuff
-        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
+        UIGraphicsBeginImageContextWithOptions(targetSize, false, 1.0)
         draw(in: rect)
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
@@ -109,23 +81,3 @@ extension UIImage {
     }
     
 }
-
-//func preprocess(image: UIImage) -> MLMultiArray? {
-//
-//    do {
-//        let result = try MLMultiArray(shape: [1, 512, 64], dataType: .double)
-//        let yMax = Int(image.size.height)
-//        let xMax = Int(image.size.width)
-//        let grayScaleImage = image.g8_grayScale()!
-//
-//        for yCo in 0 ..< yMax {
-//            for xCo in 0 ..< xMax {
-//                result[yCo * 512 + xCo] = grayScaleImage.getPixelChannel(x: xCo, y: yCo)
-//            }
-//        }
-//
-//        return result
-//    } catch {
-//        return nil
-//    }
-//}

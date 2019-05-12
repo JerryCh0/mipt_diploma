@@ -26,10 +26,7 @@ final class STRecognizer: Recognizer, STRecognizerDelegate {
         case .vision:
             tesseractRecognizer.recognize(from: image)
         case .own:
-            print("hehe")
-            // TODO: implement own
-        default:
-            firebaseRecognizer.recognize(from: image)
+            ownRecognizer.recognize(from: image)
         }
     }
     
@@ -55,7 +52,11 @@ final class STRecognizer: Recognizer, STRecognizerDelegate {
         rec.coreRecognizer = self
         return rec
     }()
-    
+    private lazy var ownRecognizer: STOwnRecognizer = {
+        let rec = STOwnRecognizer()
+        rec.coreRecognizer = self
+        return rec
+    }()
     
 }
 

@@ -30,6 +30,7 @@
 		0A3D00F22280426900E44063 /* STTesseractRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D00F12280426900E44063 /* STTesseractRecognizer.swift */; };
 		0A3D00F422804B3400E44063 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D00F322804B3300E44063 /* tessdata */; };
 		0A3D00F622804B4F00E44063 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3D00F522804B4F00E44063 /* CoreImage.framework */; };
+		0A5F133B22880A6000FBE969 /* Vision+BoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5F133A22880A6000FBE969 /* Vision+BoxService.swift */; };
 		0A6272C02287565E00405BF1 /* keras_ocr.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0A6272BF2287565E00405BF1 /* keras_ocr.mlmodel */; };
 		0A68FA79227AE85500E9414E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A68FA78227AE85500E9414E /* GoogleService-Info.plist */; };
 		0A759E0B226F36A300497CA6 /* Rationale-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A2801032233079E0087C228 /* Rationale-Regular.ttf */; };
@@ -96,6 +97,7 @@
 		0A3D00F12280426900E44063 /* STTesseractRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTesseractRecognizer.swift; sourceTree = "<group>"; };
 		0A3D00F322804B3300E44063 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		0A3D00F522804B4F00E44063 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		0A5F133A22880A6000FBE969 /* Vision+BoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vision+BoxService.swift"; sourceTree = "<group>"; };
 		0A6272BF2287565E00405BF1 /* keras_ocr.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = keras_ocr.mlmodel; sourceTree = SOURCE_ROOT; };
 		0A68FA78227AE85500E9414E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+CenterVertically.swift"; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				0A9AAEC922708C3F009CF722 /* UITextView+CenterVertically.swift */,
 				0A0D7E3B22801C070005CFCF /* Lang.swift */,
 				0A25C89A228584BD00A2216A /* UIImage+Utils.swift */,
+				0A5F133A22880A6000FBE969 /* Vision+BoxService.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -548,6 +551,7 @@
 				0A0D7E3C22801C070005CFCF /* Lang.swift in Sources */,
 				0A25C89B228584BD00A2216A /* UIImage+Utils.swift in Sources */,
 				0ADDF696227AF9EB00F5B50A /* STGoogleTranslator.swift in Sources */,
+				0A5F133B22880A6000FBE969 /* Vision+BoxService.swift in Sources */,
 				0AEDBBA122514B75000CE43F /* STStyleKit.swift in Sources */,
 				0AB025E12282B2D600FC165A /* STOwnRecognizer.swift in Sources */,
 				0AF0DC7222719E5B00158E8F /* STDatabase.swift in Sources */,

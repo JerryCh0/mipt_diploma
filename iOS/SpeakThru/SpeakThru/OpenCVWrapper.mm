@@ -27,16 +27,12 @@
 + (NSArray< NSArray<NSNumber*>* > *)prepareForML:(UIImage *)image {
     cv::Mat srcMat = [OpenCVWrapper cvMatFromUIImage:image];
     
-    int cols = 512;
-    int rows = 64;
-    
-    cv::Mat resizedMat(rows, cols, srcMat.type());
-    
-    cv::resize(srcMat, resizedMat, resizedMat.size(), 0, 0, cv::INTER_LINEAR);
+    int rows = srcMat.rows;
+    int cols = srcMat.cols;
     
     cv::Mat grayMat(rows, cols, CV_8UC1);
     
-    cv::cvtColor(resizedMat, grayMat, cv::COLOR_BGR2GRAY);
+    cv::cvtColor(srcMat, grayMat, cv::COLOR_BGR2GRAY);
     
     NSMutableArray *result = [NSMutableArray arrayWithCapacity:rows];
     
