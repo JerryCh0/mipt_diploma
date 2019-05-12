@@ -15,25 +15,6 @@ which is both a generator class for test/train data and a Keras
 callback class. After 20 epochs, longer sequences are thrown at it
 by recompiling the model to handle a wider image and rebuilding
 the word list to include two words separated by a space.
-
-The table below shows normalized edit distance values. Theano uses
-a slightly different CTC implementation, hence the different results.
-
-Epoch |   TF   |   TH
------:|-------:|-------:
-    10|  0.027 | 0.064
-    15|  0.038 | 0.035
-    20|  0.043 | 0.045
-    25|  0.014 | 0.019
-
-This requires ```cairo``` and ```editdistance``` packages:
-```python
-pip install cairocffi
-pip install editdistance
-```
-
-Created by Mike Henry
-https://github.com/mbhenry/
 '''
 import os
 import itertools
