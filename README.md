@@ -5,10 +5,12 @@ My thesis on "Application for automatic text detection and translation"
 * [iOS](https://github.com/klabertants/mipt_thesis/tree/master/iOS/)
 * [Resources](https://github.com/klabertants/mipt_thesis/tree/master/res/)
 * [ML](https://github.com/klabertants/mipt_thesis/tree/master/ML/)
-* [LaTeX](https://github.com/klabertants/mipt_thesis/tree/master/LaTeX/)
+* [Text](https://github.com/klabertants/mipt_thesis/tree/master/Text/)
 
 **Thesis representation:**
-* [Thesis Check](https://github.com/klabertants/mipt_thesis/tree/master/representation/Thesis%20Check%20(21.03.2019))
+* [Thesis Check I](https://github.com/klabertants/mipt_thesis/tree/master/representation/Thesis%20Check%20(21.03.2019))
+* [Thesis Check II](https://github.com/klabertants/mipt_thesis/tree/master/representation/Thesis%20Check%20(21.03.2019))
+* [Thesis Check III](https://github.com/klabertants/mipt_thesis/tree/master/representation/Thesis%20Check%20(21.03.2019))
 
 **Papers used:**
 * [OpenCV OCR and text recognition with Tesseract](https://www.pyimagesearch.com/2018/09/17/opencv-ocr-and-text-recognition-with-tesseract/)
